@@ -1,0 +1,103 @@
+{
+  "dashboardAuthorizations": {
+    "allAuthorized": false,
+    "authorizations": []
+  },
+  "exposedObjects": {
+    "objects": []
+  },
+  "projectType": "REGULAR",
+  "owner": "grabenertr",
+  "permissions": [],
+  "additionalDashboardUsers": {
+    "users": []
+  },
+  "tutorialProject": false,
+  "settings": {
+    "flowAnchorSourcesAndSinks": true,
+    "gitCommitMode": "AUTO",
+    "disableAutomaticTriggers": false,
+    "integrations": {
+      "integrations": []
+    },
+    "flowBuildSettings": {
+      "mergeSparkPipelines": false,
+      "pruneBeforeSparkPipelines": true
+    },
+    "limitsSettings": {
+      "memSampleBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "shakerMemTableBytes": {
+        "soft": -1,
+        "hard": -1
+      }
+    },
+    "relocationSettings": {
+      "sqlLikeRecipesInitializationMode": "RESOLVED_TABLE_REFERENCES"
+    },
+    "recipeEnginesPreferences": {
+      "forbiddenEngines": [],
+      "enginesPreferenceOrder": [],
+      "forbiddenByRecipeType": {},
+      "preferenceByRecipeType": {}
+    }
+  },
+  "name": "Bases de Production",
+  "projectStatus": "Sandbox",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1497455749665
+  },
+  "shortDesc": "The project *Bases de Production* was created by Tristam Gräbener on Jun 14th 2017",
+  "tags": [],
+  "checklists": {
+    "checklists": [
+      {
+        "title": "Your new project\u0027s Todo",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": true,
+            "text": "Create the project",
+            "createdOn": 1497455749674,
+            "createdBy": "grabenertr",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Set a project image (click on the color next to the project title)",
+            "createdOn": 1497455749674,
+            "createdBy": "grabenertr",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Import your [first dataset](datasets/new/)",
+            "createdOn": 1497455749674,
+            "createdBy": "grabenertr",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Invite [other users](settings/permissions/) to collaborate",
+            "createdOn": 1497455749674,
+            "createdBy": "grabenertr",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Organize your work by replacing this with a real todo",
+            "createdOn": 1497455749674,
+            "createdBy": "grabenertr",
+            "stateChangedOn": 0
+          }
+        ]
+      }
+    ]
+  }
+}
