@@ -8,7 +8,36 @@
   },
   "projectType": "REGULAR",
   "owner": "grabenertr",
-  "permissions": [],
+  "permissions": [
+    {
+      "group": "administrators",
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": true,
+      "exportDatasetsData": true,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    {
+      "group": "eig",
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": true,
+      "exportDatasetsData": true,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    }
+  ],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -46,6 +75,13 @@
   },
   "name": "Bases de Production",
   "projectStatus": "Sandbox",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1497517419349
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
