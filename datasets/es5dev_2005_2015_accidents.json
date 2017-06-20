@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497625312522
+    "lastModifiedOn": 1497967520936
   },
   "creationTag": {
     "versionNumber": 0,
@@ -47,7 +47,7 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -196,19 +196,37 @@
         "maxLength": -1
       },
       {
-        "name": "geo_score",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "geo_source",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
+        "name": "geo_score",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "num_route_or_id",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "num_route_com_id",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "distance",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "geojson",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -401,12 +419,6 @@
       },
       {
         "name": "gravite_accident",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "geojson",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
