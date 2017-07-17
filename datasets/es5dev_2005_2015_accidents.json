@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500294402968
+    "lastModifiedOn": 1500294416363
   },
   "creationTag": {
     "versionNumber": 0,
@@ -359,9 +359,21 @@
         "maxLength": -1
       },
       {
+        "name": "has_voiture",
+        "type": "boolean",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "deuxrouesmotorises_nb",
         "type": "string",
         "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "has_deuxrouesmotorises",
+        "type": "boolean",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -373,6 +385,12 @@
         "maxLength": -1
       },
       {
+        "name": "has_velo",
+        "type": "boolean",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "poidslourd_nb",
         "type": "string",
         "meaning": "Text",
@@ -380,9 +398,21 @@
         "maxLength": -1
       },
       {
+        "name": "has_poidslourd",
+        "type": "boolean",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "vehiculeautre_nb",
         "type": "string",
         "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "has_vehiculeautre",
+        "type": "boolean",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
