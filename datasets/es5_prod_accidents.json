@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499860365431
+    "lastModifiedOn": 1500910980686
   },
   "creationTag": {
     "versionNumber": 0,
@@ -47,7 +47,7 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -353,36 +353,66 @@
       },
       {
         "name": "voiture_nb",
-        "type": "string",
+        "type": "bigint",
         "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "has_voiture",
+        "type": "boolean",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "deuxrouesmotorises_nb",
-        "type": "string",
+        "type": "bigint",
         "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "has_deuxrouesmotorises",
+        "type": "boolean",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "velo_nb",
-        "type": "string",
+        "type": "bigint",
         "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "has_velo",
+        "type": "boolean",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "poidslourd_nb",
-        "type": "string",
+        "type": "bigint",
         "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
+        "name": "has_poidslourd",
+        "type": "boolean",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "vehiculeautre_nb",
-        "type": "string",
+        "type": "bigint",
         "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "has_vehiculeautre",
+        "type": "boolean",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -390,6 +420,12 @@
         "name": "pietons_nb",
         "type": "bigint",
         "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "has_pietons",
+        "type": "boolean",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -419,6 +455,12 @@
       },
       {
         "name": "gravite_accident",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "geo_source_display",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
