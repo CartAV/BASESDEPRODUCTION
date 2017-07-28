@@ -41,7 +41,13 @@
       "items": [
         {
           "ref": "VERBALISATIONLECTRONIQUEPARTAGE.2014_2015_pve_sr_regions_very_light",
-          "deps": []
+          "deps": [
+            {
+              "idim": "ANNEE",
+              "func": "all_available",
+              "params": {}
+            }
+          ]
         }
       ]
     }
@@ -57,11 +63,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "grabenertr"
     },
-    "lastModifiedOn": 1501233068168
+    "lastModifiedOn": 1501242941074
   },
   "creationTag": {
     "versionNumber": 0,
