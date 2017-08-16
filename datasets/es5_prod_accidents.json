@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500914597204
+    "lastModifiedOn": 1502899141702
   },
   "creationTag": {
     "versionNumber": 0,
@@ -47,7 +47,7 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -263,7 +263,7 @@
       },
       {
         "name": "nbv",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -299,13 +299,13 @@
       },
       {
         "name": "lartpc",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "larrout",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -330,18 +330,6 @@
       {
         "name": "env1",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "X_CHF_LIEU",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "Y_CHF_LIEU",
-        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
