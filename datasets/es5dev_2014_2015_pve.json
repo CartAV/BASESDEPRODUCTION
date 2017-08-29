@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1504013147694
+    "lastModifiedOn": 1504013154364
   },
   "creationTag": {
     "versionNumber": 0,
@@ -45,12 +45,6 @@
   "schema": {
     "userModified": false,
     "columns": [
-      {
-        "name": "LIBELLE_FAMILLE",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
       {
         "name": "DEPARTEMENT_INFRACTION",
         "type": "string",
@@ -100,13 +94,19 @@
         "maxLength": -1
       },
       {
-        "name": "LIB_COURT_CORPS",
+        "name": "COD_GENRE",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "COD_GENRE",
+        "name": "LIBELLE_FAMILLE",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "LIBELLE_TYPE_VOIE_DEDUIT",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -137,6 +137,12 @@
       },
       {
         "name": "nom_circonscription_police",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "LIB_COURT_CORPS",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
