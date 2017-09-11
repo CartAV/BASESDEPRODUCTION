@@ -40,7 +40,7 @@
     "main": {
       "items": [
         {
-          "ref": "GECODAGE_ACCIDENTS.caracateristiques_postgis",
+          "ref": "ACCIDENTS.accidents_CLUV_prepared",
           "deps": []
         }
       ]
@@ -57,11 +57,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 23,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1504882448109
+    "lastModifiedOn": 1505122939158
   },
   "creationTag": {
     "versionNumber": 0,
