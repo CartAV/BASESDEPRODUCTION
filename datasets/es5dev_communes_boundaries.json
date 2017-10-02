@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1506943844072
+    "lastModifiedOn": 1506958060749
   },
   "creationTag": {
     "versionNumber": 0,
@@ -38,6 +38,7 @@
     "connection": "es5-test",
     "index": "es5dev_communes_boundaries",
     "type": "es5dev_communes_boundaries",
+    "customMapping": "{\n  \"date_detection\": false,\n  \"properties\": {\n    \"st_asgeojson\": {\n      \"type\": \"text\"\n    },\n    \"the_geom\": {\n      \"type\": \"text\"\n    },\n    \"Z_MOYEN\": {\n      \"type\": \"text\"\n    },\n    \"CODE_REG\": {\n      \"type\": \"text\"\n    },\n    \"STATUT\": {\n      \"type\": \"text\"\n    },\n    \"X_CHF_LIEU\": {\n      \"type\": \"text\"\n    },\n    \"CODE_COM\": {\n      \"type\": \"text\"\n    },\n    \"ID_GEOFLA\": {\n      \"type\": \"text\"\n    },\n    \"INSEE_COM\": {\n      \"type\": \"text\"\n    },\n    \"Y_CHF_LIEU\": {\n      \"type\": \"text\"\n    },\n    \"CODE_ARR\": {\n      \"type\": \"text\"\n    },\n    \"NOM_DEPT\": {\n      \"type\": \"text\"\n    },\n    \"CODE_DEPT\": {\n      \"type\": \"keyword\"\n    },\n    \"NOM_REG\": {\n      \"type\": \"text\"\n    },\n    \"Y_CENTROID\": {\n      \"type\": \"text\"\n    },\n    \"X_CENTROID\": {\n      \"type\": \"text\"\n    },\n    \"POPULATION\": {\n      \"type\": \"text\"\n    },\n    \"SUPERFICIE\": {\n      \"type\": \"text\"\n    },\n    \"NOM_COM\": {\n      \"type\": \"text\"\n    }\n  }\n}",
     "frameSize": 10000,
     "partitioned": false
   },
