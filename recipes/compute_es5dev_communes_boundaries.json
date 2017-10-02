@@ -40,7 +40,7 @@
     "main": {
       "items": [
         {
-          "ref": "DATAPREPOPENDATAGEO.communes_boundaries",
+          "ref": "DATAPREPOPENDATAGEO.communes_boundaries_geojson",
           "deps": []
         }
       ]
@@ -57,11 +57,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1506678458313
+    "lastModifiedOn": 1506943844557
   },
   "creationTag": {
     "versionNumber": 0,
