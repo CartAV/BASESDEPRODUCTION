@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1506678386470
+    "lastModifiedOn": 1506943844072
   },
   "creationTag": {
     "versionNumber": 0,
@@ -148,6 +148,12 @@
       },
       {
         "name": "NOM_COM",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "st_asgeojson",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
