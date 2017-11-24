@@ -73,14 +73,14 @@
       "preferenceByRecipeType": {}
     }
   },
-  "name": "Bases de Production",
+  "name": "CartAV - bases de Production",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1497517419349
+    "lastModifiedOn": 1511542123281
   },
   "creationTag": {
     "versionNumber": 0,
