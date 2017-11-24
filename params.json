@@ -11,7 +11,7 @@
   "permissions": [
     {
       "group": "administrators",
-      "admin": false,
+      "admin": true,
       "readProjectContent": false,
       "writeProjectContent": true,
       "exportDatasetsData": true,
@@ -25,7 +25,7 @@
     },
     {
       "group": "eig",
-      "admin": false,
+      "admin": true,
       "readProjectContent": false,
       "writeProjectContent": true,
       "exportDatasetsData": true,
@@ -76,11 +76,11 @@
   "name": "CartAV - bases de Production",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1511542123281
+    "lastModifiedOn": 1511542166325
   },
   "creationTag": {
     "versionNumber": 0,
