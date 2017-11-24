@@ -5,20 +5,76 @@
   "name": "prod",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1511540872716
+    "lastModifiedOn": 1511540945963
   },
   "checklists": {
     "checklists": []
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "ac0BTQxQ",
+      "type": "temporal",
+      "delay": 0,
+      "active": true,
+      "params": {
+        "frequency": "Daily",
+        "dayOfMonth": 0,
+        "minute": 0,
+        "hour": 0
+      }
+    }
+  ],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_0_true_d_es5_prod_pve_d_es5_prod_radars_d_es5_prod_accidents_d_es5_prod_accidents_usagers_d_es5_prod_accidents_usagers_d_es5_prod_communes_boundaries",
+        "type": "build_flowitem",
+        "name": "prod",
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_pve",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_radars",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_accidents",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_accidents_usagers",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_accidents_usagers",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_communes_boundaries",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false
 }
