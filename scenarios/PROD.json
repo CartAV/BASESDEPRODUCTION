@@ -3,13 +3,13 @@
   "id": "PROD",
   "type": "step_based",
   "name": "prod",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1511544154901
+    "lastModifiedOn": 1511774324846
   },
   "checklists": {
     "checklists": []
@@ -19,13 +19,14 @@
     {
       "id": "ac0BTQxQ",
       "type": "temporal",
+      "name": "Daily CartAV prod trigger",
       "delay": 0,
       "active": true,
       "params": {
         "frequency": "Daily",
         "dayOfMonth": 0,
-        "minute": 0,
-        "hour": 0
+        "minute": 50,
+        "hour": 23
       }
     }
   ],
