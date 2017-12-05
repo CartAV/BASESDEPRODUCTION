@@ -133,7 +133,17 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "DATE_FACET",
+            "column": "DATE_JOUR_REEL_INFRACTION",
+            "columnType": "DATE",
+            "dateFilterType": "YEAR",
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
