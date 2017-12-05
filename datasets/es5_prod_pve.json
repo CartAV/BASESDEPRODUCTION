@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1507192903958
+    "lastModifiedOn": 1512499978595
   },
   "creationTag": {
     "versionNumber": 0,
@@ -35,7 +35,7 @@
     "creator:grabenertr"
   ],
   "params": {
-    "connection": "es5",
+    "connection": "cartav_prod",
     "index": "es5_prod_pve",
     "type": "es5_prod_pve",
     "customMapping": "{\n  \"date_detection\": false,\n  \"_all\": {\"enabled\": false},\n  \"properties\": {\n    \"DEPARTEMENT_INFRACTION\": {\n      \"type\": \"keyword\"\n    },\n    \"NOM_REG\": {\n      \"type\": \"keyword\"\n    },\n    \"CODE_INSEE_INFRACTION\": {\n      \"type\": \"keyword\"\n    },\n    \"ANNEE_INFRACTION\": {\n      \"type\": \"keyword\"\n    },\n    \"LIBELLE_FAMILLE\": {\n      \"type\": \"keyword\"\n    },\n    \"LIBELLE_JOUR_INFRACTION\": {\n      \"type\": \"keyword\"\n    },\n    \"num_route_com_id\": {\n      \"type\": \"keyword\"\n    },\n    \"LIBELLE_CORPS\": {\n      \"type\": \"keyword\"\n    },\n    \"LIBELLE_UNITE\": {\n      \"type\": \"keyword\"\n    },\n    \"COD_GENRE\": {\n      \"type\": \"keyword\"\n    },\n    \"LIBELLE_PLAGE_HORAIRE\": {\n      \"type\": \"keyword\"\n    },\n    \"nom_circonscription_police\": {\n      \"type\": \"keyword\"\n    },\n    \"LIBELLE_TYPE_VOIE_DEDUIT\": {\n      \"type\": \"keyword\"\n    },\n\"DATE_JOUR_REEL_INFRACTION\":{\n     \"type\": \"date\"\n   }\n  }\n}",
