@@ -5,11 +5,11 @@
   "name": "prod",
   "active": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "dupontlau"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1511774324846
+    "lastModifiedOn": 1512586299232
   },
   "checklists": {
     "checklists": []
@@ -17,16 +17,20 @@
   "tags": [],
   "triggers": [
     {
-      "id": "ac0BTQxQ",
-      "type": "temporal",
-      "name": "Daily CartAV prod trigger",
-      "delay": 0,
+      "id": "sN0rzcf8",
+      "type": "ds_modified",
+      "name": "pve",
+      "delay": 300,
       "active": true,
       "params": {
-        "frequency": "Daily",
-        "dayOfMonth": 0,
-        "minute": 50,
-        "hour": 23
+        "watches": [
+          {
+            "type": "DATASET",
+            "projectKey": "VERBALISATIONLECTRONIQUEPARTAGE",
+            "itemId": "2014_2015_pve_sr_regions_very_light",
+            "partitionsSpec": ""
+          }
+        ]
       }
     }
   ],
