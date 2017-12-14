@@ -43,7 +43,7 @@
     "compress": ""
   },
   "partitioning": {
-    "filePathPattern": "%Y%M%D",
+    "filePathPattern": "%Y%M%D.log",
     "ignoreNonMatchingFile": false,
     "dimensions": [
       {
@@ -56,11 +56,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1513271096807
+    "lastModifiedOn": 1513271253236
   },
   "creationTag": {
     "versionNumber": 0,
