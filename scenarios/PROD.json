@@ -2,14 +2,14 @@
   "projectKey": "BASESDEPRODUCTION",
   "id": "PROD",
   "type": "step_based",
-  "name": "prod",
+  "name": "injection elasticsearch prod",
   "active": true,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1512586299232
+    "lastModifiedOn": 1513271291723
   },
   "checklists": {
     "checklists": []
