@@ -3,22 +3,57 @@
   "id": "supervision_elasticsearch",
   "type": "step_based",
   "name": "supervision elasticsearch",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1513271310210
+    "lastModifiedOn": 1513271472364
   },
   "checklists": {
     "checklists": []
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "CwD4VMOw",
+      "type": "ds_modified",
+      "name": "es5 supervision",
+      "delay": 60,
+      "active": true,
+      "params": {
+        "watches": [
+          {
+            "type": "DATASET",
+            "itemId": "es5_prod_supervision",
+            "partitionsSpec": "CURRENT_DAY"
+          }
+        ]
+      }
+    }
+  ],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_0_true_d_es5_prod_supervision_tableau",
+        "type": "build_flowitem",
+        "name": "supervision",
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_supervision_tableau",
+              "partitionsSpec": "CURRENT_DAY"
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false
 }
