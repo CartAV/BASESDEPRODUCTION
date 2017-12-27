@@ -71,7 +71,7 @@
             "column": "date",
             "type": "DATE",
             "dateParams": {
-              "mode": "DAY"
+              "mode": "HOUR"
             },
             "maxValues": 0,
             "generateOthersCategory": true,
@@ -206,7 +206,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAsklEQVRoQ+2WoQ2AQBAE73tAYagFD9UgqAFBNeCpBYOiCCQkkD+zZ/jB/mfzt7c7IVlhXypsXmPgv288bMPNuG6eefvUtd4d9TkDqxxlwx9OEmlVvDI6dFhlMh2mw2ZAS9UnoHU7AKVVqYLSUBpKq9qU1QFaKpuBFtACWqo2Aa2nA1BalSsoDaWhtKpNUBpKR2QJSkNpKB3RrJcmv5Yqm+thqTytY+5P7476PGzD6oeq9C6Z5IwpfTDlowAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAgElEQVRoQ+3WMRXAIBAEUVASRVEQHxERHyiIojiJAArqWz41Bbszd4/eNjt9s7xN4HTiCCMc1gClw4BOcRBGOKwBSocBtbQoTemwBigdBtSWpjSlwxqgdBhQW5rS2yl93O/1PedIDT4pLXAYaoQpTenaDZjh2vzWr/e1XHdU+8YPizogKdRKF6MAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true
       }
