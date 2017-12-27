@@ -68,7 +68,7 @@
         "userEditedName": false,
         "genericDimension0": [
           {
-            "column": "2017-12-14T17:58:56Z",
+            "column": "date",
             "type": "DATE",
             "dateParams": {
               "mode": "DAY"
@@ -105,7 +105,7 @@
         ],
         "genericDimension1": [
           {
-            "column": "green",
+            "column": "statut",
             "type": "ALPHANUM",
             "maxValues": 20,
             "generateOthersCategory": true,
@@ -188,6 +188,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -205,7 +206,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAs0lEQVRoQ+2YuxGAIBBEoRJrMbcfa7AfcmuxEzPHQIf76BzKI/VwuV3uBeTU2cqd9Zto+O+JfzLhYS7rOZhtmUZpUDQsdSqyjoS50vf3jxmOnE2pNjPMDDPDhwNASwqOyDqgBbSAFtCKZJBaG2gBLaAFtNTgiNwAtIAW0AJakQxSawOtt6HlcVgd58UGj77piccjSMMGBzyGk7DEcI/Dkv/Xajz6poRrB2r5Ow23nM4TZ9sB/VqYKQlV4hcAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAsklEQVRoQ+2WoQ2AQBAE73tAYagFD9UgqAFBNeCpBYOiCCQkkD+zZ/jB/mfzt7c7IVlhXypsXmPgv288bMPNuG6eefvUtd4d9TkDqxxlwx9OEmlVvDI6dFhlMh2mw2ZAS9UnoHU7AKVVqYLSUBpKq9qU1QFaKpuBFtACWqo2Aa2nA1BalSsoDaWhtKpNUBpKR2QJSkNpKB3RrJcmv5Yqm+thqTytY+5P7476PGzD6oeq9C6Z5IwpfTDlowAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true
       }
