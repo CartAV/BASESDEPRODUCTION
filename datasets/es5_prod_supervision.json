@@ -31,7 +31,7 @@
       "\b"
     ],
     "skipRowsBeforeHeader": 0,
-    "parseHeaderRow": true,
+    "parseHeaderRow": false,
     "skipRowsAfterHeader": 0,
     "probableNumberOfRecords": 4,
     "normalizeBooleans": false,
@@ -56,11 +56,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1513271253236
+    "lastModifiedOn": 1514375216002
   },
   "creationTag": {
     "versionNumber": 0,
@@ -77,29 +77,29 @@
     "path": "/data/logs/cartav/es5/"
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
-        "name": "green",
+        "name": "statut",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "open",
+        "name": "accessible",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "es5_prod_communes_boundaries",
+        "name": "index",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "2017-12-14T17:58:56Z",
-        "type": "string",
+        "name": "date",
+        "type": "date",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
