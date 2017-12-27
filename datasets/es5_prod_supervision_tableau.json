@@ -27,11 +27,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1513271258886
+    "lastModifiedOn": 1514375224594
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,34 +61,28 @@
     "userModified": false,
     "columns": [
       {
-        "name": "green",
+        "name": "statut",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "open",
+        "name": "accessible",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "es5_prod_communes_boundaries",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "2017-12-14T17:58:56Z",
+        "name": "index",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "date",
-        "type": "string",
+        "type": "date",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       }
     ]
   },
