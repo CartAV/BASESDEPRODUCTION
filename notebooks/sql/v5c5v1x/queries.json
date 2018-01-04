@@ -44,6 +44,28 @@
         },
         "sql": "SELECT \n    \"current_name\" AS \"current_name\",\n    \"dep\" AS \"dep\",\n    SUM(\"tue_nb\") AS \"tue_nb_sum\",\nFROM \"public\".\"accidents_cluv_prepared\"\nWHERE \"date\" \u003e\u003d \u00272015-01-01 00:00:00+00\u0027 AND \"nom_circonscription_police\" !\u003d \u0027\u0027 AND (\"nom_circonscription_police\" IS NOT NULL)\nGROUP BY \"current_name\", \"dep\"",
         "expandedSql": "SELECT \n    \"current_name\" AS \"current_name\",\n    \"dep\" AS \"dep\",\n    SUM(\"tue_nb\") AS \"tue_nb_sum\",\nFROM \"public\".\"accidents_cluv_prepared\"\nWHERE \"date\" \u003e\u003d \u00272015-01-01 00:00:00+00\u0027 AND \"nom_circonscription_police\" !\u003d \u0027\u0027 AND (\"nom_circonscription_police\" IS NOT NULL)\nGROUP BY \"current_name\", \"dep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "jztaA8LNAavy",
+        "runOn": 1515079975854,
+        "runIn": 56,
+        "runBy": "antoinefa",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "uWfIUhNpmBpiAEyL",
+        "hash": "166f3160450d530c633cf08b80bd1eb9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \n    \"current_name\" AS \"current_name\",\n    \"dep\" AS \"dep\",\n    SUM(\"tue_nb\") AS \"tue_nb_sum\"\nFROM \"public\".\"accidents_cluv_prepared\"\nWHERE \"date\" \u003e\u003d \u00272015-01-01 00:00:00+00\u0027 AND \"nom_circonscription_police\" !\u003d \u0027\u0027 AND (\"nom_circonscription_police\" IS NOT NULL)\nGROUP BY \"current_name\", \"dep\"",
+        "expandedSql": "SELECT \n    \"current_name\" AS \"current_name\",\n    \"dep\" AS \"dep\",\n    SUM(\"tue_nb\") AS \"tue_nb_sum\"\nFROM \"public\".\"accidents_cluv_prepared\"\nWHERE \"date\" \u003e\u003d \u00272015-01-01 00:00:00+00\u0027 AND \"nom_circonscription_police\" !\u003d \u0027\u0027 AND (\"nom_circonscription_police\" IS NOT NULL)\nGROUP BY \"current_name\", \"dep\""
       }
     ]
   }
