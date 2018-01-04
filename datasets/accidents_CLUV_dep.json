@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515081269454
+    "lastModifiedOn": 1515081458705
   },
   "creationTag": {
     "versionNumber": 0,
@@ -65,23 +65,47 @@
         {
           "pivotElement": {
             "keyColumns": [
-              "current_name"
+              "current_city_code"
             ],
             "valueLimit": "TOP_N",
             "topnLimit": 1,
             "minOccLimit": 0,
             "explicitValues": [],
             "globalCount": true,
-            "valueColumns": []
+            "valueColumns": [
+              {
+                "column": "current_name",
+                "type": "string",
+                "min": false,
+                "max": false,
+                "count": false,
+                "countDistinct": false,
+                "sum": false,
+                "concat": false,
+                "stddev": false,
+                "avg": false,
+                "sum2": false,
+                "first": true,
+                "last": false,
+                "concatDistinct": false,
+                "firstLastNotNull": false,
+                "orderColumn": "Num_Acc"
+              }
+            ]
           },
           "pivotedModalities": [
             {
               "keyValues": [
                 null
               ],
-              "name": "null_current_name",
-              "valueColumns": [],
-              "globalCountColumn": "null_current_name_count"
+              "name": "null_current_city_code",
+              "valueColumns": [
+                {
+                  "source": "current_name",
+                  "pivoted": "null_current_city_code_current_name"
+                }
+              ],
+              "globalCountColumn": "null_current_city_code_count"
             }
           ]
         }
@@ -96,7 +120,13 @@
         "maxLength": 16200
       },
       {
-        "name": "null_current_name_count",
+        "name": "null_current_city_code_current_name_first",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "null_current_city_code_count",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
