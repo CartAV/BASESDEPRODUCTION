@@ -3,13 +3,13 @@
   "id": "CLEARLOGS",
   "type": "step_based",
   "name": "clear logs",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515078708391
+    "lastModifiedOn": 1515078710474
   },
   "checklists": {
     "checklists": []
