@@ -5,11 +5,11 @@
   "name": "supervision elasticsearch",
   "active": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515078635125
+    "lastModifiedOn": 1515078656755
   },
   "checklists": {
     "checklists": []
@@ -21,7 +21,7 @@
       "type": "ds_modified",
       "name": "es5 supervision",
       "delay": 60,
-      "active": false,
+      "active": true,
       "params": {
         "watches": [
           {
