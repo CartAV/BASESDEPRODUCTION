@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "63o4dkt5afv": [
+      {
+        "mode": "SQL",
+        "id": "ijE99Ox6QkzO",
+        "runOn": 1515079951867,
+        "runIn": -1,
+        "runBy": "antoinefa",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "SAeMl62zw2C7znWK",
+        "hash": "2db10d5fd5e1ea39c2defa41f9e5e16e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \n    \"current_name\" AS \"current_name\",\n    \"dep\" AS \"dep\",\n    SUM(\"tue_nb\") AS \"tue_nb_sum\",\n  FROM \"accidents_cluv_prepared\"\n  WHERE \"date\" \u003e\u003d \u00272015-01-01 00:00:00+00\u0027 AND \"nom_circonscription_police\" !\u003d \u0027\u0027 AND (\"nom_circonscription_police\" IS NOT NULL)\n  GROUP BY \"current_name\", \"dep\"",
+        "expandedSql": "SELECT \n    \"current_name\" AS \"current_name\",\n    \"dep\" AS \"dep\",\n    SUM(\"tue_nb\") AS \"tue_nb_sum\",\n  FROM \"accidents_cluv_prepared\"\n  WHERE \"date\" \u003e\u003d \u00272015-01-01 00:00:00+00\u0027 AND \"nom_circonscription_police\" !\u003d \u0027\u0027 AND (\"nom_circonscription_police\" IS NOT NULL)\n  GROUP BY \"current_name\", \"dep\""
+      }
+    ]
+  }
+}
