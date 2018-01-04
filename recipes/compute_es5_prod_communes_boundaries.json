@@ -6,6 +6,9 @@
     "schemaMode": "STRICT_SYNC",
     "engineParams": {
       "maxThreads": 4,
+      "tdchParams": {
+        "numberOfExecutors": 2
+      },
       "sparkSQL": {
         "overwriteOutputSchema": false,
         "useGlobalMetastore": false,
@@ -36,6 +39,7 @@
     "kv": {}
   },
   "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
   "inputs": {
     "main": {
       "items": [
@@ -57,11 +61,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1507276332030
+    "lastModifiedOn": 1515083306930
   },
   "creationTag": {
     "versionNumber": 0,
