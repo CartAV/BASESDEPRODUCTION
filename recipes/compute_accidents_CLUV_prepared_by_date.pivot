@@ -30,12 +30,31 @@
   "pivots": [
     {
       "topnLimit": 1,
-      "valueColumns": [],
+      "valueColumns": [
+        {
+          "min": false,
+          "max": false,
+          "last": false,
+          "count": false,
+          "sum": false,
+          "type": "string",
+          "concat": false,
+          "orderColumn": "Num_Acc",
+          "column": "current_name",
+          "countDistinct": false,
+          "$agg": "first",
+          "stddev": false,
+          "avg": false,
+          "first": true
+        }
+      ],
       "explicitValues": [],
       "valueLimit": "TOP_N",
       "globalCount": true,
       "minOccLimit": 0,
-      "keyColumns": []
+      "keyColumns": [
+        "current_city_code"
+      ]
     }
   ],
   "computedColumns": [],
@@ -72,7 +91,6 @@
   },
   "schemaComputation": "ONLY_IF_NO_METADATA",
   "explicitIdentifiers": [
-    "dep",
-    "current_name"
+    "dep"
   ]
 }
