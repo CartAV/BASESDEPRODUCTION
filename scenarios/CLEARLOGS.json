@@ -5,11 +5,11 @@
   "name": "clear logs",
   "active": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515078768713
+    "lastModifiedOn": 1515078785097
   },
   "checklists": {
     "checklists": []
@@ -40,7 +40,7 @@
         "params": {
           "runnableType": "pyrunnable_builtin-macros_clear-job-logs",
           "config": {
-            "age": 30
+            "age": 7
           },
           "proceedOnFailure": false
         }
