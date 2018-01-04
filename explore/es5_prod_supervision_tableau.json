@@ -71,7 +71,7 @@
             "column": "date",
             "type": "DATE",
             "dateParams": {
-              "mode": "HOUR"
+              "mode": "DAY"
             },
             "maxValues": 0,
             "generateOthersCategory": true,
@@ -206,7 +206,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAgElEQVRoQ+3WMRXAIBAEUVASRVEQHxERHyiIojiJAArqWz41Bbszd4/eNjt9s7xN4HTiCCMc1gClw4BOcRBGOKwBSocBtbQoTemwBigdBtSWpjSlwxqgdBhQW5rS2yl93O/1PedIDT4pLXAYaoQpTenaDZjh2vzWr/e1XHdU+8YPizogKdRKF6MAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAkklEQVRoQ+2ZsQmAMBQFE3CP4Cj2bmPhDG7hEFo7i4uoWAgBWwu5f5kg793xmp9TsJeD5U0GphMPQbiMy7ZPfXfDNDBRaQkTqdaZJCxhWAMqDQP6iiNhCcMaUGkYUEdLpVUa1oBKw4C60iqt0rAGVBoG1JVWaZWGNaDSfwLaDms5mnN+7rlf/C0c4bq0EAfx0IEvN/CKKTgxg1sAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true
       }
