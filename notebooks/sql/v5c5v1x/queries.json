@@ -291,10 +291,10 @@
         "mode": "SQL",
         "id": "LUctp3fCUTpk",
         "runOn": 1515082054706,
-        "runIn": 18,
+        "runIn": 15,
         "runBy": "antoinefa",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "Zrm2QABQ",
         "hash": "0e0195ce9447e7830e50c5ab64fcc4b2",
         "querySettings": {
