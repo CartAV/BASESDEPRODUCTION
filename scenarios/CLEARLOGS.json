@@ -5,20 +5,47 @@
   "name": "clear logs",
   "active": true,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515078710474
+    "lastModifiedOn": 1515078768713
   },
   "checklists": {
     "checklists": []
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "piWvoQMp",
+      "type": "temporal",
+      "name": "mensuel",
+      "delay": 0,
+      "active": true,
+      "params": {
+        "frequency": "Monthly",
+        "dayOfMonth": 1,
+        "minute": 0,
+        "hour": 23
+      }
+    }
+  ],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_clear-job-logs",
+        "type": "runnable",
+        "name": "clear logs",
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_clear-job-logs",
+          "config": {
+            "age": 30
+          },
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false
 }
