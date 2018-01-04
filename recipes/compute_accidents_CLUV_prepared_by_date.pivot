@@ -30,6 +30,7 @@
   "pivots": [
     {
       "topnLimit": 1,
+      "explicitValues": [],
       "valueColumns": [
         {
           "min": false,
@@ -39,7 +40,7 @@
           "sum": false,
           "type": "string",
           "concat": false,
-          "orderColumn": "Num_Acc",
+          "orderColumn": "current_name",
           "column": "current_name",
           "countDistinct": false,
           "$agg": "first",
@@ -48,34 +49,34 @@
           "first": true
         }
       ],
-      "explicitValues": [],
       "valueLimit": "TOP_N",
-      "globalCount": true,
       "minOccLimit": 0,
+      "globalCount": true,
       "keyColumns": [
         "current_city_code"
       ]
     }
   ],
-  "computedColumns": [],
-  "sortModalities": true,
   "enginesPreferences": {},
+  "sortModalities": true,
+  "computedColumns": [],
   "customAggregates": [],
   "otherColumns": [],
+  "schemaComputation": "ONLY_IF_NO_METADATA",
   "preFilter": {
     "enabled": true,
     "uiData": {
       "conditions": [
         {
-          "input": "tue_nb",
-          "col": "mois",
           "num": 1,
+          "col": "mois",
+          "input": "tue_nb",
           "operator": "\u003d\u003d [number]"
         },
         {
-          "num": 1,
-          "input": "hospitalise_nb",
           "col": "mois",
+          "input": "hospitalise_nb",
+          "num": 1,
           "operator": "\u003d\u003d [number]"
         }
       ],
@@ -89,7 +90,6 @@
     },
     "distinct": false
   },
-  "schemaComputation": "ONLY_IF_NO_METADATA",
   "explicitIdentifiers": [
     "dep"
   ]
