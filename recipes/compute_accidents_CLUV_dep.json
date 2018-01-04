@@ -1,7 +1,12 @@
 {
-  "type": "grouping",
+  "type": "sql_query",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
+  "params": {
+    "allowMultipleConnections": false,
+    "displayExecutionPlan": true,
+    "skipPrerunValidate": false
+  },
   "customMeta": {
     "kv": {}
   },
@@ -27,11 +32,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515079840872
+    "lastModifiedOn": 1515079841013
   },
   "creationTag": {
     "versionNumber": 0,
