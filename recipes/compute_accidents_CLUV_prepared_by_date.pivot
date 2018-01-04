@@ -30,37 +30,36 @@
   "pivots": [
     {
       "topnLimit": 1,
-      "explicitValues": [],
       "valueColumns": [],
+      "explicitValues": [],
       "valueLimit": "TOP_N",
-      "minOccLimit": 0,
       "globalCount": true,
+      "minOccLimit": 0,
       "keyColumns": [
         "dep",
         "current_name"
       ]
     }
   ],
-  "enginesPreferences": {},
-  "sortModalities": true,
   "computedColumns": [],
+  "sortModalities": true,
+  "enginesPreferences": {},
   "customAggregates": [],
   "otherColumns": [],
-  "schemaComputation": "ONLY_IF_NO_METADATA",
   "preFilter": {
     "enabled": true,
     "uiData": {
       "conditions": [
         {
-          "num": 1,
-          "col": "mois",
           "input": "tue_nb",
+          "col": "mois",
+          "num": 1,
           "operator": "\u003d\u003d [number]"
         },
         {
-          "col": "mois",
-          "input": "hospitalise_nb",
           "num": 1,
+          "input": "hospitalise_nb",
+          "col": "mois",
           "operator": "\u003d\u003d [number]"
         }
       ],
@@ -74,5 +73,6 @@
     },
     "distinct": false
   },
+  "schemaComputation": "ONLY_IF_NO_METADATA",
   "explicitIdentifiers": []
 }
