@@ -220,6 +220,28 @@
         },
         "sql": "SELECT\n    \"dep_code\",\n    FIRST_VALUE(\"gravite\") OVER (\n        PARTITION BY \"dep\"\n        ORDER BY\n            \"gravite\" DESC\n    ) AS \"ville\",\n    FIRST_VALUE(\"ville\") OVER (\n        PARTITION BY \"dep_code\"\n        ORDER BY\n            \"gravite\" DESC\n    ) AS \"ville\"\nFROM\n    (\n        SELECT\n            \"dep\" as \"dep_code\",\n            \"current_name\" as \"ville\",\n            10 * sum(\"tue_nb\") + sum(\"hospitalise_nb\") as \"gravite\"\n        FROM\n            \"accidents_cluv_prepared\"\n        WHERE\n            (\"tue_nb\" \u003d 1)\n            OR (\"hospitalise_nb\" \u003d 1)\n        GROUP BY \"dep\", \"current_name\"\n    ) \"dku__beforefirstlast\"\nGROUP BY \"dep_code\"",
         "expandedSql": "SELECT\n    \"dep_code\",\n    FIRST_VALUE(\"gravite\") OVER (\n        PARTITION BY \"dep\"\n        ORDER BY\n            \"gravite\" DESC\n    ) AS \"ville\",\n    FIRST_VALUE(\"ville\") OVER (\n        PARTITION BY \"dep_code\"\n        ORDER BY\n            \"gravite\" DESC\n    ) AS \"ville\"\nFROM\n    (\n        SELECT\n            \"dep\" as \"dep_code\",\n            \"current_name\" as \"ville\",\n            10 * sum(\"tue_nb\") + sum(\"hospitalise_nb\") as \"gravite\"\n        FROM\n            \"accidents_cluv_prepared\"\n        WHERE\n            (\"tue_nb\" \u003d 1)\n            OR (\"hospitalise_nb\" \u003d 1)\n        GROUP BY \"dep\", \"current_name\"\n    ) \"dku__beforefirstlast\"\nGROUP BY \"dep_code\""
+      },
+      {
+        "mode": "SQL",
+        "id": "1kyYcYjL6EjC",
+        "runOn": 1515081935237,
+        "runIn": 16,
+        "runBy": "antoinefa",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "ILK82H2j",
+        "hash": "62c8e5a5e19001bcb543ac031613574c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT\n    \"dep_code\",\n    FIRST_VALUE(\"gravite\") OVER (\n        PARTITION BY \"dep_code\"\n        ORDER BY\n            \"gravite\" DESC\n    ) AS \"ville\",\n    FIRST_VALUE(\"ville\") OVER (\n        PARTITION BY \"dep_code\"\n        ORDER BY\n            \"gravite\" DESC\n    ) AS \"ville\"\nFROM\n    (\n        SELECT\n            \"dep\" as \"dep_code\",\n            \"current_name\" as \"ville\",\n            10 * sum(\"tue_nb\") + sum(\"hospitalise_nb\") as \"gravite\"\n        FROM\n            \"accidents_cluv_prepared\"\n        WHERE\n            (\"tue_nb\" \u003d 1)\n            OR (\"hospitalise_nb\" \u003d 1)\n        GROUP BY \"dep\", \"current_name\"\n    ) \"dku__beforefirstlast\"\nGROUP BY \"dep_code\"",
+        "expandedSql": "SELECT\n    \"dep_code\",\n    FIRST_VALUE(\"gravite\") OVER (\n        PARTITION BY \"dep_code\"\n        ORDER BY\n            \"gravite\" DESC\n    ) AS \"ville\",\n    FIRST_VALUE(\"ville\") OVER (\n        PARTITION BY \"dep_code\"\n        ORDER BY\n            \"gravite\" DESC\n    ) AS \"ville\"\nFROM\n    (\n        SELECT\n            \"dep\" as \"dep_code\",\n            \"current_name\" as \"ville\",\n            10 * sum(\"tue_nb\") + sum(\"hospitalise_nb\") as \"gravite\"\n        FROM\n            \"accidents_cluv_prepared\"\n        WHERE\n            (\"tue_nb\" \u003d 1)\n            OR (\"hospitalise_nb\" \u003d 1)\n        GROUP BY \"dep\", \"current_name\"\n    ) \"dku__beforefirstlast\"\nGROUP BY \"dep_code\""
       }
     ]
   }
