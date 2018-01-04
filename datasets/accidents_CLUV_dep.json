@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515079688213
+    "lastModifiedOn": 1515079840681
   },
   "creationTag": {
     "versionNumber": 0,
@@ -55,6 +55,19 @@
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
+      },
+      {
+        "name": "dep",
+        "type": "string",
+        "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "tue_nb_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
       },
       {
         "name": "count",
