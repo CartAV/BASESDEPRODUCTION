@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515080944492
+    "lastModifiedOn": 1515081055298
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,7 +58,44 @@
   },
   "schema": {
     "userModified": false,
-    "columns": []
+    "metadata": {
+      "engineType": "SQL",
+      "pivotElementsModalities": [
+        {
+          "pivotElement": {
+            "keyColumns": [
+              "dep",
+              "current_name"
+            ],
+            "valueLimit": "TOP_N",
+            "topnLimit": 1,
+            "minOccLimit": 0,
+            "explicitValues": [],
+            "globalCount": true,
+            "valueColumns": []
+          },
+          "pivotedModalities": [
+            {
+              "keyValues": [
+                "13",
+                "Marseille"
+              ],
+              "name": "13_Marseille",
+              "valueColumns": [],
+              "globalCountColumn": "13_Marseille_count"
+            }
+          ]
+        }
+      ]
+    },
+    "columns": [
+      {
+        "name": "13_Marseille_count",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      }
+    ]
   },
   "metrics": {
     "probes": [
