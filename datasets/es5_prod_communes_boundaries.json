@@ -13,16 +13,26 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1513244652399
+    "lastModifiedOn": 1515082919697
   },
   "creationTag": {
     "versionNumber": 0,
@@ -36,14 +46,15 @@
   ],
   "params": {
     "connection": "cartav_prod",
+    "notReadyIfEmpty": false,
     "index": "es5_prod_communes_boundaries",
     "type": "es5_prod_communes_boundaries",
-    "customMapping": "{\n  \"date_detection\": false,\n  \"properties\": {\n    \"st_asgeojson\": {\n      \"type\": \"text\"\n    },\n    \"the_geom\": {\n      \"type\": \"text\"\n    },\n    \"Z_MOYEN\": {\n      \"type\": \"text\"\n    },\n    \"CODE_REG\": {\n      \"type\": \"text\"\n    },\n    \"STATUT\": {\n      \"type\": \"text\"\n    },\n    \"X_CHF_LIEU\": {\n      \"type\": \"text\"\n    },\n    \"CODE_COM\": {\n      \"type\": \"text\"\n    },\n    \"ID_GEOFLA\": {\n      \"type\": \"text\"\n    },\n    \"INSEE_COM\": {\n      \"type\": \"text\"\n    },\n    \"Y_CHF_LIEU\": {\n      \"type\": \"text\"\n    },\n    \"CODE_ARR\": {\n      \"type\": \"text\"\n    },\n    \"NOM_DEPT\": {\n      \"type\": \"text\"\n    },\n    \"CODE_DEPT\": {\n      \"type\": \"keyword\"\n    },\n    \"NOM_REG\": {\n      \"type\": \"text\"\n    },\n    \"Y_CENTROID\": {\n      \"type\": \"text\"\n    },\n    \"X_CENTROID\": {\n      \"type\": \"text\"\n    },\n    \"POPULATION\": {\n      \"type\": \"text\"\n    },\n    \"SUPERFICIE\": {\n      \"type\": \"text\"\n    },\n    \"NOM_COM\": {\n      \"type\": \"text\"\n    }\n  }\n}",
+    "customMapping": "",
     "frameSize": 10000,
     "partitioned": false
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "the_geom",
@@ -202,6 +213,10 @@
           },
           "partitionSelectionMethod": "ALL",
           "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
           "samplingMethod": "FULL",
           "maxRecords": -1,
           "targetRatio": 0.02,
