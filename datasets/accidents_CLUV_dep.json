@@ -13,16 +13,26 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515079840681
+    "lastModifiedOn": 1515081269454
   },
   "creationTag": {
     "versionNumber": 0,
@@ -49,13 +59,35 @@
   },
   "schema": {
     "userModified": false,
+    "metadata": {
+      "engineType": "SQL",
+      "pivotElementsModalities": [
+        {
+          "pivotElement": {
+            "keyColumns": [
+              "current_name"
+            ],
+            "valueLimit": "TOP_N",
+            "topnLimit": 1,
+            "minOccLimit": 0,
+            "explicitValues": [],
+            "globalCount": true,
+            "valueColumns": []
+          },
+          "pivotedModalities": [
+            {
+              "keyValues": [
+                null
+              ],
+              "name": "null_current_name",
+              "valueColumns": [],
+              "globalCountColumn": "null_current_name_count"
+            }
+          ]
+        }
+      ]
+    },
     "columns": [
-      {
-        "name": "current_name",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
       {
         "name": "dep",
         "type": "string",
@@ -64,13 +96,7 @@
         "maxLength": 16200
       },
       {
-        "name": "tue_nb_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "count",
+        "name": "null_current_name_count",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
