@@ -29,24 +29,50 @@
   },
   "pivots": [
     {
-      "topnLimit": 0,
-      "valueColumns": [],
+      "topnLimit": 1,
       "explicitValues": [],
-      "globalCount": true,
+      "valueColumns": [],
+      "valueLimit": "TOP_N",
       "minOccLimit": 0,
+      "globalCount": true,
       "keyColumns": [
-        "dep"
+        "dep",
+        "current_name"
       ]
     }
   ],
-  "computedColumns": [],
+  "enginesPreferences": {},
   "sortModalities": true,
+  "computedColumns": [],
   "customAggregates": [],
   "otherColumns": [],
+  "schemaComputation": "ONLY_IF_NO_METADATA",
   "preFilter": {
-    "enabled": false,
+    "enabled": true,
+    "uiData": {
+      "conditions": [
+        {
+          "num": 1,
+          "col": "mois",
+          "input": "tue_nb",
+          "operator": "\u003d\u003d [number]"
+        },
+        {
+          "col": "mois",
+          "input": "hospitalise_nb",
+          "num": 1,
+          "operator": "\u003d\u003d [number]"
+        }
+      ],
+      "mode": "||"
+    },
+    "$status": {
+      "message": "Filter expression is invalid",
+      "fullyTranslated": false,
+      "ok": false,
+      "validated": false
+    },
     "distinct": false
   },
-  "schemaComputation": "ONLY_IF_NO_METADATA",
   "explicitIdentifiers": []
 }
