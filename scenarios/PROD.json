@@ -5,14 +5,19 @@
   "name": "injection elasticsearch prod",
   "active": true,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1514377255735
+    "lastModifiedOn": 1515578884680
   },
   "checklists": {
     "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
   },
   "tags": [],
   "triggers": [
@@ -31,6 +36,10 @@
             "partitionsSpec": ""
           }
         ]
+      },
+      "graceDelaySettings": {
+        "delay": 150,
+        "checkAgainAfterGraceDelay": false
       }
     }
   ],
