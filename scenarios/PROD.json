@@ -5,11 +5,11 @@
   "name": "injection elasticsearch prod",
   "active": true,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515578884680
+    "lastModifiedOn": 1515578936508
   },
   "checklists": {
     "checklists": []
@@ -64,12 +64,12 @@
             },
             {
               "type": "DATASET",
-              "itemId": "es5_prod_accidents_usagers",
+              "itemId": "es5_prod_communes_boundaries",
               "partitionsSpec": ""
             },
             {
               "type": "DATASET",
-              "itemId": "es5_prod_communes_boundaries",
+              "itemId": "es5_prod_accidents_vehicules",
               "partitionsSpec": ""
             }
           ],
