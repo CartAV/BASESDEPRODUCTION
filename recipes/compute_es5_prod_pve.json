@@ -6,6 +6,9 @@
     "schemaMode": "STRICT_SYNC",
     "engineParams": {
       "maxThreads": 4,
+      "tdchParams": {
+        "numberOfExecutors": 2
+      },
       "sparkSQL": {
         "overwriteOutputSchema": false,
         "useGlobalMetastore": false,
@@ -36,6 +39,7 @@
     "kv": {}
   },
   "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
   "inputs": {
     "main": {
       "items": [
@@ -51,17 +55,17 @@
       "items": [
         {
           "ref": "es5_prod_pve",
-          "appendMode": false
+          "appendMode": true
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1512586410280
+    "lastModifiedOn": 1515684339800
   },
   "creationTag": {
     "versionNumber": 0,
