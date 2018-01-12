@@ -5,11 +5,11 @@
   "name": "injection elasticsearch prod",
   "active": true,
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515781947245
+    "lastModifiedOn": 1515781969483
   },
   "checklists": {
     "checklists": []
@@ -49,7 +49,7 @@
       "messaging": {
         "type": "mail-scenario",
         "configuration": {
-          "subject": "Cartav : mise à jour des données PVE finalisé sur DSS  ${scenarioName}: ${outcome}",
+          "subject": "Cartav : injection de l\u0027ensemble des données sur elasticsearch  ${scenarioName}: ${outcome}",
           "sendAsHTML": false,
           "attachments": [],
           "messageSource": "TEMPLATE_FILE",
