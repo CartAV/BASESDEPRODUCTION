@@ -6,11 +6,11 @@
   "active": true,
   "runAsUser": "antoinefa",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515782694774
+    "lastModifiedOn": 1515782720211
   },
   "checklists": {
     "checklists": []
@@ -26,7 +26,7 @@
       "id": "LF8K6qhh",
       "type": "ds_modified",
       "name": "pve",
-      "delay": 300,
+      "delay": 1,
       "active": true,
       "params": {
         "watches": [
@@ -39,7 +39,7 @@
         ]
       },
       "graceDelaySettings": {
-        "delay": 120,
+        "delay": 1,
         "checkAgainAfterGraceDelay": true
       }
     }
