@@ -6,6 +6,9 @@
     "schemaMode": "STRICT_SYNC",
     "engineParams": {
       "maxThreads": 4,
+      "tdchParams": {
+        "numberOfExecutors": 2
+      },
       "sparkSQL": {
         "overwriteOutputSchema": false,
         "useGlobalMetastore": false,
@@ -36,11 +39,12 @@
     "kv": {}
   },
   "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
   "inputs": {
     "main": {
       "items": [
         {
-          "ref": "VERBALISATIONLECTRONIQUEPARTAGE.2014_2015_pve_sr_regions_very_light",
+          "ref": "cartav_pve_backup",
           "deps": []
         }
       ]
@@ -57,11 +61,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1507044305394
+    "lastModifiedOn": 1515783943015
   },
   "creationTag": {
     "versionNumber": 0,
