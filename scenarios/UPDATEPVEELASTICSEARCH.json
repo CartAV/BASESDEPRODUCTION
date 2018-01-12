@@ -6,11 +6,11 @@
   "active": true,
   "runAsUser": "antoinefa",
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515782748519
+    "lastModifiedOn": 1515782779027
   },
   "checklists": {
     "checklists": []
