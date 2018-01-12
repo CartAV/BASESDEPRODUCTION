@@ -55,17 +55,17 @@
       "items": [
         {
           "ref": "es5dev_2014_2015_pve",
-          "appendMode": false
+          "appendMode": true
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515784768615
+    "lastModifiedOn": 1515784788114
   },
   "creationTag": {
     "versionNumber": 0,
