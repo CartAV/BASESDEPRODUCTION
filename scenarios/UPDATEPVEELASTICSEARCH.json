@@ -6,11 +6,11 @@
   "active": true,
   "runAsUser": "antoinefa",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515782736587
+    "lastModifiedOn": 1515782748519
   },
   "checklists": {
     "checklists": []
@@ -61,6 +61,7 @@
         }
       },
       "id": "4AJGZ2kj",
+      "name": "mail",
       "runConditionEnabled": true,
       "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
       "phase": "END"
