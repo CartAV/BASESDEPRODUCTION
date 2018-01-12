@@ -4,12 +4,13 @@
   "type": "step_based",
   "name": "update pve elasticsearch",
   "active": true,
+  "runAsUser": "antoinefa",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515782079916
+    "lastModifiedOn": 1515782694774
   },
   "checklists": {
     "checklists": []
