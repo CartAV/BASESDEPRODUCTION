@@ -6,11 +6,11 @@
   "active": true,
   "runAsUser": "antoinefa",
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515782732676
+    "lastModifiedOn": 1515782736587
   },
   "checklists": {
     "checklists": []
@@ -39,7 +39,7 @@
         ]
       },
       "graceDelaySettings": {
-        "delay": 10,
+        "delay": 150,
         "checkAgainAfterGraceDelay": true
       }
     }
