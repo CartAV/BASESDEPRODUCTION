@@ -3,13 +3,13 @@
   "id": "UPDATEPVEELASTICSEARCH",
   "type": "step_based",
   "name": "update pve elasticsearch",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515781984233
+    "lastModifiedOn": 1515782079916
   },
   "checklists": {
     "checklists": []
@@ -20,10 +20,71 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
-  "reporters": [],
+  "triggers": [
+    {
+      "id": "LF8K6qhh",
+      "type": "ds_modified",
+      "name": "pve",
+      "delay": 300,
+      "active": true,
+      "params": {
+        "watches": [
+          {
+            "type": "DATASET",
+            "projectKey": "VERBALISATIONLECTRONIQUEPARTAGE",
+            "itemId": "2014_2015_pve_sr_regions_very_light",
+            "partitionsSpec": ""
+          }
+        ]
+      },
+      "graceDelaySettings": {
+        "delay": 120,
+        "checkAgainAfterGraceDelay": true
+      }
+    }
+  ],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "subject": "Cartav : mise à jour des données PVE finalisé sur DSS  ${scenarioName}: ${outcome}",
+          "sender": "datalab@interieur.gouv.fr",
+          "recipient": "fabien.antoine@interieur.gouv.fr",
+          "sendAsHTML": false,
+          "attachments": [],
+          "messageSource": "TEMPLATE_FILE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "default.ftl"
+        }
+      },
+      "id": "4AJGZ2kj",
+      "runConditionEnabled": true,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_1_true_d_es5_prod_pve",
+        "type": "build_flowitem",
+        "name": "update pve",
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_pve",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false
 }
