@@ -5,11 +5,11 @@
   "name": "injection elasticsearch prod",
   "active": true,
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515604170740
+    "lastModifiedOn": 1515781810423
   },
   "checklists": {
     "checklists": []
@@ -43,7 +43,27 @@
       }
     }
   ],
-  "reporters": [],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "subject": "Cartav : mise à jour des données PVE finalisé sur DSS  ${scenarioName}: ${outcome}",
+          "sendAsHTML": false,
+          "attachments": [],
+          "messageSource": "TEMPLATE_FILE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "default.ftl"
+        }
+      },
+      "id": "Ad5nyVTm",
+      "name": "injection elasticsearch",
+      "runConditionEnabled": false,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
     "steps": [
       {
