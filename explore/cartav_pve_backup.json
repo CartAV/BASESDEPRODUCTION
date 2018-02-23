@@ -17,7 +17,20 @@
         "maxStoredBytes": -1,
         "filter": {
           "distinct": false,
-          "enabled": false
+          "enabled": true,
+          "uiData": {
+            "mode": "\u0026\u0026",
+            "conditions": [
+              {
+                "input": "DATE_JOUR_REEL_INFRACTION",
+                "operator": "\u003e\u003d [date]",
+                "col": "CODE_INSEE_INFRACTION",
+                "num": 0.0,
+                "date": "2018-01-01",
+                "time": "00:00"
+              }
+            ]
+          }
         },
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
@@ -32,13 +45,15 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1
     },
     "vizSampling": {
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -198,6 +213,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -215,7 +231,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABG0lEQVRoge3UsWrDMBAGYHfoIwRKKKcsfpssfYmsWSopj5Ct4K30LXIHyVDQq3WxiDDCtlzZtZr/By/ynXSfMaoqZN1RVtyYOjL8NfcsiyQEb49MY+qKTgjpQ/1bsLLiNpprv0b6svfrfzNhkBxDLAJWVhwZkV/Omg3cfTaaa793VjBpafrqSEvTV5PjV0sBTz7Pg4cuiaED/HsyfIvVKSvu9Z3fYr1k+DuGnR2srLjq8Pnc3SgnOPZuFeDYBZICjn20GLjtWQeYDPPQAe3aUwzcfYoHB2tlgO9DlgtOQk8BhwcUA+42LA0mIx9Fgdue81SwsuJeTtdd0AMwwI8GVlYcwAADDDDAAAMMMMAAAwwwwAADnABGEKSI/ACotoM/xTkgDwAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACAklEQVRoQ+2ar0/DQBTH79ouwBIEBpYg+q8wBIJ0SBIEFgECQwYCQ0AwGJJJDGJYYAoB86Dx/EqWIBCQJYS2R163I+XSXn9sSXfbm2rWl/R97vt9r/faUjJiP6oar7nduHuqWMWovCHOcVjztVra88cqDSyDR+CuzMorDByuS85fjq0zbl1QF44ztXTc2otTm7yGOVj/gNcecuZU6yZOk0iSaFSs7DyHtF1SMzSyzhXWNLIqLkRyhbvAtuPuv1WXbmWJzG5dzctieKK9Ll5SYF2nc/5rymu4CwygskTjwPhjwuwd1XXtH3Zg5Ogu5BNX4Z6Aw8D6CQww37a20TpZfPQ7Cq6RKbBfjTTAANP+bJfea8tfYncVgc1yo04oKWQOzK0uA+YLI1qaA+cn89fesUtX8hqrByn8V7dZWjoIQKzzsBj+Pyg8MMCeMh+FBbgtBSmpEjDkzxi7fz4qlUO7NAJXrGKURcHSYc0syxqWKjy9eTkzMa5feDZOYem4ixLVtMYM91TcOaXt0soAdwYAe0fXjUNvs5GySyOwf0czSJZGhSMs7U1OjDQ0Siw+D8NeemgtjcAOa6LC4lCvctNCS6OlA4YHtHTC8bCfe+mkGw+sYaxhrGFCsGlh0+q8hUjSjcPiZU8t4YkHdmkcD/+/PUx1H5a9IRyGc8p9AdDroo8c8C+ufnuhQZlJjwAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
