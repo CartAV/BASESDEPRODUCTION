@@ -44,7 +44,7 @@
     "main": {
       "items": [
         {
-          "ref": "cartav_pve_backup_last_month",
+          "ref": "VERBALISATIONLECTRONIQUEPARTAGE.2014_2015_pve_sr_regions_very_light",
           "deps": []
         }
       ]
@@ -55,17 +55,17 @@
       "items": [
         {
           "ref": "es5_prod_pve",
-          "appendMode": false
+          "appendMode": true
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519413948600
+    "lastModifiedOn": 1519413964900
   },
   "creationTag": {
     "versionNumber": 0,
