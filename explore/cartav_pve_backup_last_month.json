@@ -17,7 +17,20 @@
         "maxStoredBytes": -1,
         "filter": {
           "distinct": false,
-          "enabled": false
+          "enabled": true,
+          "uiData": {
+            "mode": "\u0026\u0026",
+            "conditions": [
+              {
+                "input": "DATE_JOUR_REEL_INFRACTION",
+                "operator": "\u003e\u003d [date]",
+                "col": "CODE_INSEE_INFRACTION",
+                "num": 0.0,
+                "date": "2017-12-01",
+                "time": "00:00"
+              }
+            ]
+          }
         },
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
@@ -32,13 +45,15 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1
     },
     "vizSampling": {
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
