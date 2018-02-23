@@ -6,11 +6,11 @@
   "active": true,
   "runAsUser": "antoinefa",
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1515782779027
+    "lastModifiedOn": 1519372334574
   },
   "checklists": {
     "checklists": []
@@ -72,12 +72,34 @@
       {
         "id": "build_1_true_d_es5_prod_pve",
         "type": "build_flowitem",
-        "name": "update pve",
+        "name": "update pve \u0026 backup last update",
         "params": {
           "builds": [
             {
               "type": "DATASET",
               "itemId": "es5_prod_pve",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "cartav_pve_backup_last_month",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_1_true_d_cartav_pve_backup",
+        "type": "build_flowitem",
+        "name": "backup current update",
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "cartav_pve_backup",
               "partitionsSpec": ""
             }
           ],
