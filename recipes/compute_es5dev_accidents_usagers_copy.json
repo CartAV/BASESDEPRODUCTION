@@ -44,7 +44,7 @@
     "main": {
       "items": [
         {
-          "ref": "es5dev_accidents_usagers",
+          "ref": "es5_prod_accidents_usagers",
           "deps": []
         }
       ]
@@ -61,11 +61,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520583068707
+    "lastModifiedOn": 1520587201314
   },
   "creationTag": {
     "versionNumber": 0,
