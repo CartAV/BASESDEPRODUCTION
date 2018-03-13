@@ -22,10 +22,10 @@
             "mode": "\u0026\u0026",
             "conditions": [
               {
-                "input": "date",
-                "operator": "\u003e\u003c [date]",
+                "input": "Num_Acc",
+                "operator": "\u003d\u003d [number]",
                 "col": "mois",
-                "num": 0.0,
+                "num": 5.0610001701E10,
                 "date": "2017-05-01",
                 "time": "00:00",
                 "date2": "2017-06-01",
@@ -47,7 +47,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1
+      "_refreshTrigger": 2
     },
     "vizSampling": {
       "autoRefreshSample": false,
