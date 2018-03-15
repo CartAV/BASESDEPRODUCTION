@@ -55,17 +55,17 @@
       "items": [
         {
           "ref": "usagers_postgis_partitioned",
-          "appendMode": false
+          "appendMode": true
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1521111304577
+    "lastModifiedOn": 1521111320427
   },
   "creationTag": {
     "versionNumber": 0,
