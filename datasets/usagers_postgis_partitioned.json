@@ -36,11 +36,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1521111351521
+    "lastModifiedOn": 1521111389127
   },
   "creationTag": {
     "versionNumber": 0,
@@ -136,6 +136,12 @@
       },
       {
         "name": "etatp",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "time",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
