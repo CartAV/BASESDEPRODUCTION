@@ -13,16 +13,26 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1506613556883
+    "lastModifiedOn": 1521125141822
   },
   "creationTag": {
     "versionNumber": 0,
@@ -36,6 +46,7 @@
   ],
   "params": {
     "connection": "es5-test",
+    "notReadyIfEmpty": false,
     "index": "es5dev_2005_2015_accidents",
     "type": "es5dev_2005_2015_accidents",
     "customMapping": "{\n  \"date_detection\": false,\n  \"_all\": {\"enabled\": false},\n  \"properties\": {\n    \"gravite_accident\": {\n      \"type\": \"keyword\"\n    },\n    \"col\": {\n      \"type\": \"keyword\"\n    },\n    \"lum\": {\n      \"type\": \"keyword\"\n    },\n    \"int\": {\n      \"type\": \"keyword\"\n    },\n    \"LIBELLE_PLAGE_HORAIRE\": {\n      \"type\": \"keyword\"\n    },\n    \"ANNEE\": {\n      \"type\": \"keyword\"\n    },\n    \"atm\": {\n      \"type\": \"keyword\"\n    },\n    \"LIBELLE_JOUR\": {\n      \"type\": \"keyword\"\n    },\n    \"NOM_REG\": {\n      \"type\": \"keyword\"\n    },\n    \"dep\": {\n      \"type\": \"keyword\"\n    },\n    \"current_city_code\": {\n      \"type\": \"keyword\"\n    },\n    \"agg\": {\n      \"type\": \"keyword\"\n    },\n    \"num_route_com_id\": {\n      \"type\": \"keyword\"\n    },\n    \"Num_Acc\": {\n      \"type\": \"keyword\"\n    },\n    \"has_voiture\": {\n      \"type\": \"keyword\"\n    },\n    \"has_deuxrouesmotorises\": {\n      \"type\": \"keyword\"\n    },\n    \"has_velo\": {\n      \"type\": \"keyword\"\n    },\n    \"has_poidslourd\": {\n      \"type\": \"keyword\"\n    },\n    \"has_pietons\": {\n      \"type\": \"keyword\"\n    },\n    \"has_vehiculeautre\": {\n      \"type\": \"keyword\"\n    },\n    \"catr\": {\n      \"type\": \"keyword\"\n    },\n    \"nom_circonscription_police\": {\n      \"type\": \"keyword\"\n    },\n   \"date\":{\n     \"type\": \"date\"\n   }\n  }\n}",
@@ -43,7 +54,7 @@
     "partitioned": false
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
@@ -270,18 +281,6 @@
         "maxLength": -1
       },
       {
-        "name": "pr",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "pr1",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "vosp",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -289,6 +288,18 @@
       },
       {
         "name": "prof",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "pr",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "pr1",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
