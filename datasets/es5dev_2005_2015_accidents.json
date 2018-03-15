@@ -43,11 +43,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1521125219023
+    "lastModifiedOn": 1521125311100
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,12 +73,6 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "mois",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -122,7 +116,6 @@
       {
         "name": "dep",
         "type": "string",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -177,7 +170,6 @@
       {
         "name": "original_city_code",
         "type": "string",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -370,6 +362,7 @@
       {
         "name": "voiture_nb",
         "type": "bigint",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -382,6 +375,7 @@
       {
         "name": "deuxrouesmotorises_nb",
         "type": "bigint",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -394,6 +388,7 @@
       {
         "name": "velo_nb",
         "type": "bigint",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -406,6 +401,7 @@
       {
         "name": "poidslourd_nb",
         "type": "bigint",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -418,6 +414,7 @@
       {
         "name": "vehiculeautre_nb",
         "type": "bigint",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -430,6 +427,7 @@
       {
         "name": "pietons_nb",
         "type": "bigint",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
