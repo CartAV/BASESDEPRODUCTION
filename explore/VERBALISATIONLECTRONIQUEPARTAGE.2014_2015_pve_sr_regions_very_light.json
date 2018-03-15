@@ -34,6 +34,10 @@
         },
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
         "samplingMethod": "HEAD_SEQUENTIAL",
         "maxRecords": 10000,
         "targetRatio": 0.02,
@@ -67,6 +71,10 @@
           },
           "partitionSelectionMethod": "ALL",
           "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
           "samplingMethod": "FULL",
           "maxRecords": -1,
           "targetRatio": 0.02,
@@ -85,6 +93,9 @@
           {
             "column": "DATE_JOUR_REEL_INFRACTION",
             "type": "DATE",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
             "dateParams": {
               "mode": "MONTH"
             },
@@ -119,6 +130,8 @@
           }
         ],
         "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
         "genericMeasures": [
           {
             "function": "COUNT",
@@ -128,7 +141,7 @@
             "displayAxis": "axis1",
             "displayType": "column",
             "computeMode": "NORMAL",
-            "computeModeDim": 0
+            "computeModeDim": 1
           }
         ],
         "xDimension": [],
@@ -165,17 +178,37 @@
         "smoothing": true,
         "showLegend": true,
         "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": false,
         "strokeWidth": 1,
+        "fillOpacity": 0.5,
+        "showXAxisLabel": false,
+        "showYAxisLabel": false,
         "hexbinRadius": 20,
         "hexbinNumber": 20,
         "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": false,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
         "colorOptions": {
           "singleColor": "#659a88",
           "transparency": 0.75,
           "colorPalette": "default",
-          "ccScaleMode": "NORMAL"
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
         },
-        "colorPaletteType": "LINEAR",
         "bubblesOptions": {
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
@@ -198,10 +231,12 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACBUlEQVRoQ+2Zz0sCQRTH30hR5qlD0aWkoD8h6BpRRuwx+ktKA6FbxJbQP9ItITKiW3TsHhSGB4PotmqRTow6NE67s7uNO+n69qS7w877vO933vxYAiN2kRHjBQSOu+JDr3A6V7wt29ZaUKEQOGimBqWdqDD7DQD5sm3decUXK4U5MAAcyTZPZ4uF8om1ZxS4GxCEGXN+TnJT2BW4O9aVwGELQpDgWJt+A0v95hkwv8f74iy+wABQBYA5VZDzB5crs+8zD2/T1ZKqHVeYQy/tl5afTjcf/RKlei6+s9suemDW6Vdicmes1TgPA+zloDDWjwxYzPKvgqABLFuP/RchKMDHi21tealsBDiVrGWc+tSVOD5UCi/kLo4JkFU5aXKwi8nUxnPduRbbycCy+kaBxcCGGljKWrtoiXBc4SDA7F0U6P1AK6wD3PysbbNEVM5263w8RgHcaI5br4WMo2XpdLbYWYQTOBTUC6Ww2/wXBTCf2vSAO2tR+foTcG/h0bM0AZgQC6SY1EEDpswvugozYAByA0DX/So92zwEXmm5ZIu9X0dhBFbZ0Wse1lFYdkTPWjqOCiOwmAFUuJONoS5aaGm0dH9XWv8+D6Ol0dJoaZyWQHXiIRkEixZuHgRLxGG31MbROQD4yUewAwDSIjZN0JzLyU37E4/Rj2luQZi+h8CmM266v28V8RNlys5zWAAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAvElEQVRoQ+3TsQ3CABAEQdwI1ELuZkigBkhoxjm14ErIEOGe/hKkdXxviTG7HAbP8bo9B+fj0/2xXtKXLOnB7/50216T++nt+76e03f4gxMxv3CiVdj6lwaINgyQvhMbTrQKWxsGiDYMkGw4QWpubRho2jBAsuEEqbm1YaBpwwDJhhOk5taGgaYNAyQbTpCaWxsGmjYMkGw4QWpubRho2jBAsuEEqbm1YaBpwwDJhhOk5taGgaYNA6S/nnwAZomcKfZQUPUAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
-        "useLiveProcessingIfAvailable": true
-      }
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
     }
   ]
 }
