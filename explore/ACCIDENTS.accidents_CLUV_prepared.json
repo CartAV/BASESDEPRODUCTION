@@ -25,7 +25,7 @@
                 "input": "Num_Acc",
                 "operator": "\u003d\u003d [number]",
                 "col": "mois",
-                "num": 5.0610001701E10,
+                "num": 9.15890001901E11,
                 "date": "2017-05-01",
                 "time": "00:00",
                 "date2": "2017-06-01",
@@ -47,7 +47,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 3
+      "_refreshTrigger": 4
     },
     "vizSampling": {
       "autoRefreshSample": false,
@@ -384,6 +384,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
