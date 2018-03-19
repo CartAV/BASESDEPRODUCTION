@@ -1,4 +1,22 @@
 {
-  "enabled": false,
+  "enabled": true,
+  "uiData": {
+    "conditions": [
+      {
+        "num": 0,
+        "col": "place",
+        "input": "Num_Acc",
+        "string": "2016",
+        "operator": "contains"
+      }
+    ],
+    "mode": "\u0026\u0026"
+  },
+  "$status": {
+    "message": "Filter expression is invalid",
+    "fullyTranslated": false,
+    "ok": false,
+    "validated": true
+  },
   "distinct": false
 }
