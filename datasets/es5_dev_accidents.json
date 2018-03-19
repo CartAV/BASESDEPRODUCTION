@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1521479277429
+    "lastModifiedOn": 1521480060363
   },
   "creationTag": {
     "versionNumber": 0,
@@ -47,6 +47,7 @@
     "notReadyIfEmpty": false,
     "index": "es5dev_accidents",
     "type": "es5dev_accidents",
+    "customMapping": "{\n  \"date_detection\": false,\n  \"_all\": {\"enabled\": false},\n  \"properties\": {\n    \"gravite_accident\": {\n      \"type\": \"keyword\"\n    },\n    \"col\": {\n      \"type\": \"keyword\"\n    },\n    \"lum\": {\n      \"type\": \"keyword\"\n    },\n    \"int\": {\n      \"type\": \"keyword\"\n    },\n    \"LIBELLE_PLAGE_HORAIRE\": {\n      \"type\": \"keyword\"\n    },\n    \"ANNEE\": {\n      \"type\": \"keyword\"\n    },\n    \"atm\": {\n      \"type\": \"keyword\"\n    },\n    \"LIBELLE_JOUR\": {\n      \"type\": \"keyword\"\n    },\n    \"NOM_REG\": {\n      \"type\": \"keyword\"\n    },\n    \"dep\": {\n      \"type\": \"keyword\"\n    },\n    \"current_city_code\": {\n      \"type\": \"keyword\"\n    },\n    \"agg\": {\n      \"type\": \"keyword\"\n    },\n    \"num_route_com_id\": {\n      \"type\": \"keyword\"\n    },\n    \"Num_Acc\": {\n      \"type\": \"keyword\"\n    },\n    \"has_voiture\": {\n      \"type\": \"keyword\"\n    },\n    \"has_deuxrouesmotorises\": {\n      \"type\": \"keyword\"\n    },\n    \"has_velo\": {\n      \"type\": \"keyword\"\n    },\n    \"has_poidslourd\": {\n      \"type\": \"keyword\"\n    },\n    \"has_pietons\": {\n      \"type\": \"keyword\"\n    },\n    \"has_vehiculeautre\": {\n      \"type\": \"keyword\"\n    },\n    \"catr\": {\n      \"type\": \"keyword\"\n    },\n    \"nom_circonscription_police\": {\n      \"type\": \"keyword\"\n    },\n   \"date\":{\n     \"type\": \"date\"\n   }\n  }\n}",
     "frameSize": 10000,
     "partitioned": false
   },
