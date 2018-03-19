@@ -3,9 +3,9 @@
   "uiData": {
     "conditions": [
       {
-        "input": "Num_Acc",
-        "col": "senc",
         "num": 0,
+        "col": "senc",
+        "input": "Num_Acc",
         "string": "^2016",
         "operator": "regex"
       }
