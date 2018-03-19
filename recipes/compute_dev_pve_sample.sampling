@@ -3,9 +3,9 @@
   "uiData": {
     "conditions": [
       {
-        "num": 2016,
-        "col": "CODE_INSEE_INFRACTION",
         "input": "ANNEE_INFRACTION",
+        "col": "CODE_INSEE_INFRACTION",
+        "num": 2016,
         "operator": "\u003d\u003d [number]"
       }
     ],
