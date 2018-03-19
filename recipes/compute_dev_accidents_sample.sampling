@@ -3,9 +3,9 @@
   "uiData": {
     "conditions": [
       {
-        "num": 2016,
-        "col": "mois",
         "input": "ANNEE",
+        "col": "mois",
+        "num": 2016,
         "operator": "\u003d\u003d [number]"
       }
     ],

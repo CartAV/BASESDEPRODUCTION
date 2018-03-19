@@ -58,7 +58,7 @@
     "main": {
       "items": [
         {
-          "ref": "es5_prod_accidents_copy",
+          "ref": "es5_prod_accidents",
           "deps": []
         }
       ]
@@ -68,18 +68,18 @@
     "main": {
       "items": [
         {
-          "ref": "dev_accidents_sample",
+          "ref": "es5_dev_accidents",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1521465536334
+    "lastModifiedOn": 1521477949751
   },
   "creationTag": {
     "versionNumber": 0,
