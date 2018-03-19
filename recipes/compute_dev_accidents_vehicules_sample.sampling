@@ -3,11 +3,11 @@
   "uiData": {
     "conditions": [
       {
-        "num": 0,
-        "col": "senc",
         "input": "Num_Acc",
-        "string": "^2016",
-        "operator": "regex"
+        "col": "senc",
+        "num": 0,
+        "string": "2016",
+        "operator": "contains"
       }
     ],
     "mode": "\u0026\u0026"
