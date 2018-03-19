@@ -68,18 +68,18 @@
     "main": {
       "items": [
         {
-          "ref": "dev_accidents_usagers_sample",
+          "ref": "es5dev_accidents_usagers",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1521470746489
+    "lastModifiedOn": 1521477813271
   },
   "creationTag": {
     "versionNumber": 0,
