@@ -17,7 +17,7 @@
       },
       "samplingMethod": "RANDOM_FIXED_RATIO",
       "maxRecords": 100000,
-      "targetRatio": 0.01,
+      "targetRatio": 0.1,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
@@ -75,11 +75,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1521465278458
+    "lastModifiedOn": 1521465409522
   },
   "creationTag": {
     "versionNumber": 0,

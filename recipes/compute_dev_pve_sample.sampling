@@ -1,4 +1,21 @@
 {
-  "enabled": false,
+  "enabled": true,
+  "uiData": {
+    "conditions": [
+      {
+        "num": 2016,
+        "col": "CODE_INSEE_INFRACTION",
+        "input": "ANNEE_INFRACTION",
+        "operator": "\u003d\u003d [number]"
+      }
+    ],
+    "mode": "\u0026\u0026"
+  },
+  "$status": {
+    "message": "Filter expression is invalid",
+    "fullyTranslated": false,
+    "ok": false,
+    "validated": true
+  },
   "distinct": false
 }
