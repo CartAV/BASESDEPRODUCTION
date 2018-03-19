@@ -6,7 +6,7 @@
         "input": "Num_Acc",
         "col": "senc",
         "num": 0,
-        "string": "2016",
+        "string": "201600",
         "operator": "contains"
       }
     ],
