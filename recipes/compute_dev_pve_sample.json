@@ -15,7 +15,7 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "RANDOM_FIXED_RATIO",
       "maxRecords": 100000,
       "targetRatio": 0.02,
       "withinFirstN": -1,
@@ -75,11 +75,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1521465225166
+    "lastModifiedOn": 1521465260633
   },
   "creationTag": {
     "versionNumber": 0,
