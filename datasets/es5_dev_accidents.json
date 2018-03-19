@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "dupontlau"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1521125518218
+    "lastModifiedOn": 1521479277429
   },
   "creationTag": {
     "versionNumber": 0,
@@ -45,8 +45,8 @@
   "params": {
     "connection": "es5-test",
     "notReadyIfEmpty": false,
-    "index": "es5_dev_accidents",
-    "type": "es5_dev_accidents",
+    "index": "es5dev_accidents",
+    "type": "es5dev_accidents",
     "frameSize": 10000,
     "partitioned": false
   },
