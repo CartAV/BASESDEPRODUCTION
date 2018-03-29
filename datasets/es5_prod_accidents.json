@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520926727986
+    "lastModifiedOn": 1522313126153
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,7 +58,7 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -107,6 +107,7 @@
       {
         "name": "dep",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -161,6 +162,7 @@
       {
         "name": "original_city_code",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -353,7 +355,6 @@
       {
         "name": "voiture_nb",
         "type": "bigint",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -366,7 +367,6 @@
       {
         "name": "deuxrouesmotorises_nb",
         "type": "bigint",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -379,7 +379,6 @@
       {
         "name": "velo_nb",
         "type": "bigint",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -392,7 +391,6 @@
       {
         "name": "poidslourd_nb",
         "type": "bigint",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -405,7 +403,6 @@
       {
         "name": "vehiculeautre_nb",
         "type": "bigint",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -418,7 +415,6 @@
       {
         "name": "pietons_nb",
         "type": "bigint",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
