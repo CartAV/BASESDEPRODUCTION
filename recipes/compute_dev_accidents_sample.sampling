@@ -3,19 +3,25 @@
   "uiData": {
     "conditions": [
       {
+        "input": "ANNEE",
+        "col": "mois",
         "num": 2016,
+        "operator": "\u003d\u003d [number]"
+      },
+      {
         "col": "mois",
         "input": "ANNEE",
+        "num": 2017,
         "operator": "\u003d\u003d [number]"
       }
     ],
-    "mode": "\u0026\u0026"
+    "mode": "||"
   },
   "$status": {
     "message": "Filter expression is invalid",
     "fullyTranslated": false,
     "ok": false,
-    "validated": true
+    "validated": false
   },
   "distinct": false
 }
