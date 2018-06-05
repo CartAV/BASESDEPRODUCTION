@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1528215636479
+    "lastModifiedOn": 1528215661438
   },
   "creationTag": {
     "versionNumber": 0,
@@ -45,8 +45,8 @@
   "params": {
     "connection": "cartav_prod",
     "notReadyIfEmpty": false,
-    "index": "es5_prod_pve_restore",
-    "type": "es5_prod_pve_restore",
+    "index": "es5_prod_pve",
+    "type": "es5_prod_pve",
     "frameSize": 10000,
     "partitioned": false
   },
