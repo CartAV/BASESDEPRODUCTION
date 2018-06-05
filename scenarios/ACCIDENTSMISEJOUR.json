@@ -5,11 +5,11 @@
   "name": "update accidents elasticsearch",
   "active": false,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1528214410414
+    "lastModifiedOn": 1528214469755
   },
   "checklists": {
     "checklists": []
@@ -43,6 +43,33 @@
             {
               "type": "DATASET",
               "itemId": "es5_prod_accidents_usagers_copy",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_1_true_d_es5_prod_accidents_d_es5_prod_accidents_usagers_d_es5_prod_accidents_vehicules",
+        "type": "build_flowitem",
+        "name": "update",
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_accidents",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_accidents_usagers",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_accidents_vehicules",
               "partitionsSpec": ""
             }
           ],
