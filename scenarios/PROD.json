@@ -2,14 +2,14 @@
   "projectKey": "BASESDEPRODUCTION",
   "id": "PROD",
   "type": "step_based",
-  "name": "injection elasticsearch prod",
+  "name": "PRA CartAV accidents+verbalisations full",
   "active": true,
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1528216194693
+    "lastModifiedOn": 1528216263615
   },
   "checklists": {
     "checklists": []
