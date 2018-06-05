@@ -55,17 +55,17 @@
       "items": [
         {
           "ref": "es5_prod_pve_restore",
-          "appendMode": true
+          "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1528215647622
+    "lastModifiedOn": 1528216209712
   },
   "creationTag": {
     "versionNumber": 0,
