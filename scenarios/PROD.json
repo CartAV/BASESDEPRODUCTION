@@ -5,11 +5,11 @@
   "name": "injection elasticsearch prod",
   "active": true,
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 23,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1528216172949
+    "lastModifiedOn": 1528216194693
   },
   "checklists": {
     "checklists": []
@@ -107,6 +107,11 @@
             {
               "type": "DATASET",
               "itemId": "es5_prod_radars",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_pve_restore",
               "partitionsSpec": ""
             }
           ],
