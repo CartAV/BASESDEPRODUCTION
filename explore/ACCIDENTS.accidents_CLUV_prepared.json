@@ -47,7 +47,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 7
+      "_refreshTrigger": 8
     },
     "vizSampling": {
       "autoRefreshSample": false,
@@ -234,7 +234,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABaUlEQVRoQ2NkGGGAEZt/5cu37IeJ/2dgfPWo0zscWexhp48jMh+kFiQmW7ZlLUzf4y6fYGxq0O3DpkaubPNsmLpHXb6p2NwoV7q1Eyb+98ePyd8ZOD/xcv3bCBPDcON/xh8Pu7w9qephYgKFHDWyZVvmMDEyKOPyzO//fzN+fGd9PuphpJTKMBrDSBmF3DxMTnLFlofRzRlN0miF5mgehtYaKKlnNA+P5mFICJDS8BgttJDrQSz5CleLbbSUHm1pobblR6ul0WoJVPqO9pYQFfFoW5rIAYDReni0HkatTkYbHjhaY6P94dH+8OggHnjYeHQAYHRcGtrYGm1pjba0sM8tjTYtR5uWo01LrNOuo4N4o4N4o4N4lE2Iy5UilhwwMDC9e9TtXY4s9qjbNxVVDQMDuhhV1ZRsrWdg/CcDXwaBZv/vf0wt/xhZ3rAz/pqAS81/RsZfj7t8srEueRjO61xGPTycYxfkNwBg4NWSkO5cZAAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAi0lEQVRoge3PMQrCQBBA0fECKVIKxjLns3C9i0UgrV1I+lzNaiFKZFWIILwPUwybXfIi9NjxMs15IiKq063Os3b+zhvPNeexX85W//7VpdLepOn66Z3l/uqbQxq7PCvnu30a2tIbfwUu7MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAvwdLkqTNugOpvVmi257ZqgAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -554,6 +554,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -722,6 +723,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
