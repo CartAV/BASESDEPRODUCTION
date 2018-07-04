@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "0w4vm37wmewc": [
+      {
+        "mode": "SQL",
+        "id": "CtPnpkCY8dAj",
+        "runOn": 1530703590147,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "WblcOcQJ",
+        "hash": "7c8f8b26c61451d65430c3354fcc7d88",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) FROM \"accidents_cluv_prepared_tableau\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18\n--AND \"distance_commune_baac\" \u003c 2000",
+        "expandedSql": "SELECT COUNT(*) FROM \"accidents_cluv_prepared_tableau\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18\n--AND \"distance_commune_baac\" \u003c 2000"
+      }
+    ]
+  }
+}
