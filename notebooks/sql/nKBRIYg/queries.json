@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "lccazhfizq": [
+      {
+        "mode": "SQL",
+        "id": "6olwdW2aER6M",
+        "runOn": 1530703686432,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "CG0kb4Yk",
+        "hash": "1378ec04b576045a8bb25c6d55c7a510",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"ANNEE\" FROM \"accidents_cluv_prepared\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"ANNEE\" \u003d 2018\n--AND \"distance_commune_baac\" \u003c 2000",
+        "expandedSql": "SELECT \"ANNEE\" FROM \"accidents_cluv_prepared\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"ANNEE\" \u003d 2018\n--AND \"distance_commune_baac\" \u003c 2000"
+      }
+    ]
+  }
+}
