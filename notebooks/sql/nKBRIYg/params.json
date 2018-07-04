@@ -1,0 +1,24 @@
+{
+  "connection": "postgis",
+  "name": "dupontlau\u0027s notebook on postgis",
+  "cells": [],
+  "automationLocal": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1530703679498
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1530703679498
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
