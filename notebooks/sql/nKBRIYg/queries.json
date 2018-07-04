@@ -44,6 +44,28 @@
         },
         "sql": "SELECT COUNT(*) FROM \"accidents_cluv_prepared\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"ANNEE\" \u003d 2018\n--AND \"distance_commune_baac\" \u003c 2000",
         "expandedSql": "SELECT COUNT(*) FROM \"accidents_cluv_prepared\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"ANNEE\" \u003d 2018\n--AND \"distance_commune_baac\" \u003c 2000"
+      },
+      {
+        "mode": "SQL",
+        "id": "6aGTmXzLPZjV",
+        "runOn": 1530703704727,
+        "runIn": 422,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "7fNJH4Ge",
+        "hash": "4a5f207d0f6d3cdb92bd2b6b41bec398",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) FROM \"accidents_cluv_prepared\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\n--AND \"ANNEE\" \u003d 2018\n--AND \"distance_commune_baac\" \u003c 2000",
+        "expandedSql": "SELECT COUNT(*) FROM \"accidents_cluv_prepared\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\n--AND \"ANNEE\" \u003d 2018\n--AND \"distance_commune_baac\" \u003c 2000"
       }
     ]
   }
