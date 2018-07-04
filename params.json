@@ -101,6 +101,9 @@
     "impalaEngineCreationSettings": {
       "useGlobal": true,
       "streamMode": true
+    },
+    "cluster": {
+      "clusterMode": "INHERIT"
     }
   },
   "name": "CartAV - bases de Production",
@@ -156,11 +159,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1521477963862
+    "lastModifiedOn": 1530703767388
   },
   "creationTag": {
     "versionNumber": 0,
