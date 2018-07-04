@@ -132,6 +132,28 @@
         },
         "sql": "SELECT \"ANNEE\" FROM \"accidents_cluv_prepared_tableau\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"ANNEE\" \u003d 2017\n--AND \"distance_commune_baac\" \u003c 2000",
         "expandedSql": "SELECT \"ANNEE\" FROM \"accidents_cluv_prepared_tableau\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"ANNEE\" \u003d 2017\n--AND \"distance_commune_baac\" \u003c 2000"
+      },
+      {
+        "mode": "SQL",
+        "id": "Fjh6612P6Vhe",
+        "runOn": 1530703652247,
+        "runIn": 151,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "w7ITpCgT",
+        "hash": "7a33ed563d0d1400a38a0d00f06eea5a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"ANNEE\" FROM \"accidents_cluv_prepared_tableau\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"ANNEE\" \u003d 2018\n--AND \"distance_commune_baac\" \u003c 2000",
+        "expandedSql": "SELECT \"ANNEE\" FROM \"accidents_cluv_prepared_tableau\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"ANNEE\" \u003d 2018\n--AND \"distance_commune_baac\" \u003c 2000"
       }
     ]
   }
