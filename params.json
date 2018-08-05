@@ -86,10 +86,14 @@
         "preventOverride": false
       }
     },
+    "container": {
+      "containerMode": "NONE"
+    },
     "datasetsCreationSettings": {
       "useGlobal": true,
       "preferedStorageFormats": "CSV_ESCAPING_NOGZIP_FORHIVE,CSV_EXCEL_GZIP,PARQUET_HIVE",
-      "virtualizable": false
+      "virtualizable": false,
+      "allowUploadsWithoutConnection": true
     },
     "hiveEngineCreationSettings": {
       "useGlobal": true,
@@ -102,9 +106,13 @@
       "useGlobal": true,
       "streamMode": true
     },
+    "wikiSettings": {
+      "promoted": false
+    },
     "cluster": {
       "clusterMode": "INHERIT"
-    }
+    },
+    "path": "/CartAV"
   },
   "name": "CartAV - bases de Production",
   "projectStatus": "Sandbox",
@@ -159,11 +167,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 23,
     "lastModifiedBy": {
-      "login": "dupontlau"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1530703774037
+    "lastModifiedOn": 1533461243280
   },
   "creationTag": {
     "versionNumber": 0,
