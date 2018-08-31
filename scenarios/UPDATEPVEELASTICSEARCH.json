@@ -6,11 +6,11 @@
   "active": true,
   "runAsUser": "antoinefa",
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1519416373675
+    "lastModifiedOn": 1535739442648
   },
   "checklists": {
     "checklists": []
@@ -73,6 +73,12 @@
         "id": "build_1_true_d_es5_prod_pve",
         "type": "build_flowitem",
         "name": "update pve \u0026 backup last update",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "resetScenarioStatus": false,
         "params": {
           "builds": [
             {
@@ -95,6 +101,12 @@
         "id": "build_1_true_d_cartav_pve_backup",
         "type": "build_flowitem",
         "name": "backup current update",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "resetScenarioStatus": false,
         "params": {
           "builds": [
             {
@@ -105,6 +117,38 @@
           ],
           "jobType": "NON_RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "comp_metrics_d_cartav_pve_backup_d_es5_prod_pve_d_cartav_pve_backup_last_month",
+        "type": "compute_metrics",
+        "name": "Metrics!",
+        "runConditionType": "RUN_ALWAYS",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "computes": [
+            {
+              "type": "DATASET",
+              "itemId": "cartav_pve_backup",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_pve",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "cartav_pve_backup_last_month",
+              "partitionsSpec": ""
+            }
+          ],
           "proceedOnFailure": false
         }
       }
