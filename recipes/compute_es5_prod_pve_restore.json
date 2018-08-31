@@ -7,6 +7,7 @@
     "engineParams": {
       "maxThreads": 4,
       "tdchParams": {
+        "splitMode": "DEFAULT",
         "numberOfExecutors": 2
       },
       "sparkSQL": {
@@ -44,7 +45,7 @@
     "main": {
       "items": [
         {
-          "ref": "cartav_pve_backup",
+          "ref": "cartav_pve_backup_last_month",
           "deps": []
         }
       ]
@@ -61,11 +62,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1528216209712
+    "lastModifiedOn": 1535738163906
   },
   "creationTag": {
     "versionNumber": 0,
