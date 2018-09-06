@@ -1,6 +1,6 @@
 {
-  "enabled": true,
   "uiData": {
+    "mode": "||",
     "conditions": [
       {
         "input": "ANNEE",
@@ -14,14 +14,14 @@
         "num": 2017,
         "operator": "\u003d\u003d [number]"
       }
-    ],
-    "mode": "||"
+    ]
   },
   "$status": {
-    "message": "Filter expression is invalid",
+    "validated": true,
     "fullyTranslated": false,
-    "ok": false,
-    "validated": false
+    "message": "Filter expression is invalid",
+    "ok": false
   },
-  "distinct": false
+  "distinct": false,
+  "enabled": true
 }
