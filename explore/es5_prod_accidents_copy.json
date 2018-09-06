@@ -72,21 +72,21 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Avg. of geo_score by ANNEE and mois",
+        "name": "Count by date",
         "userEditedName": false,
         "genericDimension0": [
           {
-            "column": "ANNEE",
-            "type": "NUMERICAL",
+            "column": "date",
+            "type": "DATE",
             "numParams": {
-              "mode": "NONE",
-              "nbBins": "20",
-              "binSize": 100,
               "emptyBinsMode": "ZEROS"
             },
-            "maxValues": 100,
+            "dateParams": {
+              "mode": "YEAR"
+            },
+            "maxValues": 0,
             "generateOthersCategory": true,
-            "oneTickPerBin": false,
+            "oneTickPerBin": true,
             "filters": [],
             "isA": "dimension",
             "possibleSorts": [
@@ -98,12 +98,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of geo_score, descending"
+                "label": "Count of records, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of geo_score, ascending",
+                "label": "Count of records, ascending",
                 "sortAscending": true
               }
             ],
@@ -114,52 +114,12 @@
             }
           }
         ],
-        "genericDimension1": [
-          {
-            "column": "mois",
-            "type": "NUMERICAL",
-            "numParams": {
-              "mode": "NONE",
-              "nbBins": 5,
-              "binSize": 100,
-              "emptyBinsMode": "ZEROS"
-            },
-            "maxValues": 100,
-            "generateOthersCategory": true,
-            "oneTickPerBin": false,
-            "filters": [],
-            "isA": "dimension",
-            "possibleSorts": [
-              {
-                "type": "NATURAL",
-                "label": "Natural ordering",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of geo_score, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of geo_score, ascending",
-                "sortAscending": true
-              }
-            ],
-            "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
-            }
-          }
-        ],
+        "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
           {
-            "column": "geo_score",
-            "function": "AVG",
+            "function": "COUNT",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
@@ -246,7 +206,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAxUlEQVRoge3ZLQoCURSG4bMdwV24BduA0WAyWEQRq8hEQZmgQRwFy6goYjDYBIPdDbiHCdbD5TBecPxB3rd9w2W4T74ilG/tS2Px7Tt8NB9wGkUVva/LQd89M6pVD3qX49Lm2X/vQTD2ueNLrXrdrd4+4FsYz/U+J7PEPfN2cLGza7rfhvXjVO80LOzdM38FnrROa70BC2DAVoABAwZsBTgrwAIYsAhgwFaAAQMGbAU4K8ACGLAIYMBWgAED/p3nUiIiyrEHNe/jRVQAvPAAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAjUlEQVRoge3TMQqAIBSAYW8QDVFLRAdsixy6UWNIa1drksKhJESf8v/g8Bbxe6BSdDdoc9qT+i1R+gLXequKWoqLcWfAufcHnPUCQoCfs/glAA4EFruAWGAxCwAcCezz79t5H+3ppqMpDvw294tZfe4FDBgwYMCAAQMGDBgwYMCAAQMGDBhw7mAiIkrcBXOUP7OWfHmHAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
