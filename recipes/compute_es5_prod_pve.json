@@ -7,6 +7,7 @@
     "engineParams": {
       "maxThreads": 4,
       "tdchParams": {
+        "splitMode": "DEFAULT",
         "numberOfExecutors": 2
       },
       "sparkSQL": {
@@ -55,17 +56,17 @@
       "items": [
         {
           "ref": "es5_prod_pve",
-          "appendMode": true
+          "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1522319755802
+    "lastModifiedOn": 1536251438619
   },
   "creationTag": {
     "versionNumber": 0,
