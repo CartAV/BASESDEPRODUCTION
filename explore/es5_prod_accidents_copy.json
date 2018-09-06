@@ -46,7 +46,7 @@
   "charts": [
     {
       "copySelectionFromScript": false,
-      "engineType": "LINO",
+      "engineType": "SQL",
       "refreshableSelection": {
         "selection": {
           "useMemTable": false,
@@ -119,7 +119,7 @@
             "column": "mois",
             "type": "NUMERICAL",
             "numParams": {
-              "mode": "FIXED_NB",
+              "mode": "NONE",
               "nbBins": 5,
               "binSize": 100,
               "emptyBinsMode": "ZEROS"
@@ -246,7 +246,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAnklEQVRoge3PMQrCUBAG4T1BcgmLV3sgwZMkpVWOYfVs04jYeRRvkDaxTzUuISLMlAs/7Bdh9vOWrrlndvX1Lts80LfH1G4oz8xu7tpHZrcduJ6uqd3O4OlSbl+PDv3YrG9LPY+ZBwTDBMMEkwSHYJxgmGCYYJLgEIwTDBMME0wSHIJxgmGCYYJJgkMwTjBMMEwwSXAIxgmG7Qo2+68+Lc5+siNs+GoAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAxUlEQVRoge3ZLQoCURSG4bMdwV24BduA0WAyWEQRq8hEQZmgQRwFy6goYjDYBIPdDbiHCdbD5TBecPxB3rd9w2W4T74ilG/tS2Px7Tt8NB9wGkUVva/LQd89M6pVD3qX49Lm2X/vQTD2ueNLrXrdrd4+4FsYz/U+J7PEPfN2cLGza7rfhvXjVO80LOzdM38FnrROa70BC2DAVoABAwZsBTgrwAIYsAhgwFaAAQMGbAU4K8ACGLAIYMBWgAED/p3nUiIiyrEHNe/jRVQAvPAAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
