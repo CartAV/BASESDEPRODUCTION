@@ -167,6 +167,7 @@
             "column": "DATE_JOUR_REEL_INFRACTION",
             "columnType": "DATE",
             "dateFilterType": "RANGE",
+            "minValue": 1.512528003352E12,
             "isA": "filter",
             "excludedValues": {},
             "explicitExclude": false
