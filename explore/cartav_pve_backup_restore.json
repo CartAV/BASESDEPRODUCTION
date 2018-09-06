@@ -46,7 +46,29 @@
   "charts": [
     {
       "copySelectionFromScript": true,
-      "engineType": "LINO",
+      "engineType": "SQL",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 1
+      },
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
@@ -176,6 +198,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -193,7 +216,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAArklEQVRoge2QIQ6DQBREF4mp2EqacsY1NNwHhahpRV2PBooEEkQ3Mxsa8l7y5ezM2xDAR/t4f9eXm7+lMS4XwlSV2GhFFV5nL+kTS2y0grCQR9jYYwNhIY+wsccGwkIeYWOPDYSFPMLGHhsIC3mEjT02EBbyCBt7bOwOSWO9uR/zucKHfII6BOFCPTYQzhyCcKEeGwhnDjmtcNM/r3vj/kb43r2G5aSHAAAAAM7MDFHEJ7aGODd4AAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAApUlEQVRoge3YQQ5AMBBAUfcQnMUhHEV7KiuzdzUriTRUtSjj/6QbYsyzVBT03RorU2Nlyr3HYwHWHmDtAdYeYO0B1h7gK4e6g0sjbWmkTZ0T8kzs/aj2Fl1fD1kqFezOqKwMt4N9C7gLHj3vw2UBby16FfgIlwI+9RF8yz0JDnnfJ8G1Gcfl/AIcMxsw4Azg5dS9dIABAwYMGDDg//wFISIiovc0A4PuVBpq9eclAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
