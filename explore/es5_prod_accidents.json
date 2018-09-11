@@ -63,13 +63,63 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "New chart",
+        "name": "Count by date",
         "userEditedName": false,
-        "genericDimension0": [],
+        "genericDimension0": [
+          {
+            "column": "date",
+            "type": "DATE",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "dateParams": {
+              "mode": "MONTH"
+            },
+            "maxValues": 0,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [],
+        "genericMeasures": [
+          {
+            "function": "COUNT",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
         "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
@@ -87,6 +137,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
