@@ -185,13 +185,11 @@
         "boxplotValue": [],
         "filters": [
           {
-            "filterType": "ALPHANUM_FACET",
-            "column": "nom_circonscription_police",
-            "columnType": "ALPHANUM",
+            "filterType": "NUMERICAL_FACET",
+            "column": "ANNEE",
+            "columnType": "NUMERICAL",
             "isA": "filter",
-            "excludedValues": {
-              "": true
-            },
+            "excludedValues": {},
             "explicitExclude": false
           }
         ],
@@ -254,7 +252,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABKElEQVRoge3PvUrDUBjG8ewmiw7dHByS0lvIJfQSCgWVLr2AYId+TFIyFKlIMwqGLg39oFCFEzkIHcyqQcfQK6lLse8rKjX9iG2fZ/vDOZzzUxRs8U1raoZ1RbtlXdXkSruieqzLB3nWJeVowa/HG8AArx/sRPbnGYBXvb0Evxnp+YMxwK3JpUn7RddPfjyfOLiTazFw/Viwrmrya7/rxiPtfwWeigv5a/dOxbLgIGu6tF1hDWiz9zYBZh/eEvB1wR/+Xat8D2adAJgBZ+BmQZztNLhx/nCYKNhvv6YoeNwPGxQ87oeSgmkHWdOl7QprQNuJ7Pn9GfjJC0cU3L16vttr8E3Rvwd4V8FOZEuAAQYYYIABBhhggAEGGGCAAV4GjGEYhmHYWvcBUH21F3vssZUAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABLUlEQVRoge3PsU7CUBTG8e7CIoMbIxhfoY/QdzAB08UHIO0gOpHqQAiEyECiiY1TY0tMhOSWNMQOdm4DG8QnwQGC5zRo0Qih8fu2f+4dzk+SsM03v8qcsK5m71lfZr0/7WrGYn1xcMpal3Ibnv67AZx28Fxo3rdtlwRrI88b4OTuTK+7rGc3qz+pAI+Lxx7t+Pvte02mnQRmnQbwpFAc0g4U2aRtikqPdhKYtS7laP9468AMYJcEayMv4sDUgdnBewKunw0OKbipivK/BrdU9xngfQK/9sIyBftO2KTgVX8BvtN9badg9zE8omDfieoU7DuRR8G0A0U2aS/An70AL3sJHlnRCwU/Nd4eKLh97vYBBhhggAEGGGCAAQYYYIABBhhggAHGMAzDMGz7+wCUAjLtjIPI9AAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
