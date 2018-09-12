@@ -146,7 +146,17 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "DATE_FACET",
+            "column": "date",
+            "columnType": "DATE",
+            "dateFilterType": "RANGE",
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
