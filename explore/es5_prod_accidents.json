@@ -58,8 +58,41 @@
   },
   "charts": [
     {
-      "copySelectionFromScript": true,
+      "copySelectionFromScript": false,
       "engineType": "LINO",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": true,
+            "uiData": {
+              "mode": "\u0026\u0026",
+              "conditions": [
+                {
+                  "input": "ANNEE",
+                  "operator": "\u003d\u003d [number]",
+                  "col": "mois",
+                  "num": 2018.0
+                }
+              ]
+            }
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": 10000,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 2
+      },
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
@@ -201,7 +234,7 @@
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
       },
-      "maxDataBytes": 157286400
+      "maxDataBytes": -1
     }
   ]
 }
