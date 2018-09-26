@@ -167,11 +167,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 26,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537955394901
+    "lastModifiedOn": 1537955402299
   },
   "creationTag": {
     "versionNumber": 0,
@@ -181,7 +181,9 @@
     "lastModifiedOn": 1497455749665
   },
   "shortDesc": "The project *Bases de Production* was created by Tristam Gräbener on Jun 14th 2017",
-  "tags": [],
+  "tags": [
+    "cartav"
+  ],
   "checklists": {
     "checklists": [
       {
