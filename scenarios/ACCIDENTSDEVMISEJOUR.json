@@ -5,11 +5,11 @@
   "name": "update accidents DEV CARTAV",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538561832256
+    "lastModifiedOn": 1538561972113
   },
   "checklists": {
     "checklists": []
@@ -23,7 +23,42 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_1_true_d_es5_dev_accidents_d_es5dev_accidents_usagers_d_es5dev_accidents_vehicules",
+        "type": "build_flowitem",
+        "name": "Build dev",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "es5_dev_accidents",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5dev_accidents_usagers",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5dev_accidents_vehicules",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false
 }
