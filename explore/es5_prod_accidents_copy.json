@@ -152,6 +152,7 @@
             "column": "date",
             "columnType": "DATE",
             "dateFilterType": "RANGE",
+            "minValue": 1.366063726592E12,
             "isA": "filter",
             "excludedValues": {},
             "explicitExclude": false
@@ -216,7 +217,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAeElEQVRoge3QsQmAMBRF0WxhKe4ouJfYu5pVUCwEo9EknAspA/+8ELTXT8sa39+3fNIVuMkxjqgzELiF7oCbGOAJuMoBgBPB1eBzgYsdADgT+GqAbpyH+JoFvzUWMDAwMDAwMDAwMDBw0l9g4AKPBgYGBgaWJBXSBsWg9aOIussLAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAYElEQVRoge3PUQpAERRFUTMxTBPzb2om4NVDXdTa5YtOVkqaL5faRid6I6w/n125B74lYGBgYOBT4FUMMDAwMHBEwMDAwF9vZjdCeg28vQMMDAwMDAwMDAwMvLUjSTpRB0WML7VPB306AAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
