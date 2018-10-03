@@ -7,6 +7,7 @@
     "engineParams": {
       "maxThreads": 4,
       "tdchParams": {
+        "splitMode": "DEFAULT",
         "numberOfExecutors": 2
       },
       "sparkSQL": {
@@ -61,11 +62,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1521130364576
+    "lastModifiedOn": 1538552574915
   },
   "creationTag": {
     "versionNumber": 0,
