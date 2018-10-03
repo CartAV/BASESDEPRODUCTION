@@ -1,0 +1,24 @@
+{
+  "connection": "datalabmaster",
+  "name": "dupontlau\u0027s notebook on datalabmaster",
+  "cells": [],
+  "automationLocal": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1538556114266
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1538556114266
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
