@@ -1,22 +1,29 @@
 {
-  "enabled": true,
   "uiData": {
+    "mode": "\u0026\u0026",
     "conditions": [
       {
         "input": "Num_Acc",
         "col": "senc",
+        "string": "201700",
         "num": 0,
-        "string": "201600",
+        "operator": "contains"
+      },
+      {
+        "input": "Num_Acc",
+        "col": "senc",
+        "string": "201800",
+        "num": 0,
         "operator": "contains"
       }
-    ],
-    "mode": "\u0026\u0026"
+    ]
   },
   "$status": {
-    "message": "Filter expression is invalid",
+    "validated": true,
     "fullyTranslated": false,
-    "ok": false,
-    "validated": true
+    "message": "Filter expression is invalid",
+    "ok": false
   },
-  "distinct": false
+  "distinct": false,
+  "enabled": true
 }
