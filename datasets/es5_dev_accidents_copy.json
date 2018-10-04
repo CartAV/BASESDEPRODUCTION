@@ -1,0 +1,456 @@
+{
+  "type": "Vertica",
+  "managed": true,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1538645137206
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1538645137204
+  },
+  "tags": [],
+  "params": {
+    "connection": "datalabmaster",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "es5_dev_accidents_copy",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Num_Acc",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "mois",
+        "type": "bigint"
+      },
+      {
+        "name": "lum",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "agg",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "int",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "atm",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "col",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "adr",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "dep",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "date",
+        "type": "date"
+      },
+      {
+        "name": "date_formated",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "heures_minutes",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "ANNEE",
+        "type": "bigint"
+      },
+      {
+        "name": "SEMAINE",
+        "type": "bigint"
+      },
+      {
+        "name": "LIBELLE_JOUR",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "HEURE",
+        "type": "bigint"
+      },
+      {
+        "name": "LIBELLE_PLAGE_HORAIRE",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "original_city_code",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "original_name",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "current_city_code",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "current_name",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "nom_circonscription_police",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "latitude",
+        "type": "double"
+      },
+      {
+        "name": "geo_type",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "longitude",
+        "type": "double"
+      },
+      {
+        "name": "geo_score",
+        "type": "double"
+      },
+      {
+        "name": "geo_source",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "num_route_or_id",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "num_route_com_id",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "distance",
+        "type": "double"
+      },
+      {
+        "name": "geojson",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "catr",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "voie",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "v1",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "v2",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "circ",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "nbv",
+        "type": "bigint"
+      },
+      {
+        "name": "vosp",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "prof",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "pr",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "pr1",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "plan",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "lartpc",
+        "type": "bigint"
+      },
+      {
+        "name": "larrout",
+        "type": "bigint"
+      },
+      {
+        "name": "surf",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "infra",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "situ",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "env1",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "NOM_REG",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "voiture_nb",
+        "type": "bigint",
+        "meaning": "Text"
+      },
+      {
+        "name": "has_voiture",
+        "type": "boolean"
+      },
+      {
+        "name": "deuxrouesmotorises_nb",
+        "type": "bigint",
+        "meaning": "Text"
+      },
+      {
+        "name": "has_deuxrouesmotorises",
+        "type": "boolean"
+      },
+      {
+        "name": "velo_nb",
+        "type": "bigint",
+        "meaning": "Text"
+      },
+      {
+        "name": "has_velo",
+        "type": "boolean"
+      },
+      {
+        "name": "poidslourd_nb",
+        "type": "bigint",
+        "meaning": "Text"
+      },
+      {
+        "name": "has_poidslourd",
+        "type": "boolean"
+      },
+      {
+        "name": "vehiculeautre_nb",
+        "type": "bigint",
+        "meaning": "Text"
+      },
+      {
+        "name": "has_vehiculeautre",
+        "type": "boolean"
+      },
+      {
+        "name": "pietons_nb",
+        "type": "bigint",
+        "meaning": "Text"
+      },
+      {
+        "name": "has_pietons",
+        "type": "boolean"
+      },
+      {
+        "name": "indemne_nb",
+        "type": "bigint"
+      },
+      {
+        "name": "blesseleger_nb",
+        "type": "bigint"
+      },
+      {
+        "name": "hospitalise_nb",
+        "type": "bigint"
+      },
+      {
+        "name": "tue_nb",
+        "type": "bigint"
+      },
+      {
+        "name": "gravite_accident",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "geo_source_display",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "PR_display",
+        "type": "string",
+        "meaning": "Text",
+        "maxLength": 16200
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  }
+}
