@@ -46,29 +46,7 @@
   "charts": [
     {
       "copySelectionFromScript": true,
-      "engineType": "SQL",
-      "refreshableSelection": {
-        "selection": {
-          "useMemTable": false,
-          "filter": {
-            "distinct": false,
-            "enabled": false
-          },
-          "partitionSelectionMethod": "ALL",
-          "latestPartitionsN": 1,
-          "ordering": {
-            "enabled": false,
-            "rules": []
-          },
-          "samplingMethod": "FULL",
-          "maxRecords": -1,
-          "targetRatio": 0.02,
-          "withinFirstN": -1,
-          "maxReadUncompressedBytes": -1
-        },
-        "autoRefreshSample": false,
-        "_refreshTrigger": 1
-      },
+      "engineType": "LINO",
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
@@ -242,7 +220,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAyElEQVRoge3WsQ2CQBiG4VvAFqrDTSidwT24HIWFqxhjYmFi9VNgolTGCVzAii20wpCDGBRFAu9TXb7qf6lQCgAAAADGbBpL9u8bOkXw0BE8dAT/wv6S9+ar9iq4iw/zlWBtZF68i6N1lITu5pvUc7eyum13zg+tDyx5OziwcnI3bWVRvAcd/IwjmGCC2wSvjrdZo1tjEXf7KPi+nGTlA7WVRWWLktDdfJN67qaUUq+2umCzva4b3Trk4MDKprIRPMJ/aQAA0D8Pn9hIOU1AT40AAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABB0lEQVRoge2VMQ6CQBBFtzeewKAHgMQ72HgPr6CRyugBbK1saOgIMUJjwxYkcAVPQLgFtmSzMrCw4pL/uiF/hv9CAWMA9GLpRq+xOwyGTMbax9v6vHJj/rtGmpHJQBjCBqMqHOYlpzJ/CYQZY5fg/aAyxggvDs9NfdYpLGZktMn0QizWVlgspks4yModtdMJmbD4Ul3CYVZGZGboLz55YaoYhJk+YT8tEipjrLBsRxRuc9c6xjeZ11dMF+78f4cwhCEMYQgr3oUwhCEMYRJV4eo8502ZMC+5mKF2/LRIqtNsTd1t6kuiUkyrcIu79Vm8O0nhprtGYnv2XXzmeM51jC4AAAAA6MYHmhWQZMC9IWEAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
