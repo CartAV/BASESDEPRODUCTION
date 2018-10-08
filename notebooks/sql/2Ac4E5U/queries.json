@@ -381,10 +381,10 @@
         "mode": "SQL",
         "id": "NFXivTl5vuGA",
         "runOn": 1538994224755,
-        "runIn": 30,
+        "runIn": 66,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "ECMCLiBH",
         "hash": "4a069ab6e373788140b6a1f0e132ee20",
         "querySettings": {
