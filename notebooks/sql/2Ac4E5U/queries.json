@@ -93,10 +93,10 @@
         "mode": "SQL",
         "id": "LggeNRfrL8ii",
         "runOn": 1538993903758,
-        "runIn": 38,
+        "runIn": 96,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "frtTpFE2",
         "hash": "133fd1a921eff1694358f0a545b89f3f",
         "querySettings": {
