@@ -253,7 +253,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA9klEQVRoge3PPw6CMByG4V6AW2B0IM5OHsJLcARZDIPRgRmR0cRTKJKuri4OJuohPECdWIpt6R8sw/euzQ++hxDkLpYG1MettwD+061VrEqkP5a9szSg0SESvytuuy10nE+w7La3WJXQ8p1JR4veXYDLZzbSW2xZ32DVbfHaTPVXW9SMuoXhLI/rteidlUVreDP6Pp78Rg0Z/EmWJ4BJd3AeX9rvHW6vi3nN9ruVO5EigAXvABN34Mf2eHYnUjR0sOjbxgFsMBpgjVuAuQC2DWCD0QBr3ALMBbBtABuMBljjFmAugG0D2GA0wBq3AHM5ByOEEPLYF4/nN1tlZp4vAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABH0lEQVRoge2RMQrCMBhGMwrSMzgqWNEzuCoOgpO73kC61U1QxyIdxVUoTgq2kMUjiLj1KL+LoqRpDGmlVL63pn39XsoY0Idci5fRbQyCS+I2BsElcRtTZDCFzm++TafZIPWs4GA/Xub/fdVNkmtxe2unn3/5CxQ5Y5X72y4E50HWYNUoBAvueTyvmLqN+WXwYt8PVO7Orn02dRujG3w5XBPPfY5aj3qJ88W+H9zqDalfN9ibhJFOhzYUOvxWb3BvGnFx9CuYVquqKpj8TeJdxt7B3jTi62G3Jro7u/aZ/I38QooMvjdbRwSz/IJVbgRnBcHCKARLRiH4CYIFN4IlbgRnBcHCKARLRiH4CYIFN4IlbgRnBcHCqL8LBgAAUCAP+f771W+Wv8kAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -468,7 +468,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA7UlEQVRoge3QMQ6CMBiG4X91IOEGTWTlcE7ixsY5jIuJibB0Y8DERO6hC1yAtS4davIXBKGk8XvX8qV9IEIIERGJvTy7uiuvm8rVXdZEIp09wlvw1J/0V2CRyArgNQJ4wQ3AazQ32IbqA4e7Ihz7hskB/OMGYGMDsM4L8OXx2nBnXoBVGljR3JlIZHW9t1vue4CNjdfgLosK7nuAjQ3AukXAfQ+xgfO6Yc+GwLYNwDqA5whg4yEAGxuAySOwKg/sQ1QasGcAGxtvwPEx/rj0GzC36bKoGPuTbODT7VmOFw3kGsxtANYtAkYIIbRib80NjrSlNZmFAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABIklEQVRoge2UsQ7BQByHuwqSWi0SBkO9jRdhoZOaCJNJJJYOJkl1MenQhETfgggDL9D1LCSl19NWXfXy+9bLd/f/LtdKEvgvKt21nfYMXEGw6CBYdBAsOggWHQSLDvdgw7nOuR74BvfglXNN9UllIjjIiTM8gn9N0sHL/TkXZa/MBxu7WzXKXgj2ILdMOepsH+EVHOe75xrMGiTp4KA1BCcBgj2DxHEQHMJB8AMEJwFrENKXCkEO0Yo+LzPBxFKpwxOtaBNLbVIdgYN9a6xgd1AzyaZTpjq9fJvmpBLc0Bsvh4YJpjnuoGZGvSRWMM35ijDBs+PY9jmP4MlhVPc6z+DpaVgKct7PESKY5XjXnsHEUm1FV17+F4vthfoqAAAAZJU7+b4ILzUdg0AAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
