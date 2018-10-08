@@ -139,10 +139,10 @@
         "mode": "SQL",
         "id": "PeoxTIJo4xq6",
         "runOn": 1538993865865,
-        "runIn": 72,
+        "runIn": 333,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "HUkoTzor",
         "hash": "da7c663bf5f2dcd8c38678f1313ce989",
         "querySettings": {
