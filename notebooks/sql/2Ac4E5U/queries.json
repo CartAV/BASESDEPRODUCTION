@@ -88,6 +88,28 @@
         },
         "sql": "SELECT *\nFROM \"accidents_cluv_prepared_tableau\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027\n",
         "expandedSql": "SELECT *\nFROM \"accidents_cluv_prepared_tableau\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "LggeNRfrL8ii",
+        "runOn": 1538993903758,
+        "runIn": 38,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "frtTpFE2",
+        "hash": "133fd1a921eff1694358f0a545b89f3f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"accidents_cluv_prepared_tableau\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027\n",
+        "expandedSql": "SELECT *\nFROM \"accidents_cluv_prepared_tableau\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027\n"
       }
     ],
     "wfjxoswjwto": [
