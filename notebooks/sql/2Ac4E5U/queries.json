@@ -112,6 +112,28 @@
         },
         "sql": "SELECT lat, lon\nFROM \"es5_prod_accidents_test\"\nWHERE \"ANNEE\" \u003d 2018",
         "expandedSql": "SELECT lat, lon\nFROM \"es5_prod_accidents_test\"\nWHERE \"ANNEE\" \u003d 2018"
+      },
+      {
+        "mode": "SQL",
+        "id": "C6Uw9S3HcZgn",
+        "runOn": 1538993834921,
+        "runIn": 393,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "YBVMDKYI",
+        "hash": "85b5f840c907237b9fef7197707ccb3e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT latitude, longitude\nFROM \"es5_prod_accidents_test\"\nWHERE \"ANNEE\" \u003d 2018",
+        "expandedSql": "SELECT latitude, longitude\nFROM \"es5_prod_accidents_test\"\nWHERE \"ANNEE\" \u003d 2018"
       }
     ]
   }
