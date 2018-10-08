@@ -89,6 +89,30 @@
         "sql": "SELECT *\nFROM \"accidents_cluv_prepared_tableau\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027\n",
         "expandedSql": "SELECT *\nFROM \"accidents_cluv_prepared_tableau\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027\n"
       }
+    ],
+    "wfjxoswjwto": [
+      {
+        "mode": "SQL",
+        "id": "S6Sk1BNsPcgP",
+        "runOn": 1538993823643,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "jC7Ecmiw",
+        "hash": "40c572be9804b236fb242a50ccd8a32c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT lat, lon\nFROM \"es5_prod_accidents_test\"\nWHERE \"ANNEE\" \u003d 2018",
+        "expandedSql": "SELECT lat, lon\nFROM \"es5_prod_accidents_test\"\nWHERE \"ANNEE\" \u003d 2018"
+      }
     ]
   }
 }
