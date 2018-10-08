@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538984714417
+    "lastModifiedOn": 1538984751901
   },
   "creationTag": {
     "versionNumber": 0,
@@ -63,317 +63,58 @@
         "maxLength": 16200
       },
       {
-        "name": "mois",
-        "type": "bigint"
-      },
-      {
-        "name": "lum",
+        "name": "place",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "agg",
+        "name": "catu",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "int",
+        "name": "grav",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "atm",
+        "name": "sexe",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "col",
+        "name": "trajet",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "adr",
+        "name": "secu",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "dep",
+        "name": "locp",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "date",
-        "type": "date"
-      },
-      {
-        "name": "date_formated",
+        "name": "actp",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "heures_minutes",
+        "name": "etatp",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "ANNEE",
-        "type": "bigint"
-      },
-      {
-        "name": "SEMAINE",
-        "type": "bigint"
-      },
-      {
-        "name": "LIBELLE_JOUR",
+        "name": "an_nais",
         "type": "string",
         "maxLength": 16200
       },
       {
-        "name": "HEURE",
-        "type": "bigint"
-      },
-      {
-        "name": "LIBELLE_PLAGE_HORAIRE",
+        "name": "num_veh",
         "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "original_city_code",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "original_name",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "current_city_code",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "current_name",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "nom_circonscription_police",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "latitude",
-        "type": "double"
-      },
-      {
-        "name": "geo_type",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "longitude",
-        "type": "double"
-      },
-      {
-        "name": "geo_score",
-        "type": "double"
-      },
-      {
-        "name": "geo_source",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "num_route_or_id",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "num_route_com_id",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "distance",
-        "type": "double"
-      },
-      {
-        "name": "geojson",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "catr",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "voie",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "v1",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "v2",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "circ",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "nbv",
-        "type": "bigint"
-      },
-      {
-        "name": "vosp",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "prof",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "pr",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "pr1",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "plan",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "lartpc",
-        "type": "bigint"
-      },
-      {
-        "name": "larrout",
-        "type": "bigint"
-      },
-      {
-        "name": "surf",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "infra",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "situ",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "env1",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "NOM_REG",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "voiture_nb",
-        "type": "bigint",
-        "meaning": "Text"
-      },
-      {
-        "name": "has_voiture",
-        "type": "boolean"
-      },
-      {
-        "name": "deuxrouesmotorises_nb",
-        "type": "bigint",
-        "meaning": "Text"
-      },
-      {
-        "name": "has_deuxrouesmotorises",
-        "type": "boolean"
-      },
-      {
-        "name": "velo_nb",
-        "type": "bigint",
-        "meaning": "Text"
-      },
-      {
-        "name": "has_velo",
-        "type": "boolean"
-      },
-      {
-        "name": "poidslourd_nb",
-        "type": "bigint",
-        "meaning": "Text"
-      },
-      {
-        "name": "has_poidslourd",
-        "type": "boolean"
-      },
-      {
-        "name": "vehiculeautre_nb",
-        "type": "bigint",
-        "meaning": "Text"
-      },
-      {
-        "name": "has_vehiculeautre",
-        "type": "boolean"
-      },
-      {
-        "name": "pietons_nb",
-        "type": "bigint",
-        "meaning": "Text"
-      },
-      {
-        "name": "has_pietons",
-        "type": "boolean"
-      },
-      {
-        "name": "indemne_nb",
-        "type": "bigint"
-      },
-      {
-        "name": "blesseleger_nb",
-        "type": "bigint"
-      },
-      {
-        "name": "hospitalise_nb",
-        "type": "bigint"
-      },
-      {
-        "name": "tue_nb",
-        "type": "bigint"
-      },
-      {
-        "name": "gravite_accident",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "geo_source_display",
-        "type": "string",
-        "maxLength": 16200
-      },
-      {
-        "name": "PR_display",
-        "type": "string",
-        "meaning": "Text",
         "maxLength": 16200
       }
     ],
