@@ -376,6 +376,28 @@
         },
         "sql": "SELECT COUNT(*) -- latitude, longitude\nFROM \"es5_prod_accidents_test\"\nWHERE \"ANNEE\" \u003d 2018\nAND \"mois\" IN (1,2,3)\nAND latitude IS NOT NULL AND longitude IS NOT NULL",
         "expandedSql": "SELECT COUNT(*) -- latitude, longitude\nFROM \"es5_prod_accidents_test\"\nWHERE \"ANNEE\" \u003d 2018\nAND \"mois\" IN (1,2,3)\nAND latitude IS NOT NULL AND longitude IS NOT NULL"
+      },
+      {
+        "mode": "SQL",
+        "id": "NFXivTl5vuGA",
+        "runOn": 1538994224755,
+        "runIn": 30,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "ECMCLiBH",
+        "hash": "4a069ab6e373788140b6a1f0e132ee20",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) -- latitude, longitude\nFROM \"es5_prod_accidents_test\"\n--WHERE \"ANNEE\" \u003d 2018\n--AND \"mois\" IN (1,2,3)\n--AND latitude IS NOT NULL AND longitude IS NOT NULL",
+        "expandedSql": "SELECT COUNT(*) -- latitude, longitude\nFROM \"es5_prod_accidents_test\"\n--WHERE \"ANNEE\" \u003d 2018\n--AND \"mois\" IN (1,2,3)\n--AND latitude IS NOT NULL AND longitude IS NOT NULL"
       }
     ]
   }
