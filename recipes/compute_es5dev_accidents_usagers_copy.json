@@ -7,6 +7,7 @@
     "engineParams": {
       "maxThreads": 4,
       "tdchParams": {
+        "splitMode": "DEFAULT",
         "numberOfExecutors": 2
       },
       "sparkSQL": {
@@ -44,7 +45,7 @@
     "main": {
       "items": [
         {
-          "ref": "es5_prod_accidents_usagers",
+          "ref": "es5_dev_accidents",
           "deps": []
         }
       ]
@@ -61,11 +62,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1520587203887
+    "lastModifiedOn": 1538984720062
   },
   "creationTag": {
     "versionNumber": 0,
