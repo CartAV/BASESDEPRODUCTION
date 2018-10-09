@@ -640,6 +640,28 @@
         },
         "sql": "SELECT COUNT(*) c, \"geo_source\" -- latitude, longitude\nFROM \"es5_prod_accidents_copy\"\nWHERE \"ANNEE\" \u003d 2018\nAND \"mois\" IN (1,2,3)\nGROUP BY \"geo_source\"\nORDER BY c DESC\n--AND \"geo_type\" IS NOT NULL\nAND latitude IS NOT NULL AND longitude IS NOT NULL",
         "expandedSql": "SELECT COUNT(*) c, \"geo_source\" -- latitude, longitude\nFROM \"es5_prod_accidents_copy\"\nWHERE \"ANNEE\" \u003d 2018\nAND \"mois\" IN (1,2,3)\nGROUP BY \"geo_source\"\nORDER BY c DESC\n--AND \"geo_type\" IS NOT NULL\nAND latitude IS NOT NULL AND longitude IS NOT NULL"
+      },
+      {
+        "mode": "SQL",
+        "id": "FoLuujzaJfx1",
+        "runOn": 1539075864163,
+        "runIn": 20,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "tePHXmwk",
+        "hash": "9ed25da14db169c9c9acacd9678509fd",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) c, \"geo_source\" -- latitude, longitude\nFROM \"es5_prod_accidents_copy\"\nWHERE \"ANNEE\" \u003d 2018\nAND \"mois\" IN (1,2,3)\nAND latitude IS NOT NULL AND longitude IS NOT NULL\nGROUP BY \"geo_source\"\nORDER BY c DESC\n--AND \"geo_type\" IS NOT NULL\n",
+        "expandedSql": "SELECT COUNT(*) c, \"geo_source\" -- latitude, longitude\nFROM \"es5_prod_accidents_copy\"\nWHERE \"ANNEE\" \u003d 2018\nAND \"mois\" IN (1,2,3)\nAND latitude IS NOT NULL AND longitude IS NOT NULL\nGROUP BY \"geo_source\"\nORDER BY c DESC\n--AND \"geo_type\" IS NOT NULL\n"
       }
     ]
   }
