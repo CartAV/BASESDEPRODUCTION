@@ -623,10 +623,10 @@
         "mode": "SQL",
         "id": "rhmCev2CTrni",
         "runOn": 1539075853792,
-        "runIn": 94,
+        "runIn": 20,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "LA748aKX",
         "hash": "c68d77739d5e5f6c7c3292ef587c369e",
         "querySettings": {
