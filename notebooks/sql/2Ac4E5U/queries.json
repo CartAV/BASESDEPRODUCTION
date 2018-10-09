@@ -447,10 +447,10 @@
         "mode": "SQL",
         "id": "4eXU5aezRAmV",
         "runOn": 1539075547843,
-        "runIn": 48,
+        "runIn": 60,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "B2N54osN",
         "hash": "4574b40d685b5f6824a1e3480274004d",
         "querySettings": {
