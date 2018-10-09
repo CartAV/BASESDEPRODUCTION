@@ -513,10 +513,10 @@
         "mode": "SQL",
         "id": "Pokpixz3QCLs",
         "runOn": 1539075762423,
-        "runIn": 32,
+        "runIn": 27,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "u63MRn4W",
         "hash": "8eee4352141d538f4d301597c156e5bd",
         "querySettings": {
