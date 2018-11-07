@@ -31,6 +31,7 @@
     {
       "id": "xcbxvdmp54j",
       "type": "QUERY",
+      "name": "Bug doublons",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -48,7 +49,7 @@
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1541598291338
+    "lastModifiedOn": 1541598296427
   },
   "creationTag": {
     "versionNumber": 0,
