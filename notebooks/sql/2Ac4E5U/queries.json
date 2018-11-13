@@ -823,10 +823,10 @@
         "mode": "SQL",
         "id": "dK21EkMqWall",
         "runOn": 1542114345331,
-        "runIn": 47,
+        "runIn": 113,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "kAjwq2xu",
         "hash": "9b9bd1269f0b6108c1309610fb77f739",
         "querySettings": {
