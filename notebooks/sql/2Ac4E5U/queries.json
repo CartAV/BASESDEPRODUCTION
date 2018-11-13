@@ -840,6 +840,28 @@
         },
         "sql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"num_route_or_id\" \u003d \u002715913\u0027\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
         "expandedSql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"num_route_or_id\" \u003d \u002715913\u0027\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "dlxG07N55AyD",
+        "runOn": 1542114363262,
+        "runIn": 113,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "tNU43ePA",
+        "hash": "7419a8090da18480f95e7199f8a11b6f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT \"Num_Acc\"\nFROM \"es5_prod_accidents_copy\"\nWHERE \"num_route_or_id\" \u003d \u002715913\u0027\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
+        "expandedSql": "SELECT DISTINCT \"Num_Acc\"\nFROM \"es5_prod_accidents_copy\"\nWHERE \"num_route_or_id\" \u003d \u002715913\u0027\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
       }
     ]
   }
