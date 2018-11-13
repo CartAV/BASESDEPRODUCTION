@@ -686,6 +686,28 @@
         },
         "sql": "SELECT *\nFROM \"accidents_cluv_prepared_tableau\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
         "expandedSql": "SELECT *\nFROM \"accidents_cluv_prepared_tableau\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "gAc38YF60Idz",
+        "runOn": 1542114098332,
+        "runIn": 3466,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "PJ7v2NZk",
+        "hash": "f10e61a5979e1f4ef07a74932a72df54",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
+        "expandedSql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
       }
     ]
   }
