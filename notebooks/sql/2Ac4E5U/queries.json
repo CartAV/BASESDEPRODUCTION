@@ -774,6 +774,28 @@
         },
         "sql": "SELECT *\n--FROM \"es5_prod_accidents_copy\"\nFROM \"es5_prod_accidents_vehicules_copy\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
         "expandedSql": "SELECT *\n--FROM \"es5_prod_accidents_copy\"\nFROM \"es5_prod_accidents_vehicules_copy\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "XGFlgqL3LK9I",
+        "runOn": 1542114315977,
+        "runIn": 238,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "bSDjyV9x",
+        "hash": "daa9987e78dc492e38d1a6420870f3b0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE num_route_or_id \u003d 15913\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
+        "expandedSql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE num_route_or_id \u003d 15913\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
       }
     ]
   }
