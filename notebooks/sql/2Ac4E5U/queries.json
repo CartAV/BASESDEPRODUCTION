@@ -730,6 +730,28 @@
         },
         "sql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
         "expandedSql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "51uGN7zmot11",
+        "runOn": 1542114241203,
+        "runIn": 66,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "ydNkfinj",
+        "hash": "8f7cf192701ee823ebcc3fabd7f8668f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\n--FROM \"es5_prod_accidents_copy\"\nFROM \"es5_prod_accidents_usagers_copy\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
+        "expandedSql": "SELECT *\n--FROM \"es5_prod_accidents_copy\"\nFROM \"es5_prod_accidents_usagers_copy\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
       }
     ]
   }
