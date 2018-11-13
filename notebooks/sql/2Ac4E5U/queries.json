@@ -801,10 +801,10 @@
         "mode": "SQL",
         "id": "m838fqleafep",
         "runOn": 1542114333666,
-        "runIn": 218,
+        "runIn": 47,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "acUwVI2T",
         "hash": "c09effee57197faec116667180769f32",
         "querySettings": {
