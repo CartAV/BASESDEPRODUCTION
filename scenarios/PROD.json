@@ -5,11 +5,11 @@
   "name": "PRA CartAV accidents+verbalisations full",
   "active": false,
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1528216294216
+    "lastModifiedOn": 1542274820592
   },
   "checklists": {
     "checklists": []
@@ -70,6 +70,12 @@
         "id": "build_0_true_d_es5_prod_pve_d_es5_prod_radars_d_es5_prod_accidents_d_es5_prod_accidents_usagers_d_es5_prod_accidents_usagers_d_es5_prod_communes_boundaries",
         "type": "build_flowitem",
         "name": "accidents",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "resetScenarioStatus": false,
         "params": {
           "builds": [
             {
@@ -102,6 +108,12 @@
         "id": "build_0_true_d_es5_prod_pve_d_es5_prod_radars",
         "type": "build_flowitem",
         "name": "pve",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "resetScenarioStatus": false,
         "params": {
           "builds": [
             {
