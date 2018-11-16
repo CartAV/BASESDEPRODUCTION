@@ -105,9 +105,9 @@
               }
             ],
             "sort": {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Count of records, descending"
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
             }
           }
         ],
@@ -202,7 +202,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAZElEQVRoge3PwQmAMAyG0S4ijtnF1GtXc4BCD2JMkPdBjoH/taa5vR9jddn7Xg8Y+Gc9AX/1ExIwcN5PSMDAdX+2fl7AwEXHAwMDAwNXHg8MDAwMXHk8MDAwMHDl8cBRYElSUjfwmG5jx0E7lgAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAYUlEQVRoge3PsQ2AMAxE0SyCGDOLAS2rsUGqGF/xvuTS0r0x1Nc5r3d13fu2BwwcPOSvn5KAgft+SgIGzv055v0AA4eOBwYGBgZOHg8MDAwMnDweGBgYGDh5PHAVWJLU1Ad6Em5jRo5uMgAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
