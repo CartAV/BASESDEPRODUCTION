@@ -72,7 +72,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by date",
+        "name": "Count by date and mois",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -114,7 +114,46 @@
             }
           }
         ],
-        "genericDimension1": [],
+        "genericDimension1": [
+          {
+            "column": "mois",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "TREAT_AS_ALPHANUM",
+              "nbBins": 5,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
@@ -146,18 +185,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [
-          {
-            "filterType": "DATE_FACET",
-            "column": "date",
-            "columnType": "DATE",
-            "dateFilterType": "RANGE",
-            "minValue": 1.366063726592E12,
-            "isA": "filter",
-            "excludedValues": {},
-            "explicitExclude": false
-          }
-        ],
+        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -217,12 +245,12 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAYElEQVRoge3PUQpAERRFUTMxTBPzb2om4NVDXdTa5YtOVkqaL5faRid6I6w/n125B74lYGBgYOBT4FUMMDAwMHBEwMDAwF9vZjdCeg28vQMMDAwMDAwMDAwMvLUjSTpRB0WML7VPB306AAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAr0lEQVRoge3PoQ3CUBhF4bcArIAEUQdboJmhIxSHJ6imIZUoZFOBgibXQLpAg8XWMENRGNIACvK/d84E53OO7LZZzPXvh58G2PcA+x5g3zMPLupWRd1+jQBsLcAfCgp8KZskKPC5bATYWoDfBNhigHvK4kpZXAmwxQD3BNhygF/q8q2CAV/HEwUBTu/pML+t5R14lBz0BHergZxzLtpFmu2nxyDA3WkpwIABExGRqR4n+MkbfaroywAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
       },
-      "maxDataBytes": 157286400
+      "maxDataBytes": -1
     }
   ]
 }
