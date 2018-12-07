@@ -5,13 +5,6 @@
       {
         "input": "Num_Acc",
         "col": "senc",
-        "string": "201700",
-        "num": 0,
-        "operator": "contains"
-      },
-      {
-        "input": "Num_Acc",
-        "col": "senc",
         "string": "201800",
         "num": 0,
         "operator": "contains"
