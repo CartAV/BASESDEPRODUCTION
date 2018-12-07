@@ -7,12 +7,6 @@
         "col": "mois",
         "num": 2018,
         "operator": "\u003d\u003d [number]"
-      },
-      {
-        "col": "mois",
-        "input": "ANNEE",
-        "num": 2017,
-        "operator": "\u003d\u003d [number]"
       }
     ]
   },
