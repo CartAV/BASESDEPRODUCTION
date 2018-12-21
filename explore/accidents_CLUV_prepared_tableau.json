@@ -253,7 +253,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABH0lEQVRoge2RMQrCMBhGMwrSMzgqWNEzuCoOgpO73kC61U1QxyIdxVUoTgq2kMUjiLj1KL+LoqRpDGmlVL63pn39XsoY0Idci5fRbQyCS+I2BsElcRtTZDCFzm++TafZIPWs4GA/Xub/fdVNkmtxe2unn3/5CxQ5Y5X72y4E50HWYNUoBAvueTyvmLqN+WXwYt8PVO7Orn02dRujG3w5XBPPfY5aj3qJ88W+H9zqDalfN9ibhJFOhzYUOvxWb3BvGnFx9CuYVquqKpj8TeJdxt7B3jTi62G3Jro7u/aZ/I38QooMvjdbRwSz/IJVbgRnBcHCKARLRiH4CYIFN4IlbgRnBcHCKARLRiH4CYIFN4IlbgRnBcHCqL8LBgAAUCAP+f771W+Wv8kAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABZUlEQVRoge2QMU8CMRiGSZyMMBkTQ3HlDCEm8hMcdeY3MDuol5jAYhjQOAiB2yTG6eJgYmQAzlsYGDFRFwYGF/9FXaiBXluTtkdE3ne65rnve/s0kUDshJaTvpJXUuGi7rKQQJjnEF7yQJjnhsK059p/MPp8sq09ayhMu+6Zksci/MtSFTcWNujWzkoKe5OaXKrnhjfj6paQlZN+rp2rSmf/o3C+nZfPVlLh3dflhkm3jGknbuHC/X7HpFvGtPNXhK+KR5E9sQpTrylczoQbpX70QlPhD2c3fKgNbyN8Kky9Zjh4fBMKsW6Z8LvjvIi6tTNfehiI+Gthr9Mo9SOXgjA/C2FVN4QhbCUQFnAIMwZhbhbCqm4IQ9hKICzgEGYMwtwshFXdEIawlayU8ObxE1FxP/hUc5+uzZ6D1vXP/6Ldg3o9zb53Trtpnqu6L4oHc2d6vk6yrSwZZTIk8EdkthtBkOXON2AKYTkFSBlMAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -468,7 +468,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABIklEQVRoge2UsQ7BQByHuwqSWi0SBkO9jRdhoZOaCJNJJJYOJkl1MenQhETfgggDL9D1LCSl19NWXfXy+9bLd/f/LtdKEvgvKt21nfYMXEGw6CBYdBAsOggWHQSLDvdgw7nOuR74BvfglXNN9UllIjjIiTM8gn9N0sHL/TkXZa/MBxu7WzXKXgj2ILdMOepsH+EVHOe75xrMGiTp4KA1BCcBgj2DxHEQHMJB8AMEJwFrENKXCkEO0Yo+LzPBxFKpwxOtaBNLbVIdgYN9a6xgd1AzyaZTpjq9fJvmpBLc0Bsvh4YJpjnuoGZGvSRWMM35ijDBs+PY9jmP4MlhVPc6z+DpaVgKct7PESKY5XjXnsHEUm1FV17+F4vthfoqAAAAZJU7+b4ILzUdg0AAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA/klEQVRoge2UMQ6CQBREuYBHQA8AFzDeC+xsqDyBdhZWJFLRqAUlx7DlFlgIZsX9yyo/yH7nlUyWmbcJeB6YFos4L369YVQgLB0ISwfC0hEpbJKCsAQgbJk5y2SEs7IapcxpYeqMH+UJdQbClhk7EB5wxo/yhMogbJmxM6bwN5fBimmECZHCphEQboAwQxcrELYcAeEGCDN0sdI3ot7MtFlWVtrMGeH6un4rbIV12d8KB/tgrj5vhetLfKK6qB1DPKxRhcNDWHSzPuHumacw8b7mMlLdDtNO6tP6GFvh3W37kqnCamYl/MiOui5qp/PCq3R5prq6G6n/BQAAiOEOSdc1wqCc6vgAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -646,7 +646,222 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAhUlEQVRoge3UOwqAMBBF0ezCUrJHwX2JvVuzCopFYJTJfLwXUgrvTGEpdDWv+9Ge9ZYh9cApj3FHPYGAMyQBpzjAF3DIAwB+CQ6D1wK7PQBgJXDvANOy1fakm8OAzX6WHkYDBgwYMGDAgAEDBuzg29+BxXiPowEDBgwYMGBHo1XBRERk3AnpFEss/LyxgwAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAi0lEQVRoge3SywmAMBBF0SnETwdWJ7ES97YgZG9rrgIhG5UkzAzeC4LgZs5DERKZt3ilZ1jPRfue7j2B8+8a9zWvBJdAwN77CnY/QC3Y3QCAK8HmB+gNNjcA4I7gKcQjvY8h7i1vdwFW+XsAAwYMGDBgwIABAwYM+HfgVwMABgwYMGDAgPXARERWuwH7rPC3raeH0AAAAABJRU5ErkJggg\u003d\u003d",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    },
+    {
+      "copySelectionFromScript": true,
+      "engineType": "SQL",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
+      "def": {
+        "type": "grouped_columns",
+        "variant": "normal",
+        "name": "Count by mois and geo_source",
+        "userEditedName": false,
+        "genericDimension0": [
+          {
+            "column": "mois",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "TREAT_AS_ALPHANUM",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": false,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "genericDimension1": [
+          {
+            "column": "geo_source",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            }
+          }
+        ],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
+          {
+            "function": "COUNT",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [
+          {
+            "filterType": "NUMERICAL_FACET",
+            "column": "ANNEE",
+            "columnType": "NUMERICAL",
+            "minValue": 2018.0,
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAhklEQVRoge3Tuw2AMAxF0SzADIxJyVL0jAYL8DOyY+fp3tIF9olEa6TRvGx79g1dA6weYPUAqwdYPcDqAVZPFnwHA6wS4Jf58MmCrTDAowX453yYwsHVXqgcOPqB0sBZ/wxg73sAey8I3gu41+Lo7z/Nj3X6flOPg7zmVzAJsAVmBhMRVewEdHfld1exSp4AAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
