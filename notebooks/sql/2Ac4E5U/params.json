@@ -41,19 +41,6 @@
         "statementsParseMode": "SPLIT",
         "statementsExecutionMode": "PREPARED"
       }
-    },
-    {
-      "id": "bwh74pddz2",
-      "type": "QUERY",
-      "querySettings": {
-        "addLimitToStatement": true,
-        "statementsOutOfTransaction": false,
-        "inheritConf": "default",
-        "extraConf": [],
-        "addDkuUdf": false,
-        "statementsParseMode": "SPLIT",
-        "statementsExecutionMode": "PREPARED"
-      }
     }
   ],
   "automationLocal": false,
@@ -62,7 +49,7 @@
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1546426118388
+    "lastModifiedOn": 1546426135583
   },
   "creationTag": {
     "versionNumber": 0,
