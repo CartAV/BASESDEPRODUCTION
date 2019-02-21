@@ -72,49 +72,9 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by date and mois",
+        "name": "Count by mois",
         "userEditedName": false,
         "genericDimension0": [
-          {
-            "column": "date",
-            "type": "DATE",
-            "numParams": {
-              "emptyBinsMode": "ZEROS"
-            },
-            "dateParams": {
-              "mode": "YEAR"
-            },
-            "maxValues": 0,
-            "generateOthersCategory": true,
-            "oneTickPerBin": true,
-            "filters": [],
-            "isA": "dimension",
-            "possibleSorts": [
-              {
-                "type": "NATURAL",
-                "label": "Natural ordering",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Count of records, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Count of records, ascending",
-                "sortAscending": true
-              }
-            ],
-            "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
-            }
-          }
-        ],
-        "genericDimension1": [
           {
             "column": "mois",
             "type": "NUMERICAL",
@@ -124,8 +84,8 @@
               "binSize": 100,
               "emptyBinsMode": "ZEROS"
             },
-            "maxValues": 100,
-            "generateOthersCategory": true,
+            "maxValues": 0,
+            "generateOthersCategory": false,
             "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
@@ -154,6 +114,7 @@
             }
           }
         ],
+        "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
@@ -185,7 +146,17 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "NUMERICAL_FACET",
+            "column": "ANNEE",
+            "columnType": "NUMERICAL",
+            "minValue": 2019.0,
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -245,7 +216,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABLElEQVRoge3UP6/BUBgG8JPc2W4RI0O/ifV2tfoG2CymxqakQsTAItFUWITkHfRes0Ssja3foobm+FMtghY9zzN16NO+v5NzDmPIY1ELC3r3DJEG4LhHaLBpbM7wo3+7Ff1EIcYZyj9igedlugdsdtR4bPsgsGYpxNgl2NGah3e/8uz7gVPFaVVIcE3OUWu+GzPmgp1KgoQAbzNZigqsr+xwF/Ed4Gs9Djbbav+Rb9/Mq8De2/0weKc+8P7zY8BST6JnwfyyOwU7lcQZ8LT3Z2xm/JkajeRXgVPFSTcIzHveHcXBmqXQR4P9j4Ig4GPPBdfkHOkrm9zebXC6NCXNUkjN/xqxBy/19UIYsNSTyA+8zWQJYIABBhhggAEGGGCAAQYYYIDDBCMIgkSVPU4Lh3BOWBGDAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAS0lEQVRoge3PMQ0AIAwAwRohuCzGOrBhDQ2dCMl98gIuQv3mqvPikbWBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBJem3Lhp6YDNcEZq0AAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
