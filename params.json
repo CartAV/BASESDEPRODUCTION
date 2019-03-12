@@ -100,7 +100,9 @@
       "executionEngine": "HIVECLI_LOCAL"
     },
     "sparkEngineCreationSettings": {
-      "useGlobal": true
+      "useGlobal": true,
+      "executionEngine": "SPARK_SUBMIT",
+      "useGlobalMetastore": false
     },
     "impalaEngineCreationSettings": {
       "useGlobal": true,
@@ -152,6 +154,10 @@
       "impala": {
         "active": true
       },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
       "python": {}
     },
     "displayedState": {
@@ -167,11 +173,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537955402299
+    "lastModifiedOn": 1552410955367
   },
   "creationTag": {
     "versionNumber": 0,
@@ -184,6 +190,7 @@
   "tags": [
     "cartav"
   ],
+  "customFields": {},
   "checklists": {
     "checklists": [
       {
