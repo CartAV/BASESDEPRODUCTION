@@ -12,7 +12,7 @@ import json
 from multiprocessing import Process, Queue
 
 es5_prod_accidents_copy = dataiku.Dataset("es5_prod_accidents_copy")
-input_schema = ids.read_schema()
+input_schema = es5_prod_accidents_copy.read_schema()
 es5_prod_accidents_copy_df = es5_prod_accidents_copy.get_dataframe()
 export_accidents = dataiku.Folder("szydloR5")
 export_path = export_accidents.get_path()
