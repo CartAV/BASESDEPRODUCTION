@@ -5,11 +5,11 @@
   "name": "PRA CartAV accidents+verbalisations full",
   "active": false,
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1552485541992
+    "lastModifiedOn": 1552485603807
   },
   "checklists": {
     "checklists": []
@@ -128,30 +128,6 @@
             }
           ],
           "jobType": "NON_RECURSIVE_FORCED_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
-      {
-        "id": "build_0_true_d_export_dummy",
-        "type": "build_flowitem",
-        "name": "Export to Swift",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "params": {
-          "builds": [
-            {
-              "type": "DATASET",
-              "itemId": "export_dummy",
-              "partitionsSpec": ""
-            }
-          ],
-          "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
