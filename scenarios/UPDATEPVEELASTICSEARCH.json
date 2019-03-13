@@ -6,11 +6,11 @@
   "active": true,
   "runAsUser": "antoinefa",
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1543400400901
+    "lastModifiedOn": 1552485879552
   },
   "checklists": {
     "checklists": []
@@ -113,6 +113,11 @@
               "type": "DATASET",
               "itemId": "cartav_pve_backup",
               "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_pve_copy",
+              "partitionsSpec": ""
             }
           ],
           "jobType": "NON_RECURSIVE_FORCED_BUILD",
@@ -154,5 +159,6 @@
       }
     ]
   },
-  "automationLocal": false
+  "automationLocal": false,
+  "customFields": {}
 }
