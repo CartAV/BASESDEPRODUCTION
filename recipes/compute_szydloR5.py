@@ -11,17 +11,19 @@ import csv
 import json
 from multiprocessing import Process, Queue
 
-es5_prod_accidents_copy = dataiku.Dataset("es5_prod_accidents_copy")
-input_schema = es5_prod_accidents_copy.read_schema()
-es5_prod_accidents_copy_df = es5_prod_accidents_copy.get_dataframe()
-export_accidents = dataiku.Folder("szydloR5")
-export_path = export_accidents.get_path()
+inputs = ["es5_prod_accidents_copy", "es5_prod_pve_copy"]
 
-of = os.path.join(export_path, 'prod_accidents_copy.csv.gz')
-es5_prod_accidents_copy_df.to_csv(of, mode='a', index=False, sep=',', compression='gzip', encoding='utf8', header=True)
-size = es5_prod_accidents_copy_df.shape[0]
-print 'Wrote {} rows to {}'.format(size, of)
-osc = os.path.join(export_path, 'prod_accidents_copy.json')
-with open(osc, 'w') as output_schema:
-    json.dump(input_schema, output_schema)
-print 'Wrote schema to {}'.format(size, osc)
+for input in inputs:
+    ids = dataiku.Dataset()
+    input_schema = ids.read_schema()
+    idf = ids.get_dataframe()
+    export_folder = dataiku.Folder("szydloR5")
+    export_path = export_folder.get_path()
+    of = os.path.join(export_path, input + '.csv.gz')
+    idf.to_csv(of, mode='a', index=False, sep=',', compression='gzip', encoding='utf8', header=True)
+    size = idf.shape[0]
+    print 'Wrote {} rows to {}'.format(size, of)
+    osc = os.path.join(export_path, input + '.json')
+    with open(osc, 'w') as output_schema:
+        json.dump(input_schema, output_schema)
+    print 'Wrote schema to {}'.format(size, osc)
