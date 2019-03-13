@@ -14,7 +14,7 @@ from multiprocessing import Process, Queue
 inputs = ["es5_prod_accidents_copy", "es5_prod_pve_copy"]
 
 for input in inputs:
-    ids = dataiku.Dataset()
+    ids = dataiku.Dataset(input)
     input_schema = ids.read_schema()
     idf = ids.get_dataframe()
     export_folder = dataiku.Folder("szydloR5")
