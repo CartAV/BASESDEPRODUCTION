@@ -5,11 +5,11 @@
   "name": "update accidents CARTAV",
   "active": false,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1539157913876
+    "lastModifiedOn": 1552485983973
   },
   "checklists": {
     "checklists": []
@@ -89,8 +89,33 @@
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
+      },
+      {
+        "id": "build_0_true_d_export_dummy",
+        "type": "build_flowitem",
+        "name": "Export to Swift",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "export_dummy",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
       }
     ]
   },
-  "automationLocal": false
+  "automationLocal": false,
+  "customFields": {}
 }
