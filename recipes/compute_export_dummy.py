@@ -8,14 +8,15 @@ from multiprocessing import Process, Queue, Pool, current_process
 
 date_update = dataiku.get_custom_variables()["date_update"]
 
-# Read recipe inputs
-export_folder = dataiku.Folder("szydloR5")
-export_folder_info = export_accidents.get_info()
+folder_id = "szydloR5"
+export_folder = dataiku.Folder(folder_id)
+# export_folder_info = export_folder.get_info()
+export_path = export_folder.get_path()
 
 inputs = ["es5_prod_accidents_copy", "es5_prod_pve_copy"]
 files = [i + ".json" for i in inputs] + [i + ".csv.gz" for i in inputs] 
 
-# paramètres openstack
+# OpenStack
 openstack_auth_url = "https://identity.api.pi.dsic.minint.fr/v3/auth/tokens"
 openstack_domain = "tech"
 swift_url = "https://object-store.api.pi.dsic.minint.fr/v1"
@@ -26,8 +27,6 @@ openstack_pass = "ahk4Xee8"
 swift_threads = 10
 swift_path = '{}/{}/{}/'.format(swift_url, swift_auth, swift_container)
 maxtries = 3
-
-# authent openstack
 data = { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": openstack_user, "domain": { "name": openstack_domain }, "password": openstack_pass } } } } }
 try:
     r = requests.post(openstack_auth_url, verify=False, json=data)
@@ -37,7 +36,7 @@ except:
     print "OpenStack auth failed :{}".format(r.content)
     exit
 
-# get list of files in openstack
+# List Swift files
 headers = { 'X-Auth-Token': token}
 try:
     r = requests.get(swift_path, verify=False, headers=headers)
@@ -53,8 +52,8 @@ def swift_send_file(src, dst, process_queue):
     failed = True
     while ((failed == True) & (tries <= maxtries)):
         try:
-            url = '{}/{}/{}'.format(swift_path, date_update, dst)
-            print 'sending {} to {}'.format(src, url)
+            url = '{}/{}'.format(swift_path, dst)
+            print 'Swift sending {} to {}'.format(src, url)
             with open(src) as f:
                 r = requests.put(url, data=f, verify=False, headers=headers)
             status_code = r.status_code
@@ -70,16 +69,13 @@ def swift_send_file(src, dst, process_queue):
 
 process_queue = Queue(swift_threads)
 for i, file in enumerate(files):
-    handle = dataiku.Folder(file[0])
-    path = handle.get_path()
     try:
-        print file[1]
-        input = os.path.join(path, [ x.replace('/','', 1) for x in handle.list_paths_in_partition() if file[1] in x][0])
+        input = os.path.join(path, [x.replace('/','', 1) for x in handle.list_paths_in_partition() if file in x][0])
     except:
-        print '{} not found in {}'.format(file[1], file[0])
+        print '{} not found'.format(file)
     try:
         process_queue.put(i)
-        thread = Process(target=swift_send_file, args=[input, file[1], process_queue])
+        thread = Process(target=swift_send_file, args=[input, file, process_queue])
         thread.start()
     except:
         print 'Failed while swifting {}'.format(input)
