@@ -5,11 +5,11 @@
   "name": "PRA CartAV accidents+verbalisations full",
   "active": false,
   "versionTag": {
-    "versionNumber": 32,
+    "versionNumber": 33,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1552485603807
+    "lastModifiedOn": 1552485705705
   },
   "checklists": {
     "checklists": []
@@ -128,6 +128,69 @@
             }
           ],
           "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_0_true_d_es5_prod_accidents_copy_d_es5_prod_accidents_usagers_copy_d_es5_prod_accidents_vehicules_copy_d_es5_prod_pve_copy",
+        "type": "build_flowitem",
+        "name": "backup (accidents + pve)",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_accidents_copy",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_accidents_usagers_copy",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_accidents_vehicules_copy",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_pve_copy",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_0_true_d_export_dummy",
+        "type": "build_flowitem",
+        "name": "Export to Swift",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "export_dummy",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
