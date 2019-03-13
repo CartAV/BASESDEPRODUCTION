@@ -21,7 +21,7 @@ of = os.path.join(export_path, 'prod_accidents_copy.csv.gz')
 es5_prod_accidents_copy_df.to_csv(of, mode='a', index=False, sep=',', compression='gzip', encoding='utf8', header=True)
 size = es5_prod_accidents_copy_df.shape[0]
 print 'Wrote {} rows to {}'.format(size, of)
-osc = os.path.join(path, 'prod_accidents_copy.json')
+osc = os.path.join(export_path, 'prod_accidents_copy.json')
 with open(osc, 'w') as output_schema:
     json.dump(input_schema, output_schema)
 print 'Wrote schema to {}'.format(size, osc)
