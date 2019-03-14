@@ -5,6 +5,7 @@ from dataiku import pandasutils as pdu
 import requests
 import os
 from multiprocessing import Process, Queue, Pool, current_process
+from time import time
 
 folder_id = "szydloR5"
 export_folder = dataiku.Folder(folder_id)
