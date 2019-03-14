@@ -62,7 +62,7 @@ def swift_send_file(src, dst, process_queue):
             failed=False
         else:
             tries += 1
-            if (tries <= maxtries):
+            if tries <= maxtries:
                 sleep(3 ** (tries-1))
     process_queue.get(i)
 
