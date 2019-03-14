@@ -69,6 +69,7 @@ process_queue = Queue(swift_threads)
 for i, file in enumerate(files):
     try:
         input = os.path.join(path, [x.replace('/','', 1) for x in handle.list_paths_in_partition() if file in x][0])
+        print 'Input file: {}'.format(input)
     except:
         print '{} not found'.format(file)
     try:
