@@ -34,8 +34,8 @@ try:
     r = requests.post(openstack_auth_url, verify=False, json=data)
     token = r.headers['X-Subject-Token']
     print "OpenStack auth successful"
-except:
-    print "OpenStack auth failed :{}".format(r.content)
+except Exception as e:
+    print "OpenStack auth failed :{}".format(e)
     exit
 
 # List Swift files
