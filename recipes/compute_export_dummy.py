@@ -31,7 +31,7 @@ swift_path = '{}/{}/{}'.format(swift_url, swift_auth, swift_container)
 maxtries = 3
 data = { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": openstack_user, "domain": { "name": openstack_domain }, "password": openstack_pass } } } } }
 try:
-    r = requests.post(openstack_auth_url, verify=False, json=data)
+    r = requests.post(openstack_auth_url, verify=False, json=data, proxies={})
     token = r.headers['X-Subject-Token']
     print "OpenStack auth successful"
 except Exception as e:
