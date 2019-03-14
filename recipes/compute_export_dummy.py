@@ -19,9 +19,9 @@ inputs = ["es5_prod_accidents_copy", "es5_prod_pve_copy"]
 files = [i + ".json" for i in inputs] + [i + ".csv.gz" for i in inputs] 
 
 # OpenStack
-openstack_auth_url = "https://localhost:7700/v3/auth/tokens" # "https://identity.api.pi.dsic.minint.fr/v3/auth/tokens"
+openstack_auth_url = "https://identity.api.pi.dsic.minint.fr/v3/auth/tokens" # "https://localhost:7700/v3/auth/tokens"
 openstack_domain = "tech"
-swift_url = "https://localhost:7701/v1" # "https://object-store.api.pi.dsic.minint.fr/v1"
+swift_url = "https://object-store.api.pi.dsic.minint.fr/v1" # "https://localhost:7701/v1"
 swift_auth = "AUTH_373b0504876743f09427f84e4fd8fe9d"
 swift_container = "cartav-dev"
 openstack_user = "dupontla"
