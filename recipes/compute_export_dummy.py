@@ -23,7 +23,7 @@ swift_container = "cartav-dev"
 openstack_user = "dupontla"
 openstack_pass = "*ahk4Xee8!"
 swift_threads = 10
-swift_path = '{}/{}/{}/'.format(swift_url, swift_auth, swift_container)
+swift_path = '{}/{}/{}'.format(swift_url, swift_auth, swift_container)
 maxtries = 3
 data = { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": openstack_user, "domain": { "name": openstack_domain }, "password": openstack_pass } } } } }
 try:
