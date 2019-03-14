@@ -8,7 +8,7 @@ from multiprocessing import Process, Queue, Pool, current_process
 
 folder_id = "szydloR5"
 export_folder = dataiku.Folder(folder_id)
-# export_folder_info = export_folder.get_info()
+export_folder_info = export_folder.get_info()
 export_path = export_folder.get_path()
 
 inputs = ["es5_prod_accidents_copy", "es5_prod_pve_copy"]
