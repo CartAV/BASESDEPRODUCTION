@@ -6,8 +6,6 @@ import requests
 import os
 from multiprocessing import Process, Queue, Pool, current_process
 
-date_update = dataiku.get_custom_variables()["date_update"]
-
 folder_id = "szydloR5"
 export_folder = dataiku.Folder(folder_id)
 # export_folder_info = export_folder.get_info()
