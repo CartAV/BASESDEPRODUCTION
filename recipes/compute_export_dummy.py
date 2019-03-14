@@ -5,7 +5,7 @@ from dataiku import pandasutils as pdu
 import requests
 import os
 from multiprocessing import Process, Queue, Pool, current_process
-from time import time
+from time import sleep
 
 folder_id = "szydloR5"
 export_folder = dataiku.Folder(folder_id)
@@ -63,7 +63,7 @@ def swift_send_file(src, dst, process_queue):
         else:
             tries += 1
             if (tries <= maxtries):
-                time.sleep(3 ** (tries-1))
+                sleep(3 ** (tries-1))
     process_queue.get(i)
 
 process_queue = Queue(swift_threads)
