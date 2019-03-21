@@ -15,8 +15,11 @@ export_folder = dataiku.Folder(folder_id)
 export_folder_info = export_folder.get_info()
 export_path = export_folder.get_path()
 
-inputs = ["es5_prod_accidents_copy", "es5_prod_pve_copy"]
-files = [i + ".json" for i in inputs] + [i + ".csv.gz" for i in inputs] 
+inputs = [["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accidents_usagers", 
+          "es5_prod_pve", 
+          "es5_prod_equipements_radar"
+         ]
+files = [i + ".json" for i in inputs] + [i + ".json.gz" for i in inputs] 
 
 # OpenStack
 openstack_auth_url = "https://identity.api.pi.dsic.minint.fr/v3/auth/tokens" # "https://localhost:7700/v3/auth/tokens"
