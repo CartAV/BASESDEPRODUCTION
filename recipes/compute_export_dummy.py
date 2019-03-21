@@ -10,7 +10,7 @@ from time import sleep
 import urllib3
 urllib3.disable_warnings()
 
-folder_id = "szydloR5"
+folder_id = "v30qzlxb"
 export_folder = dataiku.Folder(folder_id)
 export_folder_info = export_folder.get_info()
 export_path = export_folder.get_path()
