@@ -19,7 +19,7 @@ for input in inputs:
     ids = dataiku.Dataset(input)
     input_schema = ids.read_schema()
     idf = ids.get_dataframe()
-    export_folder = dataiku.Folder("szydloR5")
+    export_folder = dataiku.Folder("v30qzlxb")
     export_path = export_folder.get_path()
     of = os.path.join(export_path, input + '.json.gz')
     idf.to_json(of, mode='a', index=False, sep=',', compression='gzip', encoding='utf8', header=True)
