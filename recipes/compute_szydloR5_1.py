@@ -11,10 +11,11 @@ import csv
 import json
 from multiprocessing import Process, Queue
 
-for input in ["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accidents_usagers", 
+inputs = ["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accidents_usagers", 
           "es5_prod_pve", 
           "es5_prod_equipements_radar"
-         ]:
+         ]
+for input in inputs:
     ids = dataiku.Dataset(input)
     input_schema = ids.read_schema()
     idf = ids.get_dataframe()
