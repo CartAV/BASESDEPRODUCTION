@@ -22,7 +22,7 @@ for input in inputs:
     export_folder = dataiku.Folder("v30qzlxb")
     export_path = export_folder.get_path()
     of = os.path.join(export_path, input + '.json.gz')
-    idf.to_json(of, compression='gzip', encoding='utf8', header=True)
+    idf.to_json(of, compression='gzip', encoding='utf8')
     size = idf.shape[0]
     print 'Wrote {} rows to {}'.format(size, of)
     osc = os.path.join(export_path, input + '.json')
