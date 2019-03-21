@@ -26,6 +26,18 @@
         {
           "ref": "es5_prod_pve",
           "deps": []
+        },
+        {
+          "ref": "es5_prod_accidents_vehicules",
+          "deps": []
+        },
+        {
+          "ref": "es5_prod_radars",
+          "deps": []
+        },
+        {
+          "ref": "es5_prod_accidents_usagers",
+          "deps": []
         }
       ]
     }
@@ -41,11 +53,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1553178814660
+    "lastModifiedOn": 1553178887770
   },
   "creationTag": {
     "versionNumber": 0,
