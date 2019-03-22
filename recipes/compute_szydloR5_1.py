@@ -17,6 +17,7 @@ inputs = ["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accide
          ]
 for input in inputs:
     ids = dataiku.Dataset(input)
+    print 'Processing input {}'.format(input)
     input_schema = ids.read_schema()
     idf = ids.get_dataframe()
     export_folder = dataiku.Folder("v30qzlxb")
