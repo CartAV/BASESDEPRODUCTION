@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "dupontlau"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1538645137206
+    "lastModifiedOn": 1553519504524
   },
   "creationTag": {
     "versionNumber": 0,
@@ -48,7 +48,8 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "es5_dev_accidents_copy",
+    "table": "acc",
+    "schema": "acc",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
@@ -436,6 +437,10 @@
       "impala": {
         "active": true
       },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
       "python": {}
     },
     "displayedState": {
@@ -452,5 +457,6 @@
     "displayedState": {
       "checks": []
     }
-  }
+  },
+  "customFields": {}
 }
