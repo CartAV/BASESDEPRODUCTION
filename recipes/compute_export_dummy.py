@@ -19,7 +19,7 @@ inputs = ["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accide
           "es5_prod_pve", 
           "es5_prod_radars"
          ]
-files = [i + ".json" for i in inputs] + [i + ".json.gz" for i in inputs] 
+files = [i + ".json" for i in inputs] + [i + "_schema.json" for i in inputs] 
 
 # OpenStack
 openstack_auth_url = "https://identity.api.pi.dsic.minint.fr/v3/auth/tokens" # "https://localhost:7700/v3/auth/tokens"
