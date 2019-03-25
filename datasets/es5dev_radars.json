@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1553519821252
+    "lastModifiedOn": 1553519898677
   },
   "creationTag": {
     "versionNumber": 0,
@@ -47,7 +47,7 @@
   "params": {
     "connection": "es5-test",
     "notReadyIfEmpty": false,
-    "index": "es5dev_radars",
+    "index": "radars",
     "type": "radars",
     "frameSize": 10000,
     "partitioned": false
