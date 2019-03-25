@@ -7,6 +7,7 @@
     "engineParams": {
       "maxThreads": 4,
       "tdchParams": {
+        "splitMode": "DEFAULT",
         "numberOfExecutors": 2
       },
       "sparkSQL": {
@@ -19,6 +20,7 @@
         "readParams": {
           "map": {}
         },
+        "executionEngine": "SPARK_SUBMIT",
         "pipelineAllowMerge": true,
         "pipelineAllowStart": true
       },
@@ -61,11 +63,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1521477557866
+    "lastModifiedOn": 1553519860775
   },
   "creationTag": {
     "versionNumber": 0,
@@ -75,6 +77,7 @@
     "lastModifiedOn": 1499853087366
   },
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }
