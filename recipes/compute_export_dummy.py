@@ -15,9 +15,9 @@ export_folder = dataiku.Folder(folder_id)
 export_folder_info = export_folder.get_info()
 export_path = export_folder.get_path()
 
-inputs = [["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accidents_usagers", 
+inputs = ["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accidents_usagers", 
           "es5_prod_pve", 
-          "es5_prod_equipements_radar"
+          "es5_prod_radars"
          ]
 files = [i + ".json" for i in inputs] + [i + ".json.gz" for i in inputs] 
 
