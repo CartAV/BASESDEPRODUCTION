@@ -28,7 +28,7 @@ for input in inputs:
     idf.to_json(of)
     size = idf.shape[0]
     print 'Wrote {} rows to {}'.format(size, of)
-    osc = os.path.join(export_path, input + '.json')
+    osc = os.path.join(export_path, input + '_schema.json')
     with open(osc, 'w') as output_schema:
         json.dump(input_schema, output_schema)
     print 'Wrote schema to {}'.format(size, osc)
