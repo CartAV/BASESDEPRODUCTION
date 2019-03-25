@@ -13,16 +13,26 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1499853087355
+    "lastModifiedOn": 1553519821252
   },
   "creationTag": {
     "versionNumber": 0,
@@ -36,765 +46,516 @@
   ],
   "params": {
     "connection": "es5-test",
+    "notReadyIfEmpty": false,
     "index": "es5dev_radars",
-    "type": "es5dev_radars",
+    "type": "radars",
     "frameSize": 10000,
     "partitioned": false
   },
   "schema": {
-    "userModified": false,
     "columns": [
       {
         "name": "Equipement",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Type",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Titulaire",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Marché",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Lot",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Constructeur",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Phase",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Version XSD",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "double"
       },
       {
         "name": "Etat",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Etat Maintenance",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Etat fonctionnel",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Catégorie Miffeur",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Etat\nDécentralisation",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date\nDécentralisation",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Complétude",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Marque\ncinémomètre",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Modèle\ncinémomètre",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Référence\ncinémomètre",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date vérification télémètre laser",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "ET discriminant les voies",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date de création",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date modification",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date de mise en service",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date arrêt définitif",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date pose cabine",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Version MIF",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date infraction dernier MIF",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date réception dernier MIF",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Zone",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Organisme vérificateur",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date dernière vérification",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date d\u0027expiration de la dernière vérification",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Type de vérification",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Adresse",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Commune",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Code INSEE",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Code Postal",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "departement_num",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Département",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Environnement de la voie",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Gestionnaire voirie",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Nom société\ngestionnaire voirie",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Emplacement",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Nécessité balisage",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Option mât",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Num voies surveillées",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Sens détection",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Nature voie",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Libellé voie",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Sens circulation",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Repère kilométrique",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Condition prise de vue",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Nbr voies contrôlées",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Nbr de panneaux",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Id Agent",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Axe routier",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Texte arrêté",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "VLA",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Texte arrêté PL",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "VLA PL",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Catégories VLA",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Coordonnées GPS cabine - latitude",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "double"
       },
       {
         "name": "Coordonnées GPS cabine - longitude",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "double"
       },
       {
         "name": "Version logiciel",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Adresse IP",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Numéro usine",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date de vérification d\u0027installation",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Organisme vérificateur de l\u0027installation",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date de dépôt du \ncertificat d\u0027installation",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date exp. certif\nauthentification",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date exp. certif\nchiffrement",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Energie\nPoint de livraison",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Energie\nRéférence client",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Energie\nCoordonnées GPS Logette - latitude",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Energie\nCoordonnées GPS Logette - longitude",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Télécom\nNuméro Tel. ET",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Télécom\nRéférence contrat",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Télécom\nType réseau",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Télécom\nEtat ligne FT",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Télécom\nEtat ligne Réseau",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Télécom\nNuméro série routeur",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Télécom\nNom Routeur",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Télécom\nCoordonnées GPS Logette - latitude",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Télécom\nCoordonnées GPS Logette - longitude",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Type de cabine",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Numéro de série",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Catégorie",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Marque",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Modèle",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Version Xsd",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "double"
       },
       {
         "name": "Date arrêté",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Signataire arrêté",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Date dernière réfection LEF",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "N° habitation",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Nombre de voies",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Intersection",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Sens",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Pays",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Sas vélos",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Checksum",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Adresse IP ET",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Etape VABF2\nDate fin réalisation",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "ET double sens",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Sens détection visé",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Sens circulation inverse",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Lieu(ETVM)",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Distance(ETVM)",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "double"
       },
       {
         "name": "Repère kilométrique (PE)",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Nbr voies contrôlées (PE)",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Nature voie (PE)",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Adresse (PE)",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Commune (PE)",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Code INSEE (PE)",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Code Postal (PE)",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Numéro\ndépartement (PE)",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Département (PE)",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Repère kilométrique (PS)",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Nbr voies contrôlées (PS)",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Nature voie (PS)",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Adresse (PS)",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Commune (PS)",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "Code INSEE (PS)",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Code Postal (PS)",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Numéro\ndépartement (PS)",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "Département (PS)",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       }
-    ]
+    ],
+    "userModified": true
   },
   "metrics": {
     "probes": [
@@ -836,6 +597,10 @@
           },
           "partitionSelectionMethod": "ALL",
           "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
           "samplingMethod": "FULL",
           "maxRecords": -1,
           "targetRatio": 0.02,
@@ -848,6 +613,10 @@
       },
       "impala": {
         "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
       },
       "python": {}
     },
@@ -865,5 +634,6 @@
     "displayedState": {
       "checks": []
     }
-  }
+  },
+  "customFields": {}
 }
