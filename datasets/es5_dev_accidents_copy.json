@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1553519504524
+    "lastModifiedOn": 1553519536452
   },
   "creationTag": {
     "versionNumber": 0,
@@ -48,8 +48,8 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "acc",
-    "schema": "acc",
+    "table": "es5_dev_accidents_copy",
+    "schema": "",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
