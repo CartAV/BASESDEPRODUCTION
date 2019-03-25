@@ -33,6 +33,7 @@
         "readParams": {
           "map": {}
         },
+        "executionEngine": "SPARK_SUBMIT",
         "pipelineAllowMerge": true,
         "pipelineAllowStart": true
       },
@@ -75,11 +76,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
-      "login": "dupontlau"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1544179368111
+    "lastModifiedOn": 1553519642767
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,6 +90,7 @@
     "lastModifiedOn": 1521465225166
   },
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }
