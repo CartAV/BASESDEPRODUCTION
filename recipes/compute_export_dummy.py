@@ -64,6 +64,7 @@ def swift_send_file(src, dst, process_queue):
             status_code = r.status_code
         except requests.exceptions.ReadTimeout:
             status_code = "timeout"
+        print 'Status code: {}'.format(status_code)
         if status_code == 201:
             failed=False
         else:
