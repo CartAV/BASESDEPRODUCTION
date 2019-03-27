@@ -22,9 +22,9 @@ inputs = ["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accide
 files = [i + ".json" for i in inputs] + [i + "_schema.json" for i in inputs] 
 
 # OpenStack
-openstack_auth_url = "https://192.168.3.13:7700/v3/auth/tokens" # "https://identity.api.pi.dsic.minint.fr/v3/auth/tokens"
+openstack_auth_url = "https://identity.api.pi.dsic.minint.fr/v3/auth/tokens"
 openstack_domain = "tech"
-swift_url = "https://192.168.3.13:7701/v1" # "https://object-store.api.pi.dsic.minint.fr/v1"
+swift_url = "https://object-store.api.pi.dsic.minint.fr/v1"
 swift_auth = "AUTH_373b0504876743f09427f84e4fd8fe9d"
 swift_container = "cartav-dev"
 openstack_user = "dupontla"
@@ -36,8 +36,8 @@ data = { "auth": { "identity": { "methods": ["password"], "password": { "user": 
 try:
     r = requests.post(openstack_auth_url, verify=False, json=data)
     print 'Auth return: {}'.format(r)
-    token = r.headers['X-Subject-Token']
     print "OpenStack auth successful: token={}".format(token)
+    token = r.headers['X-Subject-Token']
 except Exception as e:
     print "OpenStack auth failed :{}".format(e)
     exit
