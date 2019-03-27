@@ -37,8 +37,8 @@ try:
     r = requests.post(openstack_auth_url, verify=False, json=data)
     print 'Auth response content: {}'.format(r.content)
     print 'Auth response headers: {}'.format(r.headers)
-    print "OpenStack auth successful: token={}".format(token)
     token = r.headers['X-Subject-Token']
+    print "OpenStack auth successful: token={}".format(token)
 except Exception as e:
     print "OpenStack auth failed :{}".format(e)
     exit
