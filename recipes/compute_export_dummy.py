@@ -36,7 +36,7 @@ data = { "auth": { "identity": { "methods": ["password"], "password": { "user": 
 try:
     r = requests.post(openstack_auth_url, verify=False, json=data)
     token = r.headers['X-Subject-Token']
-    print "OpenStack auth successful"
+    print "OpenStack auth successful: token={}".format(token)
 except Exception as e:
     print "OpenStack auth failed :{}".format(e)
     exit
