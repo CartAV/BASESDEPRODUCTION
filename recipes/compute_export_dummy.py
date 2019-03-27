@@ -35,6 +35,7 @@ maxtries = 3
 data = { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": openstack_user, "domain": { "name": openstack_domain }, "password": openstack_pass } } } } }
 try:
     r = requests.post(openstack_auth_url, verify=False, json=data)
+    print 'Auth return: {}'.format(r)
     token = r.headers['X-Subject-Token']
     print "OpenStack auth successful: token={}".format(token)
 except Exception as e:
