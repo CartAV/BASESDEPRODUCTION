@@ -60,7 +60,7 @@ def swift_send_file(src, dst, process_queue):
             url = '{}/{}'.format(swift_path, dst)
             print 'Swift sending {} to {}'.format(src, url)
             with open(src) as f:
-                r = requests.put(url, data=f, verify=False, headers=headers)
+                r = requests.put(url, data=f, verify=False, headers=headers, proxy=None)
             status_code = r.status_code
         except requests.exceptions.ReadTimeout:
             status_code = "timeout"
