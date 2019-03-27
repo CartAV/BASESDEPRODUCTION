@@ -59,7 +59,7 @@ def swift_send_file(src, dst, process_queue):
         try:
             url = '{}/{}'.format(swift_path, dst)
             print 'Swift sending {} to {}'.format(src, url)
-            with open(src, 'b') as f:
+            with open(src, 'rb') as f:
                 r = requests.put(url, data=f, verify=False, headers=headers)
             status_code = r.status_code
         except requests.exceptions.ReadTimeout:
