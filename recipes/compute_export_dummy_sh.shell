@@ -35,7 +35,7 @@ export OS_TOKEN=`curl -k --request POST --include --header "Content-Type: applic
 }
 ' "$OS_AUTH_URL/auth/tokens" | awk '/X-Subject-Token/ {print $2}'`
 
-export OS_OBJECT_FILE=/home/dataiku/dss/managed_folders/BASESDEPRODUCTION/v30qzlxb/es5_prod_radars_schema.json
+export OS_OBJECT_FILE=/etc/hosts
 export OS_CONTAINER_NAME=cartav-dev
 export OS_SWIFT_URL=https://object-store.api.pi.dsic.minint.fr/v1
 curl -k --request PUT --include --header "X-Auth-Token: $OS_TOKEN" --upload-file $OS_OBJECT_FILE "$OS_SWIFT_URL/AUTH_$OS_PROJECT_ID/$OS_CONTAINER_NAME/"
