@@ -1,0 +1,41 @@
+export OS_AUTH_URL=https://identity.api.pi.dsic.minint.fr/v3
+export OS_PROJECT_NAME=cartavdev-dev-f047-z1
+export OS_PROJECT_ID=373b0504876743f09427f84e4fd8fe9d
+export OS_DOMAIN_NAME=tech
+export OS_USERNAME=dupontla
+export OS_PASSWORD=*ahk4Xee8!
+
+# export OS_CACERT=/etc/ssl/certs/ca-certificates.crt
+# export OS_REGION_NAME=region1
+# export OS_INTERFACE=public
+# export OS_IDENTITY_API_VERSION=3
+
+export OS_TOKEN=`curl -k --request POST --include --header "Content-Type: application/json" --data '
+{
+  "auth": {
+    "identity": {
+      "methods": [
+        "password"
+      ],
+      "password": {
+        "user": {
+          "domain": { "name": "'$OS_DOMAIN_NAME'" },
+          "name": "'$OS_USERNAME'",
+          "password": "'$OS_PASSWORD'"
+        }
+      }
+    },
+    "scope": {
+      "project": {
+        "name": "'$OS_PROJECT_NAME'",
+        "domain": { "name": "'$OS_DOMAIN_NAME'" }
+      }
+    }
+  }
+}
+' "$OS_AUTH_URL/auth/tokens" | awk '/X-Subject-Token/ {print $2}'`
+
+export OS_OBJECT_FILE=/home/dataiku/dss/managed_folders/BASESDEPRODUCTION/v30qzlxb/es5_prod_radars_schema.json
+export OS_CONTAINER_NAME=cartav-dev
+export OS_SWIFT_URL=https://object-store.api.pi.dsic.minint.fr/v1
+curl -k --request PUT --include --header "X-Auth-Token: $OS_TOKEN" --upload-file $OS_OBJECT_FILE "$OS_SWIFT_URL/AUTH_$OS_PROJECT_ID/$OS_CONTAINER_NAME/"
