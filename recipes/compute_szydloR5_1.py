@@ -27,7 +27,8 @@ for input in inputs:
     of = os.path.join(export_path, input + '.json')
     c = 0
     for idx, doc in idf.iterrows():
-        of.print("{\"index": {\"_index\": \"" + input + "\"}}")
+        # of.print("{\"index": {\"_index\": \"" + input + "\"}}")
+        of.print("{\"index": {\"_index\": \"\"}}")
         of.print(doc.to_dict())
         c += 1
     idf.to_json(of)
