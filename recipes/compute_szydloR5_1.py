@@ -28,7 +28,7 @@ for input in inputs:
     c = 0
     for idx, doc in idf.iterrows():
         # of.print("{\"index": {\"_index\": \"" + input + "\"}}")
-        pass
+        of.print("")
         of.print(doc.to_dict())
         c += 1
     idf.to_json(of)
