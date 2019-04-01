@@ -28,7 +28,7 @@ for input in inputs:
     c = 0
     with open(of, 'w') as file:
         for idx, doc in idf.iterrows():
-            file.write("{\"index": {\"_index\": \"" + input + "\"}}\n")
+            file.write("")
             file.write(doc.to_dict() + "\n")
             c += 1
     idf.to_json(of)
