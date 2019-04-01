@@ -26,11 +26,11 @@ for input in inputs:
     # idf.to_json(of, compression='gzip')
     of = os.path.join(export_path, input + '.json')
     c = 0
-    for idx, doc in idf.iterrows():
-        # of.print("{\"index": {\"_index\": \"" + input + "\"}}")
-        print(of)
-        of.print(doc.to_dict())
-        c += 1
+    with open(of, 'w') as file:
+        for idx, doc in idf.iterrows():
+            file.print("{\"index": {\"_index\": \"" + input + "\"}}")
+            file.print(doc.to_dict())
+            c += 1
     idf.to_json(of)
     size = idf.shape[0]
     print 'Wrote {} rows out of {} to {}'.format(c, size, of)
