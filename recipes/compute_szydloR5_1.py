@@ -25,9 +25,14 @@ for input in inputs:
     # of = os.path.join(export_path, input + '.json.gz')
     # idf.to_json(of, compression='gzip')
     of = os.path.join(export_path, input + '.json')
+    c = 0
+    for idx, doc in idf.iterrows():
+        of.print('{"index": {"_index": "' + input + '"}}')
+        of.print(doc.to_dict())
+        c += 1
     idf.to_json(of)
     size = idf.shape[0]
-    print 'Wrote {} rows to {}'.format(size, of)
+    print 'Wrote {} rows out of {} to {}'.format(c, size, of)
     osc = os.path.join(export_path, input + '_schema.json')
     with open(osc, 'w') as output_schema:
         json.dump(input_schema, output_schema)
