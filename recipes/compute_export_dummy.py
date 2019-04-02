@@ -36,7 +36,7 @@ maxtries = 3
 data = { "auth": { 
     "scope": {
       "project": {
-        "name": project_name 
+        "name": project_name,
         "domain": { "name": openstack_domain }
       }
     },
