@@ -27,12 +27,20 @@ openstack_domain = "tech"
 swift_url = "https://object-store.api.pi.dsic.minint.fr/v1"
 swift_auth = "AUTH_373b0504876743f09427f84e4fd8fe9d"
 swift_container = "cartav-dev"
+project_name="cartavdev-dev-f047-z1"
 openstack_user = "dupontla"
 openstack_pass = "*ahk4Xee8!"
 swift_threads = 10
 swift_path = '{}/{}/{}'.format(swift_url, swift_auth, swift_container)
 maxtries = 3
-data = { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": openstack_user, "domain": { "name": openstack_domain }, "password": openstack_pass } } } } }
+data = { "auth": { 
+    "scope": {
+      "project": {
+        "name": project_name 
+        "domain": { "name": openstack_domain }
+      }
+    },
+    "identity": { "methods": ["password"], "password": { "user": { "name": openstack_user, "domain": { "name": openstack_domain }, "password": openstack_pass } } } } }
 try:
     r = requests.post(openstack_auth_url, verify=False, json=data)
     print 'Auth response content: {}'.format(r.content)
