@@ -21,16 +21,8 @@ for input in inputs:
     export_path = export_folder.get_path()
     # of = os.path.join(export_path, input + '.json.gz')
     # idf.to_json(of, compression='gzip')
-    of = os.path.join(export_path, input + '.json')
-    c = 0
-    with open(of, 'w') as file:
-        for row in idf.iterrows():
-            file.write("{\"index\": {\"_index\": \"" + input + "\"}}\n")
-            file.write(str(row[1].to_dict()) + "\n")
-            c += 1
-            if c >2:
-                break
-    idf.to_json(of)
+    of = os.path.join(export_path, input + '.json')    
+    idf.to_json(of, orient='records', lines=True)
     size = idf.shape[0]
     print 'Wrote {} rows out of {} to {}'.format(c, size, of)
     osc = os.path.join(export_path, input + '_schema.json')
