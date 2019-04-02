@@ -31,6 +31,8 @@ for input in inputs:
             file.write("{\"index\": {\"_index\": \"" + input + "\"}}\n")
             file.write(str(doc.to_dict()) + "\n")
             c += 1
+            if c >2:
+                break
     idf.to_json(of)
     size = idf.shape[0]
     print 'Wrote {} rows out of {} to {}'.format(c, size, of)
