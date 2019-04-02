@@ -11,7 +11,7 @@ import csv
 import json
 from multiprocessing import Process, Queue
 
-inputs = ["es5_prod_radars"] #["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accidents_usagers", "es5_prod_pve", "es5_prod_radars"]
+inputs = ["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accidents_usagers", "es5_prod_pve", "es5_prod_radars"]
 for input in inputs:
     ids = dataiku.Dataset(input)
     print 'Processing input {}'.format(input)
@@ -19,8 +19,6 @@ for input in inputs:
     idf = ids.get_dataframe()
     export_folder = dataiku.Folder("v30qzlxb")
     export_path = export_folder.get_path()
-    # of = os.path.join(export_path, input + '.json.gz')
-    # idf.to_json(of, compression='gzip')
     of = os.path.join(export_path, input + '.json')    
     idf.to_json(of, orient='records', lines=True)
     size = idf.shape[0]
