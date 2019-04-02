@@ -29,8 +29,7 @@ for input in inputs:
     with open(of, 'w') as file:
         for idx, doc in idf.iterrows():
             file.write("{\"index\": {\"_index\": \"" + input + "\"}}\n")
-            file.write(doc.to_dict())
-            file.write("\n")
+            file.write(str(doc.to_dict()) + "\n")
             c += 1
     idf.to_json(of)
     size = idf.shape[0]
