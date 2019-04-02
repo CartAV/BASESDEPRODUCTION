@@ -8,7 +8,7 @@ from multiprocessing import Process, Queue, Pool, current_process
 from time import sleep
 
 import urllib3
-urllib3.disable_warnings()
+#urllib3.disable_warnings()
 
 folder_id = "v30qzlxb"
 export_folder = dataiku.Folder(folder_id)
