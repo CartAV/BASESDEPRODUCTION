@@ -10,9 +10,7 @@ export OS_PASSWORD=*ahk4Xee8!
 # export OS_INTERFACE=public
 # export OS_IDENTITY_API_VERSION=3
 
-export OS_TOKEN=8cc59760ece8421b85bb07b8907530b9
-
 export OS_OBJECT_FILE=/etc/hosts
 export OS_CONTAINER_NAME=cartav-dev
 export OS_SWIFT_URL=https://object-store.api.pi.dsic.minint.fr/v1
-curl -k --request PUT --include --header "X-Auth-Token: $OS_TOKEN" --upload-file $OS_OBJECT_FILE "$OS_SWIFT_URL/AUTH_$OS_PROJECT_ID/$OS_CONTAINER_NAME/"
+curl -k --request PUT --include --header "X-Auth-Token: 8cc59760ece8421b85bb07b8907530b9" --upload-file $OS_OBJECT_FILE "$OS_SWIFT_URL/AUTH_$OS_PROJECT_ID/$OS_CONTAINER_NAME/"
