@@ -11,9 +11,9 @@ import csv
 import json, ndjson
 from multiprocessing import Process, Queue
 
-inputs = ["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accidents_usagers", 
-          "es5_prod_pve", 
-          "es5_prod_radars"
+inputs = #["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accidents_usagers", 
+          #"es5_prod_pve", 
+          ["es5_prod_radars"
          ]
 for input in inputs:
     ids = dataiku.Dataset(input)
@@ -27,9 +27,9 @@ for input in inputs:
     of = os.path.join(export_path, input + '.json')
     c = 0
     with open(of, 'w') as file:
-        for idx, doc in idf.iterrows():
+        for idx, row in idf.iterrows():
             file.write("{\"index\": {\"_index\": \"" + input + "\"}}\n")
-            file.write(str(doc.to_dict()) + "\n")
+            file.write(str(row[1].to_dict()) + "\n")
             c += 1
             if c >2:
                 break
