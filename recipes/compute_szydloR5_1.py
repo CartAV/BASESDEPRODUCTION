@@ -8,7 +8,7 @@ import hashlib
 import cStringIO
 import gzip
 import csv
-import json
+import json, ndjson
 from multiprocessing import Process, Queue
 
 inputs = ["es5_prod_accidents", "es5_prod_accidents_vehicules", "es5_prod_accidents_usagers", 
