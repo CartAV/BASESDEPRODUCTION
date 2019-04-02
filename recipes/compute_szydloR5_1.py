@@ -24,7 +24,7 @@ for input in inputs:
     of = os.path.join(export_path, input + '.json')
     c = 0
     with open(of, 'w') as file:
-        for idx, row in idf.iterrows():
+        for row in idf.iterrows():
             file.write("{\"index\": {\"_index\": \"" + input + "\"}}\n")
             file.write(str(row[1].to_dict()) + "\n")
             c += 1
