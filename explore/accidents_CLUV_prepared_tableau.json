@@ -188,7 +188,7 @@
             "filterType": "NUMERICAL_FACET",
             "column": "ANNEE",
             "columnType": "NUMERICAL",
-            "minValue": 2012.4074,
+            "minValue": 2019.0,
             "isA": "filter",
             "excludedValues": {},
             "explicitExclude": false
@@ -253,7 +253,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABG0lEQVRoge3UsQ7BUBgFYA/A5CE0aWcewmDiFTwACZOaRMTY0El0YBaJgTa5A48gRhbvcS3ucnvbav9q2uac9fjv8RlUKkg64ZOqFdqbNZbVd8kkAMs9wAUPwHJPBHN3nP4Pxs9DI/EtEcwvo01o/xdwxKNhPRlM2E6cvIPXz3kv7DOxw90xs1+LYFQEWHf0UWBfRrCxNYJ7s8as96xO2S4cuLVvnijbpQUvu23fOwJs9b30/rzEKLdXykcFWDUqwI+GxnbTq+Prv2Bur9jtcFeCxHYQ2Bt0jlbfU/aJ8svoo6Ex1SjA8i3A8bcBpgZgRQ+w6ACWbgGOvw0wNQAreoBFB7B0C3D8bYCpAVjRAyw6gKXbPIIRBEHylg9LS3gHoreYTgAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAqUlEQVRoge3SMQ6CQBBGYS7gNdBiT8JFLIy9nT0NDTGUnMBAZ6LJNJt4gQ0tLaU3gAJrCJG42eG9ZPv/m2wU0XT3dye+N/w1wNoDrD3A2tskuL/uxve8iCmNmNLoPQJgwMoC/AUXbSrN/iBNHCe+N67aHPhzPj364ib58SW2dpmtXeZ7808tAldObOXC/u6AAQMGHFSAAQMGHFSAAQMGHFSAASsDExH5bAD/7P/HBgyG4wAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -398,7 +398,17 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "NUMERICAL_FACET",
+            "column": "ANNEE",
+            "columnType": "NUMERICAL",
+            "minValue": 2019.0,
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -458,7 +468,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABQklEQVRoge3TsUrDQBzH8cPZPIFglm4J+DY+QJ/ALYJinWzt1kFahEKKFIdKCxpdSj1waF+g3dRu0reIQ/uP4eCOmGuTS/P7Tgf5c//7FMoYKn6D6c9Z3m/INID3vdzAYc3ieewFWCfbCxIjAM4ogHUCWNEuwcPZSno3wDoBrAjgTcfe8+nfObhP8469BKt2GQe2vYADvAngFLuMBz/NVi06XwwWXToDnHBXbuDwynqTzaUBxyFmgiX/0yzB4hzAOtlewMPxebSg9GD6VmiweDnAsTkZ+ONlNKJz6cHiHTKI6k3xb0aCaa4w4Pby9pGxNdj1XU5zIrizbHLG0oNVP64MPH+47GmDnZ4ziT+CIP8B0xyB7z7rlQh8zQ7oDtd33mVgYVe1UODOd+OEwO2vxkQGTrbrsF8u8M3R69bACCFkSr+w/TfeuYUOMAAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAfklEQVRoge3PqxGAMBREURqgBhpIf4mjFSpA4SKeTCvpIijiUHzezOaemfV7pwn3lnjYEg/z/vEbgtURrI5gdQSrI1gdweoIVncF76X2eX/6FMEEiyGYYDEEl2ptnfu8/72OYILFEEywGIJHD245WcvJwhb6vD8/MlwwAHg7AcE2nUgpC7KoAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -786,7 +796,7 @@
             "filterType": "NUMERICAL_FACET",
             "column": "ANNEE",
             "columnType": "NUMERICAL",
-            "minValue": 2018.0,
+            "minValue": 2019.0,
             "isA": "filter",
             "excludedValues": {},
             "explicitExclude": false
@@ -851,7 +861,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAyUlEQVRoge2PMQ6CQBBFuQAtFhaEG3gm72BIaLiPMSYmWG9s9Cp7C6gxGhaZPztj/qvfzv5XFOQzdTuE3BvWsmkzgx3AYLXHmWCw2mMAKXsYLP2BJn8VLBXDYOkRUjAY6GAeA/5yE7w/3Q8Sf7kJ1oxh8BoYDLzDYKCz6XHV3XYSd9wEe3RMjGAw0DExgsFAx8QIBgMdEyMYDHRMjMgSfH3FmVy3Qxj7Miw5KXfenfMjNhJ3Ls94XNr8Fc3gX52UPfBg6w4hhLhiAtxHilyJl3nRAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA3ElEQVRoge2PMQ6DMBAE+UBqSmqk43FUuMtXEA+IKOhcuMxX8gunipQiJGeLs5dot7+bmabh6q2btlDboegY/O/LCW7HdWjHdagqUZLVTVs41LGkBIMNWRASDDZkQUgw2JAFIcFgQxaEBIMNWRASpw++3R9Jt6+blDuT4FwJBgOxICQYbMiCkGCwIQtCAi44Xi+qp+8S2psjWFqOqUTJ4BQWhASDDVkQEgw2ZEFIMNiQpZaI3gVZpJdFeq1E9C5E737KfGJpbnJYSRIyS5BZdp/uSXy7Kc3iOI47xZ6sI0HgwyqGrQAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
