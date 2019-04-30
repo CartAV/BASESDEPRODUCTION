@@ -398,17 +398,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [
-          {
-            "filterType": "NUMERICAL_FACET",
-            "column": "ANNEE",
-            "columnType": "NUMERICAL",
-            "minValue": 2011.7548,
-            "isA": "filter",
-            "excludedValues": {},
-            "explicitExclude": false
-          }
-        ],
+        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -468,7 +458,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA/klEQVRoge2UMQ6CQBREuYBHQA8AFzDeC+xsqDyBdhZWJFLRqAUlx7DlFlgIZsX9yyo/yH7nlUyWmbcJeB6YFos4L369YVQgLB0ISwfC0hEpbJKCsAQgbJk5y2SEs7IapcxpYeqMH+UJdQbClhk7EB5wxo/yhMogbJmxM6bwN5fBimmECZHCphEQboAwQxcrELYcAeEGCDN0sdI3ot7MtFlWVtrMGeH6un4rbIV12d8KB/tgrj5vhetLfKK6qB1DPKxRhcNDWHSzPuHumacw8b7mMlLdDtNO6tP6GFvh3W37kqnCamYl/MiOui5qp/PCq3R5prq6G6n/BQAAiOEOSdc1wqCc6vgAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABQklEQVRoge3TsUrDQBzH8cPZPIFglm4J+DY+QJ/ALYJinWzt1kFahEKKFIdKCxpdSj1waF+g3dRu0reIQ/uP4eCOmGuTS/P7Tgf5c//7FMoYKn6D6c9Z3m/INID3vdzAYc3ieewFWCfbCxIjAM4ogHUCWNEuwcPZSno3wDoBrAjgTcfe8+nfObhP8469BKt2GQe2vYADvAngFLuMBz/NVi06XwwWXToDnHBXbuDwynqTzaUBxyFmgiX/0yzB4hzAOtlewMPxebSg9GD6VmiweDnAsTkZ+ONlNKJz6cHiHTKI6k3xb0aCaa4w4Pby9pGxNdj1XU5zIrizbHLG0oNVP64MPH+47GmDnZ4ziT+CIP8B0xyB7z7rlQh8zQ7oDtd33mVgYVe1UODOd+OEwO2vxkQGTrbrsF8u8M3R69bACCFkSr+w/TfeuYUOMAAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -646,7 +636,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAi0lEQVRoge3SywmAMBBF0SnETwdWJ7ES97YgZG9rrgIhG5UkzAzeC4LgZs5DERKZt3ilZ1jPRfue7j2B8+8a9zWvBJdAwN77CnY/QC3Y3QCAK8HmB+gNNjcA4I7gKcQjvY8h7i1vdwFW+XsAAwYMGDBgwIABAwYM+HfgVwMABgwYMGDAgPXARERWuwH7rPC3raeH0AAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAfUlEQVRoge3Tuw3AIAwAUSYJW4Yxsox7VkvlMiGQD7ZzJyFRuPCTICUios5ykTp7h09TcC5S9cze6dUAR0efgUPCr4BDwXvAIeC9YPd//C5Y78sq29GMqUbBbl8B4AfBJtGAAQMG3JoxFWDAgAG3ZkwFGDBg32AiIiKiX7QDWQbCILSfZTIAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
