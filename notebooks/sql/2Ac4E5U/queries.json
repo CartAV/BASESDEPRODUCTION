@@ -863,6 +863,30 @@
         "sql": "SELECT DISTINCT \"Num_Acc\"\nFROM \"es5_prod_accidents_copy\"\nWHERE \"num_route_or_id\" \u003d \u002715913\u0027\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
         "expandedSql": "SELECT DISTINCT \"Num_Acc\"\nFROM \"es5_prod_accidents_copy\"\nWHERE \"num_route_or_id\" \u003d \u002715913\u0027\n--WHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
       }
+    ],
+    "70lyz20wtx6": [
+      {
+        "mode": "SQL",
+        "id": "SCeKNPOY0izn",
+        "runOn": 1556810980005,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "wC2A6UN7",
+        "hash": "37c1c95101fac6cd49b68d7c32570556",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"geo_source\", COUNT(*)\nFROM \"accidents_cluv_prepared_tableau\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nGROUP BY \"geo_source\"",
+        "expandedSql": "SELECT \"geo_source\", COUNT(*)\nFROM \"accidents_cluv_prepared_tableau\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nGROUP BY \"geo_source\""
+      }
     ]
   }
 }
