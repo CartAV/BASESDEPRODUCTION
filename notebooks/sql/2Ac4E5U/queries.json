@@ -906,6 +906,28 @@
         },
         "sql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027",
         "expandedSql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "5K6Bs75PH6QR",
+        "runOn": 1557146236828,
+        "runIn": 103,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "yHk5AwBZ",
+        "hash": "a23f62fb73afe19543330567422a9ac3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800007\u0027",
+        "expandedSql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800007\u0027"
       }
     ],
     "70lyz20wtx6": [
