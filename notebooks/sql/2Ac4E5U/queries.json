@@ -972,6 +972,28 @@
         },
         "sql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"Num_Acc\" \u003d \u002720190118004101800006\u0027\n--WHERE \"Num_Acc\" \u003d \u002720190130004101800007\u0027\n",
         "expandedSql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"Num_Acc\" \u003d \u002720190118004101800006\u0027\n--WHERE \"Num_Acc\" \u003d \u002720190130004101800007\u0027\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "zR27VS5uIB96",
+        "runOn": 1557221125368,
+        "runIn": 99,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "OYqrddAA",
+        "hash": "3bd4502cf8446b0243f41b47e39ebe3e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"Num_Acc\" \u003d \u002720190118004101800006\u0027\nOR \"Num_Acc\" \u003d \u002720190130004101800007\u0027\n",
+        "expandedSql": "SELECT *\nFROM \"es5_prod_accidents_copy\"\nWHERE \"Num_Acc\" \u003d \u002720190118004101800006\u0027\nOR \"Num_Acc\" \u003d \u002720190130004101800007\u0027\n"
       }
     ],
     "70lyz20wtx6": [
