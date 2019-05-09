@@ -1438,6 +1438,28 @@
         },
         "sql": "SELECT DISTINCT \"COD_GENRE\"\nFROM \"es5_prod_pve_copy\"\n",
         "expandedSql": "SELECT DISTINCT \"COD_GENRE\"\nFROM \"es5_prod_pve_copy\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "Rs88VBVlsuYs",
+        "runOn": 1557409518633,
+        "runIn": 530,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Dz8jP6SG",
+        "hash": "fd8a6e02faf8b546f36975ea456350ce",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT \"LIBELLE_TYPE_VOIE_DEDUIT\"\nFROM \"es5_prod_pve_copy\"\n",
+        "expandedSql": "SELECT DISTINCT \"LIBELLE_TYPE_VOIE_DEDUIT\"\nFROM \"es5_prod_pve_copy\"\n"
       }
     ]
   }
