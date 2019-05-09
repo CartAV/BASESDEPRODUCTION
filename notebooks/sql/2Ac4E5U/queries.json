@@ -1394,6 +1394,28 @@
         },
         "sql": "SELECT DISTINCT \"LIBELLE_FAMILLE\"\nFROM \"es5_prod_pve_copy\"\n",
         "expandedSql": "SELECT DISTINCT \"LIBELLE_FAMILLE\"\nFROM \"es5_prod_pve_copy\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "8yHL05KIRbGi",
+        "runOn": 1557409323598,
+        "runIn": 1144,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "C3BWvpIf",
+        "hash": "553d94c71c442f425e7647980fdaa116",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT \"LIBELLE_CORPS\"\nFROM \"es5_prod_pve_copy\"\n",
+        "expandedSql": "SELECT DISTINCT \"LIBELLE_CORPS\"\nFROM \"es5_prod_pve_copy\"\n"
       }
     ]
   }
