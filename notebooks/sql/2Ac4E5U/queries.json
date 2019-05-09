@@ -1372,6 +1372,28 @@
         },
         "sql": "SELECT DISTINCT \"col\"\nFROM \"es5_prod_accidents_copy\"\n",
         "expandedSql": "SELECT DISTINCT \"col\"\nFROM \"es5_prod_accidents_copy\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "3DAracY1knS6",
+        "runOn": 1557409305641,
+        "runIn": 173,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "D6M9vSO4",
+        "hash": "ca6ec150d81e137279a38e8419eef0e4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT \"LIBELLE_FAMILLE\"\nFROM \"es5_prod_pve_copy\"\n",
+        "expandedSql": "SELECT DISTINCT \"LIBELLE_FAMILLE\"\nFROM \"es5_prod_pve_copy\"\n"
       }
     ]
   }
