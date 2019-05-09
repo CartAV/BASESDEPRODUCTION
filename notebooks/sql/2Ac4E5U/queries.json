@@ -1311,10 +1311,10 @@
         "mode": "SQL",
         "id": "Ku75o3iQdCEd",
         "runOn": 1557409153092,
-        "runIn": 133,
+        "runIn": 140,
         "runBy": "dupontlau",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "gAUht594",
         "hash": "fe887912e31b6079c15e7bf34d6dfa03",
         "querySettings": {
