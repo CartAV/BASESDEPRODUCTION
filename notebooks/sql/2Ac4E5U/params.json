@@ -43,6 +43,20 @@
       }
     },
     {
+      "id": "0.661346439077474",
+      "type": "QUERY",
+      "name": "Bug doublons",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    },
+    {
       "id": "70lyz20wtx6",
       "type": "QUERY",
       "querySettings": {
@@ -58,11 +72,11 @@
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1556810969865
+    "lastModifiedOn": 1557408531339
   },
   "creationTag": {
     "versionNumber": 0,
