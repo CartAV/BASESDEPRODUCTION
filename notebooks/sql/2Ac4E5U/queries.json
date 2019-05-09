@@ -1086,6 +1086,28 @@
         },
         "sql": "SELECT DISTINCT \"LIBELLE_PLAGE_HORAIRE\"\nFROM \"es5_prod_accidents_copy\"",
         "expandedSql": "SELECT DISTINCT \"LIBELLE_PLAGE_HORAIRE\"\nFROM \"es5_prod_accidents_copy\""
+      },
+      {
+        "mode": "SQL",
+        "id": "samyNiLVIqq1",
+        "runOn": 1557408619947,
+        "runIn": 165,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "N7OYhYRG",
+        "hash": "0794800c1bf87874db3e9bfba247e94e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT \"LIBELLE_FAMILLE\"\nFROM \"es5_prod_accidents_copy\"",
+        "expandedSql": "SELECT DISTINCT \"LIBELLE_FAMILLE\"\nFROM \"es5_prod_accidents_copy\""
       }
     ]
   }
