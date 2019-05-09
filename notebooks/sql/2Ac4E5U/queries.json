@@ -1262,6 +1262,28 @@
         },
         "sql": "SELECT COUNT(*) --DISTINCT \"catr\"\nFROM \"es5_prod_accidents_copy\"\nWHERE \"catr\" \u003d \u00277\u0027",
         "expandedSql": "SELECT COUNT(*) --DISTINCT \"catr\"\nFROM \"es5_prod_accidents_copy\"\nWHERE \"catr\" \u003d \u00277\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "QKSNPYiswEE5",
+        "runOn": 1557409062048,
+        "runIn": 84,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "eLgowOgX",
+        "hash": "1a2dfc209c5941f943d5f69b4fe15ed8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT \"lum\"\nFROM \"es5_prod_accidents_copy\"\n",
+        "expandedSql": "SELECT DISTINCT \"lum\"\nFROM \"es5_prod_accidents_copy\"\n"
       }
     ]
   }
