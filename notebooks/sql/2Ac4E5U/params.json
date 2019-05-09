@@ -45,7 +45,7 @@
     {
       "id": "0.661346439077474",
       "type": "QUERY",
-      "name": "Bug doublons",
+      "name": "Auto-discovery",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -72,11 +72,11 @@
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1557408531339
+    "lastModifiedOn": 1557408538564
   },
   "creationTag": {
     "versionNumber": 0,
