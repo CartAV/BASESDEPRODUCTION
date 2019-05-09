@@ -1196,6 +1196,28 @@
         },
         "sql": "SELECT DISTINCT \"has_vehiculeautre\"\nFROM \"es5_prod_accidents_copy\"",
         "expandedSql": "SELECT DISTINCT \"has_vehiculeautre\"\nFROM \"es5_prod_accidents_copy\""
+      },
+      {
+        "mode": "SQL",
+        "id": "X4ytFwMzAB2o",
+        "runOn": 1557408739546,
+        "runIn": 103,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "IVDcvtwt",
+        "hash": "f7b921333feff5b3f2eae4d1abad2a60",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT \"gravite_accident\"\nFROM \"es5_prod_accidents_copy\"",
+        "expandedSql": "SELECT DISTINCT \"gravite_accident\"\nFROM \"es5_prod_accidents_copy\""
       }
     ]
   }
