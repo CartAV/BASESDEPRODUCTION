@@ -1019,6 +1019,30 @@
         "sql": "SELECT \"geo_source\", COUNT(*)\nFROM \"accidents_cluv_prepared_tableau\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nGROUP BY \"geo_source\"",
         "expandedSql": "SELECT \"geo_source\", COUNT(*)\nFROM \"accidents_cluv_prepared_tableau\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nGROUP BY \"geo_source\""
       }
+    ],
+    "0.661346439077474": [
+      {
+        "mode": "SQL",
+        "id": "99Bx6MF6y9Ky",
+        "runOn": 1557408546394,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "bEKgmMRD",
+        "hash": "f7b921333feff5b3f2eae4d1abad2a60",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT \"gravite_accident\"\nFROM \"es5_prod_accidents_copy\"",
+        "expandedSql": "SELECT DISTINCT \"gravite_accident\"\nFROM \"es5_prod_accidents_copy\""
+      }
     ]
   }
 }
