@@ -1174,6 +1174,28 @@
         },
         "sql": "SELECT DISTINCT \"has_pietons\"\nFROM \"es5_prod_accidents_copy\"",
         "expandedSql": "SELECT DISTINCT \"has_pietons\"\nFROM \"es5_prod_accidents_copy\""
+      },
+      {
+        "mode": "SQL",
+        "id": "Gxde2Vp9m21m",
+        "runOn": 1557408728146,
+        "runIn": 135,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "AMqPZwlQ",
+        "hash": "1c81453589e0a461644fd15c16b4e816",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT \"has_vehiculeautre\"\nFROM \"es5_prod_accidents_copy\"",
+        "expandedSql": "SELECT DISTINCT \"has_vehiculeautre\"\nFROM \"es5_prod_accidents_copy\""
       }
     ]
   }
