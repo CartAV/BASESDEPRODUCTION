@@ -1284,6 +1284,28 @@
         },
         "sql": "SELECT DISTINCT \"lum\"\nFROM \"es5_prod_accidents_copy\"\n",
         "expandedSql": "SELECT DISTINCT \"lum\"\nFROM \"es5_prod_accidents_copy\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "EQAsIuZKrIof",
+        "runOn": 1557409143710,
+        "runIn": 237,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "6Ilvg5Qc",
+        "hash": "fa33759282e8e31a8245d7099d697ed5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT \"agg\"\nFROM \"es5_prod_accidents_copy\"\n",
+        "expandedSql": "SELECT DISTINCT \"agg\"\nFROM \"es5_prod_accidents_copy\"\n"
       }
     ]
   }
