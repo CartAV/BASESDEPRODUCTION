@@ -1130,6 +1130,28 @@
         },
         "sql": "SELECT DISTINCT \"has_voiture\"\nFROM \"es5_prod_accidents_copy\"",
         "expandedSql": "SELECT DISTINCT \"has_voiture\"\nFROM \"es5_prod_accidents_copy\""
+      },
+      {
+        "mode": "SQL",
+        "id": "Jj51F5qFJZkz",
+        "runOn": 1557408714631,
+        "runIn": 116,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "sCRloigN",
+        "hash": "c0ce81ea8576ac398bdf7e03f54a1173",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT \"has_deuxrouesmotorises\"\nFROM \"es5_prod_accidents_copy\"",
+        "expandedSql": "SELECT DISTINCT \"has_deuxrouesmotorises\"\nFROM \"es5_prod_accidents_copy\""
       }
     ]
   }
