@@ -1042,6 +1042,28 @@
         },
         "sql": "SELECT DISTINCT \"gravite_accident\"\nFROM \"es5_prod_accidents_copy\"",
         "expandedSql": "SELECT DISTINCT \"gravite_accident\"\nFROM \"es5_prod_accidents_copy\""
+      },
+      {
+        "mode": "SQL",
+        "id": "p7HMJda0sn46",
+        "runOn": 1557408583902,
+        "runIn": 130,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "HgMvVFJo",
+        "hash": "02874f4a791c35bd8b34f70fe60e98e1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT \"LIBELLE_JOUR\"\nFROM \"es5_prod_accidents_copy\"",
+        "expandedSql": "SELECT DISTINCT \"LIBELLE_JOUR\"\nFROM \"es5_prod_accidents_copy\""
       }
     ]
   }
