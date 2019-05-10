@@ -1504,6 +1504,28 @@
         },
         "sql": "SELECT DISTINCT gravite_accident\nFROM \"es5_prod_accidents_copy\"\n",
         "expandedSql": "SELECT DISTINCT gravite_accident\nFROM \"es5_prod_accidents_copy\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "liuTdAhEtxYl",
+        "runOn": 1557495050094,
+        "runIn": 199,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "113T4KN1",
+        "hash": "23337f606e0fa8c704f6146e4b16b566",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT catr\nFROM \"es5_prod_accidents_copy\"\n",
+        "expandedSql": "SELECT DISTINCT catr\nFROM \"es5_prod_accidents_copy\"\n"
       }
     ]
   }
