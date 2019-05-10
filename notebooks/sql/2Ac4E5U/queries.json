@@ -1482,6 +1482,28 @@
         },
         "sql": "SELECT DISTINCT \"LIBELLE_TYPE_VOIE_DEDUIT\"\nFROM \"es5_prod_pve_copy\"\n",
         "expandedSql": "SELECT DISTINCT \"LIBELLE_TYPE_VOIE_DEDUIT\"\nFROM \"es5_prod_pve_copy\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "PWfPreNhY4de",
+        "runOn": 1557495038677,
+        "runIn": 751,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "4hQ271mY",
+        "hash": "9de7fa9aa36133bbdf6ad0b81cab0755",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT gravite_accident\nFROM \"es5_prod_accidents_copy\"\n",
+        "expandedSql": "SELECT DISTINCT gravite_accident\nFROM \"es5_prod_accidents_copy\"\n"
       }
     ]
   }
