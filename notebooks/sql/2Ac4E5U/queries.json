@@ -1680,6 +1680,28 @@
         },
         "sql": "SELECT DISTINCT col\nFROM \"es5_prod_accidents_copy\"\n",
         "expandedSql": "SELECT DISTINCT col\nFROM \"es5_prod_accidents_copy\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "KEfr8r7tizOK",
+        "runOn": 1557926011285,
+        "runIn": 262,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "F4uCp9ei",
+        "hash": "d46767f764492bce0aac07d81be41e50",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT col, COUNT(*)\nFROM \"es5_prod_accidents_copy\"\nGROUP BY col",
+        "expandedSql": "SELECT col, COUNT(*)\nFROM \"es5_prod_accidents_copy\"\nGROUP BY col"
       }
     ]
   }
