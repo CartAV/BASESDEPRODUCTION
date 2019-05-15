@@ -1658,6 +1658,28 @@
         },
         "sql": "SELECT DISTINCT atm\nFROM \"es5_prod_accidents_copy\"\n",
         "expandedSql": "SELECT DISTINCT atm\nFROM \"es5_prod_accidents_copy\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "nnxd2GyDeNxd",
+        "runOn": 1557925986141,
+        "runIn": 302,
+        "runBy": "dupontlau",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "wVU2V09Y",
+        "hash": "60a1689e6f1442e3304102b12c8df3e2",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT col\nFROM \"es5_prod_accidents_copy\"\n",
+        "expandedSql": "SELECT DISTINCT col\nFROM \"es5_prod_accidents_copy\"\n"
       }
     ]
   }
