@@ -72,11 +72,11 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Avg. of geo_score by ANNEE and geo_type",
+        "name": "Avg. of geo_score by mois and geo_type",
         "userEditedName": false,
         "genericDimension0": [
           {
-            "column": "ANNEE",
+            "column": "mois",
             "type": "NUMERICAL",
             "numParams": {
               "mode": "TREAT_AS_ALPHANUM",
@@ -86,7 +86,7 @@
             },
             "maxValues": 100,
             "generateOthersCategory": true,
-            "oneTickPerBin": true,
+            "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
             "possibleSorts": [
@@ -253,7 +253,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAqUlEQVRoge3SMQ6CQBBGYS7gNdBiT8JFLIy9nT0NDTGUnMBAZ6LJNJt4gQ0tLaU3gAJrCJG42eG9ZPv/m2wU0XT3dye+N/w1wNoDrD3A2tskuL/uxve8iCmNmNLoPQJgwMoC/AUXbSrN/iBNHCe+N67aHPhzPj364ib58SW2dpmtXeZ7808tAldObOXC/u6AAQMGHFSAAQMGHFSAAQMGHFSAASsDExH5bAD/7P/HBgyG4wAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABAklEQVRoge3PsQqCUBgF4PsCPkeCDW3RczgHDUFjS0FN7s0iDkINjSWtlXAJAl8gXFt9i79JMLu37GZ6i3PW4/2PH2NIuYRxyj/pv7ndyCjANW43MgpwjduNjAJcCDmGcq8tmA7Tsaz/FEzHWfVo2k+6qqNhnPJga2+ktx2Dt1dt6XtyDG4trYHKtnIomvdk3X+C3c5a1gEs6AHO39YV7F8XwsPZ6LM+2NqbpGUK+wyctEzujqKHb8gx+PDU3zHG2Hl3uevz2+R71cEzsOjoq9E8WAYqAybf46/AxV4574BFP/XT4HdHAQYYYIABBhhggAEGGGCAAQYYYID1BCMIguiWG7/acbIlekNuAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
