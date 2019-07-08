@@ -5,11 +5,11 @@
   "name": "PRA CartAV accidents+verbalisations full",
   "active": false,
   "versionTag": {
-    "versionNumber": 33,
+    "versionNumber": 34,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1552485705705
+    "lastModifiedOn": 1562593239672
   },
   "checklists": {
     "checklists": []
@@ -66,6 +66,45 @@
   ],
   "params": {
     "steps": [
+      {
+        "id": "build_0_true_d_es5_prod_accidents_copy_d_es5_prod_accidents_usagers_copy_d_es5_prod_accidents_vehicules_copy_d_es5_prod_pve_copy",
+        "type": "build_flowitem",
+        "name": "backup (accidents + pve)",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_accidents_copy",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_accidents_usagers_copy",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_accidents_vehicules_copy",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "es5_prod_pve_copy",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
       {
         "id": "build_0_true_d_es5_prod_pve_d_es5_prod_radars_d_es5_prod_accidents_d_es5_prod_accidents_usagers_d_es5_prod_accidents_usagers_d_es5_prod_communes_boundaries",
         "type": "build_flowitem",
@@ -128,45 +167,6 @@
             }
           ],
           "jobType": "NON_RECURSIVE_FORCED_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
-      {
-        "id": "build_0_true_d_es5_prod_accidents_copy_d_es5_prod_accidents_usagers_copy_d_es5_prod_accidents_vehicules_copy_d_es5_prod_pve_copy",
-        "type": "build_flowitem",
-        "name": "backup (accidents + pve)",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "params": {
-          "builds": [
-            {
-              "type": "DATASET",
-              "itemId": "es5_prod_accidents_copy",
-              "partitionsSpec": ""
-            },
-            {
-              "type": "DATASET",
-              "itemId": "es5_prod_accidents_usagers_copy",
-              "partitionsSpec": ""
-            },
-            {
-              "type": "DATASET",
-              "itemId": "es5_prod_accidents_vehicules_copy",
-              "partitionsSpec": ""
-            },
-            {
-              "type": "DATASET",
-              "itemId": "es5_prod_pve_copy",
-              "partitionsSpec": ""
-            }
-          ],
-          "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
