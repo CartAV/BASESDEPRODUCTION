@@ -76,6 +76,41 @@
             "empty": true
           }
         }
+      },
+      {
+        "column": "DATE_JOUR_REEL_INFRACTION",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "DATE_JOUR_REEL_INFRACTION",
+          "columnType": "DATE",
+          "currentMode": "DATE",
+          "sort": "count",
+          "minValue": 1555557428743,
+          "selectedValues": {},
+          "dateFilterType": "MONTH_OF_YEAR"
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "DATE_JOUR_REEL_INFRACTION",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "DATE_JOUR_REEL_INFRACTION",
+          "params": {
+            "type": "Date",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
       }
     ],
     "previewMode": "ALL_ROWS"
