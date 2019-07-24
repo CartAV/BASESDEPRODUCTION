@@ -17,7 +17,7 @@ for input in inputs:
     print 'Processing input {}'.format(input)
     input_schema = ids.read_schema()
     idf = ids.get_dataframe()
-    idf = idf.iloc[-10000:]
+    # idf = idf.iloc[-10000:]
     export_folder = dataiku.Folder("v30qzlxb")
     export_path = export_folder.get_path()
     of = os.path.join(export_path, input + '.json')    
