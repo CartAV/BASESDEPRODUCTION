@@ -41,12 +41,12 @@ def process_chunk(arg):
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 datasets = {
-    "acc": "es5_prod_accidents",
-    "acc_vehicules": "es5_prod_accidents_vehicules",
-    "acc_usagers": "es5_prod_accidents_usagers",
+    "acc": "ACCIDENTS.accidents_CLUV_prepared",
+    "acc_vehicules": "ACCIDENTS_BRUT.vehicules_pg",
+    "acc_usagers": "ACCIDENTS_BRUT.usagers_postgis",
     "pve": "cartav_pve_backup",
-    "radars": "es5_prod_radars",
-    "communes": "es5_prod_communes_boundaries"
+    "radars": "RADARS.equipements_radars",
+    "communes": "DATAPREPOPENDATAGEO.communes_boundaries_geojson"
 }
 ## test values
 # datasets = { "pve" : "cartav_pve_backup"}
@@ -57,7 +57,7 @@ for output, input in datasets.items():
     ids = dataiku.Dataset(input)
     print 'Processing input {}'.format(input)
     input_schema = ids.read_schema()
-    ichunks = ids.iter_dataframes(chunksize = CHUNK_SIZE, infer_with_pandas=False, limit=MAX_INPUT_ROWS)
+    ichunks = ids.iter_dataframes(chunksize = CHUNK_SIZE, infer_with_pandas=True, limit=MAX_INPUT_ROWS)
     # process data chunks in parallel then write them sequentially
     pool = Pool(processes = NUM_THREADS)
     ochunks = pool.imap_unordered(process_chunk, enumerate(ichunks), chunksize=1)
