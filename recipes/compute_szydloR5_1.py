@@ -10,6 +10,7 @@ from cStringIO import StringIO
 import gzip
 import csv
 import json
+import shutil
 from multiprocessing import Process, Queue, Pool
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
@@ -69,21 +70,17 @@ for output, input in datasets.items():
 
     export_path = export_folder.get_path()
     size = 0
-    if COMPRESSED:
-        of = os.path.join(export_path, output + '.json.gz')
-        with gzip.open(of, "w") as ow:
-            for i, json_lines in ochunks:
-                print("chunk {} processed".format(chunk_row_range(i)))
-                ow.write(json_lines)
-                size += i * CHUNK_SIZE
-    else:
-        of = os.path.join(export_path, output + '.json')
-        with open(of, "w") as ow:
-            for i, json_lines in ochunks:
-                print("chunk {} processed".format(chunk_row_range(i)))
-                ow.write(json_lines)
-                size += i * CHUNK_SIZE
+    of = os.path.join(export_path, output + '.json')
+    with open(of, "w") as ow:
+        for i, json_lines in ochunks:
+            print("chunk {} processed".format(chunk_row_range(i)))
+            ow.write(json_lines)
+            size += i * CHUNK_SIZE              
     pool.close()  # Cannot be replaced with `with` in Python 2
+    if COMPRESSED:
+        with open(of, 'rb') as f_in:
+            with gzip.open(of + '.gz', 'wb') as f_out:
+                shutil.copyfileobj(f_in, f_out)
     print 'Wrote {} rows to {}'.format(size, of)
     osc = os.path.join(export_path, output + '_schema.json')
     with open(osc, 'w') as output_schema:
