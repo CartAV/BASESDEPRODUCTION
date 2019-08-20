@@ -16,7 +16,7 @@ from multiprocessing import Process, Queue, Pool
 CHUNK_SIZE = 20000         # size of each chunk
 MAX_INPUT_ROWS = None      # number of lines to process in the recipe, None if no limit
 NUM_THREADS = 1            # number of parallel threads
-
+COMPRESSED = False
 
 def chunk_row_range(chunk_index):
     """Return the index of the first and (maximum) last row of the chunk with the given index, in a string"""
@@ -68,13 +68,21 @@ for output, input in datasets.items():
     export_folder = dataiku.Folder("v30qzlxb")
 
     export_path = export_folder.get_path()
-    of = os.path.join(export_path, output + '.json.gz')
     size = 0
-    with gzip.open(of, "w") as ow:
-        for i, json_lines in ochunks:
-            print("chunk {} processed".format(chunk_row_range(i)))
-            ow.write(json_lines)
-            size += i * CHUNK_SIZE
+    if COMPRESSED:
+        of = os.path.join(export_path, output + '.json.gz')
+        with gzip.open(of, "w") as ow:
+            for i, json_lines in ochunks:
+                print("chunk {} processed".format(chunk_row_range(i)))
+                ow.write(json_lines)
+                size += i * CHUNK_SIZE
+    else:
+        of = os.path.join(export_path, output + '.json')
+        with open(of, "w") as ow:
+            for i, json_lines in ochunks:
+                print("chunk {} processed".format(chunk_row_range(i)))
+                ow.write(json_lines)
+                size += i * CHUNK_SIZE
     pool.close()  # Cannot be replaced with `with` in Python 2
     print 'Wrote {} rows to {}'.format(size, of)
     osc = os.path.join(export_path, output + '_schema.json')
