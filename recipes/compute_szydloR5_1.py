@@ -22,6 +22,11 @@ def chunk_row_range(chunk_index):
     """Return the index of the first and (maximum) last row of the chunk with the given index, in a string"""
     return "%d-%d" % (chunk_index * CHUNK_SIZE + 1, (chunk_index + 1) * CHUNK_SIZE)
 
+def gzip_file(src_path, dst_path):
+    with open(src_path, 'rb') as src, gzip.open(dst_path, 'wb') as dst:
+        for chunk in iter(lambda: src.read(65536), b""):
+            dst.write(chunk)
+
 def process_chunk(arg):
     """Encrypt the given chunk in-place and return it (for use with Pool.imap_unordered)"""
     i, df = arg
@@ -39,14 +44,17 @@ def process_chunk(arg):
     # Return i and df for writing to the output dataset
     return i, json_lines
 
+
+
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 datasets = {
-    "acc": "ACCIDENTS.accidents_CLUV_prepared",
+    "radars": "RADARS.equipements_radar",
+    "communes": "DATAPREPOPENDATAGEO.communes_boundaries_geojson",
     "acc_vehicules": "ACCIDENTS_BRUT.vehicules_pg",
     "acc_usagers": "ACCIDENTS_BRUT.usagers_postgis",
-    "pve": "cartav_pve_backup",
-    "radars": "RADARS.equipements_radars",
-    "communes": "DATAPREPOPENDATAGEO.communes_boundaries_geojson"
+    "acc": "ACCIDENTS.accidents_CLUV_prepared",
+    "pve": "cartav_pve_backup"
 }
 ## test values
 # datasets = { "pve" : "cartav_pve_backup"}
