@@ -8,6 +8,7 @@ import requests
 import hashlib
 from cStringIO import StringIO
 import gzip
+import os
 import csv
 import json
 import shutil
@@ -81,6 +82,7 @@ for output, input in datasets.items():
         with open(of, 'rb') as f_in:
             with gzip.open(of + '.gz', 'wb') as f_out:
                 shutil.copyfileobj(f_in, f_out)
+        os.remove(of)
     print 'Wrote {} rows to {}'.format(size, of)
     osc = os.path.join(export_path, output + '_schema.json')
     with open(osc, 'w') as output_schema:
