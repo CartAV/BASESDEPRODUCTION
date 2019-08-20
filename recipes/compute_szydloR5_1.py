@@ -79,10 +79,7 @@ for output, input in datasets.items():
             size += i * CHUNK_SIZE              
     pool.close()  # Cannot be replaced with `with` in Python 2
     if COMPRESS:
-        with open(of, 'rb') as f_in:
-            with gzip.open(of + '.gz', 'wb') as f_out:
-                shutil.copyfileobj(f_in, f_out)
-        os.remove(of)
+        os.system("gzip {}".format(of))
     print 'Wrote {} rows to {}'.format(size, of)
     osc = os.path.join(export_path, output + '_schema.json')
     with open(osc, 'w') as output_schema:
