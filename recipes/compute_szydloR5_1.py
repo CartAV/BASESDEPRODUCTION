@@ -6,7 +6,7 @@ from dataiku import pandasutils as pdu
 import os, re, time
 import requests
 import hashlib
-import cStringIO
+from cStringIO import StringIO
 import gzip
 import csv
 import json
@@ -40,9 +40,6 @@ def process_chunk(arg):
     # Return i and df for writing to the output dataset
     return i, json_lines
 
-
-
-
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 datasets = {
     "radars": "RADARS.equipements_radar",
@@ -53,8 +50,9 @@ datasets = {
     "pve": "cartav_pve_backup"
 }
 ## test values
-# datasets = { "pve" : "cartav_pve_backup"}
-# MAX_INPUT_ROWS = 30000
+datasets = { "pve" : "cartav_pve_backup"}
+MAX_INPUT_ROWS = 30000
+CHUNK_SIZE = 10000
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for output, input in datasets.items():
@@ -68,12 +66,12 @@ for output, input in datasets.items():
     export_folder = dataiku.Folder("v30qzlxb")
 
     export_path = export_folder.get_path()
-    of = os.path.join(export_path, output + '.json')
+    of = os.path.join(export_path, output + '.json.gz')
     size = 0
     with gzip.open(of, "w") as ow:
         for i, json_lines in ochunks:
             print("chunk {} processed".format(chunk_row_range(i)))
-            ow.writelines(json_lines)
+            ow.write(json_lines)
             size += i * CHUNK_SIZE
     pool.close()  # Cannot be replaced with `with` in Python 2
     print 'Wrote {} rows to {}'.format(size, of)
