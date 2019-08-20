@@ -22,10 +22,6 @@ def chunk_row_range(chunk_index):
     """Return the index of the first and (maximum) last row of the chunk with the given index, in a string"""
     return "%d-%d" % (chunk_index * CHUNK_SIZE + 1, (chunk_index + 1) * CHUNK_SIZE)
 
-def gzip_file(src_path, dst_path):
-    with open(src_path, 'rb') as src, gzip.open(dst_path, 'wb') as dst:
-        for chunk in iter(lambda: src.read(65536), b""):
-            dst.write(chunk)
 
 def process_chunk(arg):
     """Encrypt the given chunk in-place and return it (for use with Pool.imap_unordered)"""
@@ -74,10 +70,10 @@ for output, input in datasets.items():
     export_path = export_folder.get_path()
     of = os.path.join(export_path, output + '.json')
     size = 0
-    with open(of, "w") as ow:
+    with gzip.open(of, "w") as ow:
         for i, json_lines in ochunks:
             print("chunk {} processed".format(chunk_row_range(i)))
-            ow.write(json_lines)
+            ow.writelines(json_lines)
             size += i * CHUNK_SIZE
     pool.close()  # Cannot be replaced with `with` in Python 2
     print 'Wrote {} rows to {}'.format(size, of)
