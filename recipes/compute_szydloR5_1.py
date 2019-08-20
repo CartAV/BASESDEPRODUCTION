@@ -13,7 +13,7 @@ import json
 from multiprocessing import Process, Queue, Pool
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-CHUNK_SIZE = 100000         # size of each chunk
+CHUNK_SIZE = 10000         # size of each chunk
 MAX_INPUT_ROWS = None      # number of lines to process in the recipe, None if no limit
 NUM_THREADS = 1            # number of parallel threads
 
