@@ -18,7 +18,7 @@ from multiprocessing import Process, Queue, Pool
 CHUNK_SIZE = 20000         # size of each chunk
 MAX_INPUT_ROWS = None      # number of lines to process in the recipe, None if no limit
 NUM_THREADS = 1            # number of parallel threads
-COMPRESSED = False
+COMPRESS = True
 
 def chunk_row_range(chunk_index):
     """Return the index of the first and (maximum) last row of the chunk with the given index, in a string"""
@@ -78,7 +78,7 @@ for output, input in datasets.items():
             ow.write(json_lines)
             size += i * CHUNK_SIZE              
     pool.close()  # Cannot be replaced with `with` in Python 2
-    if COMPRESSED:
+    if COMPRESS:
         with open(of, 'rb') as f_in:
             with gzip.open(of + '.gz', 'wb') as f_out:
                 shutil.copyfileobj(f_in, f_out)
