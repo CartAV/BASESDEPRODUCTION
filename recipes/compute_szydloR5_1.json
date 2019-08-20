@@ -20,31 +20,27 @@
     "main": {
       "items": [
         {
-          "ref": "es5_prod_accidents",
-          "deps": []
-        },
-        {
-          "ref": "es5_prod_pve",
-          "deps": []
-        },
-        {
-          "ref": "es5_prod_accidents_vehicules",
-          "deps": []
-        },
-        {
-          "ref": "es5_prod_radars",
-          "deps": []
-        },
-        {
-          "ref": "es5_prod_accidents_usagers",
-          "deps": []
-        },
-        {
           "ref": "cartav_pve_backup",
           "deps": []
         },
         {
-          "ref": "es5_prod_communes_boundaries",
+          "ref": "ACCIDENTS_BRUT.usagers_postgis",
+          "deps": []
+        },
+        {
+          "ref": "ACCIDENTS.accidents_CLUV_prepared",
+          "deps": []
+        },
+        {
+          "ref": "ACCIDENTS_BRUT.vehicules_pg",
+          "deps": []
+        },
+        {
+          "ref": "DATAPREPOPENDATAGEO.communes_boundaries_geojson",
+          "deps": []
+        },
+        {
+          "ref": "RADARS.equipements_radar",
           "deps": []
         }
       ]
@@ -61,11 +57,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 49,
+    "versionNumber": 50,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1566335333283
+    "lastModifiedOn": 1566335889303
   },
   "creationTag": {
     "versionNumber": 0,
