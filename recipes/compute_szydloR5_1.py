@@ -50,9 +50,11 @@ datasets = {
     "pve": "cartav_pve_backup"
 }
 ## test values
-datasets = { "pve" : "cartav_pve_backup"}
-MAX_INPUT_ROWS = 30000
-CHUNK_SIZE = 10000
+test = False
+if test:
+    datasets = { "pve" : "cartav_pve_backup"}
+    MAX_INPUT_ROWS = 30000
+    CHUNK_SIZE = 10000
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for output, input in datasets.items():
