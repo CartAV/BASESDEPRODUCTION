@@ -84,7 +84,7 @@ for output, input in datasets.items():
         except:
             pass
         os.system("gzip {}".format(of))
-        os.system("md5sum {}.gz > {}.gz.md5".format(of))
+        #os.system("md5sum {}.gz > {}.gz.md5".format(of))
     else:
         os.system("md5sum {} > {}.md5".format(of))
     print 'Wrote {} rows to {}'.format(size, of)
