@@ -26,7 +26,7 @@ inputs = ["acc", "acc_vehicules", "acc_usagers",
           "pve",
           "communes", "radars"
          ]
-files = [i + ".json.gz" for i in inputs] + [i + "_schema.json" for i in inputs] + [i + "json.gz.md5" for i in inputs]
+files = [i + ".json.gz" for i in inputs] + [i + "_schema.json" for i in inputs] + [i + ".json.gz.md5" for i in inputs]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # OpenStack
