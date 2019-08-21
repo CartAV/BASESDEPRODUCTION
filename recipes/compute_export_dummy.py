@@ -118,3 +118,20 @@ for i, file in enumerate(files):
         thread.start()
     except:
         print 'Failed while swifting {}'.format(input)
+        
+      
+# final listing of swift dir for log check
+try:
+    r = requests.get(swift_path, verify=False, headers=headers)
+    if (r.status_code != 200 | r.status_code != 204):
+        print "Error {} while listing content: {}".format(r.status_code, r.content)
+    else:
+        remote_files=[f for f in r.content.split('\n') if 'json' in f]
+        if len(files) > 0:
+            print "Swift container {} successfully listed : \n{}".format(swift_container, remote_files)
+        else:
+            print "Swift container {} successfully listed : \nno json file found"
+
+except:
+    print "Swift request failed"        
+        
