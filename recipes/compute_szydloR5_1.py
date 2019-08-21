@@ -52,7 +52,7 @@ datasets = {
     "pve": "cartav_pve_backup"
 }
 ## test values
-test = True
+test = False
 if test:
     datasets = { "pve" : "cartav_pve_backup"}
     MAX_INPUT_ROWS = 30000
