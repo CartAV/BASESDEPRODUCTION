@@ -79,6 +79,10 @@ for output, input in datasets.items():
             size += i * CHUNK_SIZE              
     pool.close()  # Cannot be replaced with `with` in Python 2
     if COMPRESS:
+        try:
+            os.system("rm {}.gz".format(of))
+        except:
+            pass
         os.system("gzip {}".format(of))
         os.system("md5sum {}.gz > {}.gz.md5".format(of))
     else:
