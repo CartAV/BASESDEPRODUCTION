@@ -106,6 +106,7 @@ def swift_send_file(src, dst, process_queue):
 
 process_queue = Queue(swift_threads)
 for i, file in enumerate(files):
+    print file
     try:
         input = os.path.join(export_path, [x.replace('/','', 1) for x in export_folder.list_paths_in_partition() if file in x][0])
         print 'Input file: {}'.format(input)
