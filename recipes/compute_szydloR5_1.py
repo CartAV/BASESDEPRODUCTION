@@ -80,6 +80,9 @@ for output, input in datasets.items():
     pool.close()  # Cannot be replaced with `with` in Python 2
     if COMPRESS:
         os.system("gzip {}".format(of))
+        os.system("md5sum {}.gz > {}.gz.md5".format(of))
+    else:
+        os.system("md5sum {} > {}.md5".format(of))
     print 'Wrote {} rows to {}'.format(size, of)
     osc = os.path.join(export_path, output + '_schema.json')
     with open(osc, 'w') as output_schema:
