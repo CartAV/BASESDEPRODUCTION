@@ -72,7 +72,7 @@ try:
 except:
     print "Swift request failed"
 
-if CLEAR and len(files)>0:
+if CLEAR and len(remote_files)>0:
     data = "\n".join(swift_container + '/' + f for f in remote_files)
     headers = { 'X-Auth-Token': token, 'Content-Type': 'text/plain' }
     r = requests.post(swift_path + "?bulk-delete", data=data, verify=False, headers=headers)
