@@ -52,7 +52,7 @@ datasets = {
     "pve": "cartav_pve_backup"
 }
 ## test values
-test = False
+test = True
 if test:
     datasets = { "pve" : "cartav_pve_backup"}
     MAX_INPUT_ROWS = 30000
@@ -76,7 +76,7 @@ for output, input in datasets.items():
         for i, json_lines in ochunks:
             print("chunk {} processed".format(chunk_row_range(i)))
             ow.write(json_lines)
-            size += i * CHUNK_SIZE              
+            size += i * CHUNK_SIZE
     pool.close()  # Cannot be replaced with `with` in Python 2
     if COMPRESS:
         try:
@@ -84,9 +84,9 @@ for output, input in datasets.items():
         except:
             pass
         os.system("gzip {}".format(of))
-        #os.system("md5sum {}.gz > {}.gz.md5".format(of))
+        os.system("md5sum {}.gz > {}.gz.md5".format(of, of))
     else:
-        os.system("md5sum {} > {}.md5".format(of))
+        os.system("md5sum {} > {}.md5".format(of, of))
     print 'Wrote {} rows to {}'.format(size, of)
     osc = os.path.join(export_path, output + '_schema.json')
     with open(osc, 'w') as output_schema:
