@@ -1,3 +1,4 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
@@ -7,20 +8,23 @@ import os
 from multiprocessing import Process, Queue, Pool, current_process
 from time import sleep
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 import urllib3
 #urllib3.disable_warnings()
 
+CLEAR=True
 folder_id = "v30qzlxb"
 export_folder = dataiku.Folder(folder_id)
 export_folder_info = export_folder.get_info()
 export_path = export_folder.get_path()
 
-inputs = ["acc", "acc_vehicules", "acc_usagers", 
-          "pve", 
+inputs = ["acc", "acc_vehicules", "acc_usagers",
+          "pve",
           "communes", "radars"
          ]
-files = [i + ".json.gz" for i in inputs] + [i + "_schema.json" for i in inputs] 
+files = [i + ".json.gz" for i in inputs] + [i + "_schema.json" for i in inputs]
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # OpenStack
 openstack_auth_url = "https://identity.api.pi.dsic.minint.fr/v3/auth/tokens"
 openstack_domain = "tech"
@@ -33,7 +37,7 @@ openstack_pass = "*ahk4Xee8!"
 swift_threads = 10
 swift_path = '{}/{}/{}'.format(swift_url, swift_auth, swift_container)
 maxtries = 3
-data = { "auth": { 
+data = { "auth": {
     "scope": {
       "project": {
         "name": project_name,
@@ -51,6 +55,7 @@ except Exception as e:
     print "OpenStack auth failed :{}".format(e)
     exit
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # List Swift files
 headers = { 'X-Auth-Token': token}
 try:
@@ -58,10 +63,26 @@ try:
     if (r.status_code != 200 | r.status_code != 204):
         print "Error {} while listing content: {}".format(r.status_code, r.content)
     else:
-        print "Swift container {} successfully listed : \n{}".format(swift_container, r.content)
+        files=[f for f in r.content.split('\n') if 'json' in f]
+        if len(files) > 0:
+            print "Swift container {} successfully listed : \n{}".format(swift_container, files)
+        else:
+            print "Swift container {} successfully listed : \nno json file found"
+
 except:
     print "Swift request failed"
 
+if CLEAR and len(files)>0:
+    data = "\n".join(swift_container + '/' + f for f in files)
+    headers = { 'X-Auth-Token': token, 'Content-Type': 'text/plain' }
+    r = requests.post(swift_path + "?bulk-delete", data=data, verify=False, headers=headers)
+    if r.status_code == 200:
+        # There may be errors. We don't handle them; we only print this:
+        print r.content
+    else:
+        print "ERROR {} performing bulk delete: {}".format(r.status_code, r.content)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 def swift_send_file(src, dst, process_queue):
     tries = 1
     failed = True
