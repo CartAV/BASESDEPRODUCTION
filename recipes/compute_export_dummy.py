@@ -118,10 +118,9 @@ for i, file in enumerate(files):
     except:
         print '{} not found'.format(file)
     try:
-        print "{} < {}".format(input, file)
-        #process_queue.put(i)
-        #thread = Process(target=swift_send_file, args=[input, file, process_queue])
-        #thread.start()
+        process_queue.put(i)
+        thread = Process(target=swift_send_file, args=[input, file, process_queue])
+        thread.start()
     except:
         print 'Failed while swifting {}'.format(input)
 
