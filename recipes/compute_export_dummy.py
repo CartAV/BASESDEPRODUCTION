@@ -63,9 +63,9 @@ try:
     if (r.status_code != 200 | r.status_code != 204):
         print "Error {} while listing content: {}".format(r.status_code, r.content)
     else:
-        files=[f for f in r.content.split('\n') if 'json' in f]
+        remote_files=[f for f in r.content.split('\n') if 'json' in f]
         if len(files) > 0:
-            print "Swift container {} successfully listed : \n{}".format(swift_container, files)
+            print "Swift container {} successfully listed : \n{}".format(swift_container, remote_files)
         else:
             print "Swift container {} successfully listed : \nno json file found"
 
@@ -73,7 +73,7 @@ except:
     print "Swift request failed"
 
 if CLEAR and len(files)>0:
-    data = "\n".join(swift_container + '/' + f for f in files)
+    data = "\n".join(swift_container + '/' + f for f in remote_files)
     headers = { 'X-Auth-Token': token, 'Content-Type': 'text/plain' }
     r = requests.post(swift_path + "?bulk-delete", data=data, verify=False, headers=headers)
     if r.status_code == 200:
