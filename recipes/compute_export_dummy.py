@@ -3,6 +3,7 @@
 # NOTE: parallel send in swift can be faster up to ten times
 # a more chunked version of pve dataset should be realized for speeding up operations
 # a monthly chunked could be a nice split
+# md5 should be performed too as in ICER and histovec
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
