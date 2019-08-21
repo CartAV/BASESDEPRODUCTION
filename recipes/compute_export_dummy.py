@@ -51,8 +51,8 @@ data = { "auth": {
     "identity": { "methods": ["password"], "password": { "user": { "name": openstack_user, "domain": { "name": openstack_domain }, "password": openstack_pass } } } } }
 try:
     r = requests.post(openstack_auth_url, verify=False, json=data)
-    print 'Auth response content: {}'.format(r.content)
-    print 'Auth response headers: {}'.format(r.headers)
+    #print 'Auth response content: {}'.format(r.content)
+    #print 'Auth response headers: {}'.format(r.headers)
     token = r.headers['X-Subject-Token']
     print "OpenStack auth successful: token={}".format(token)
 except Exception as e:
@@ -108,22 +108,24 @@ def swift_send_file(src, dst, process_queue):
                 sleep(3 ** (tries-1))
     process_queue.get(i)
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 process_queue = Queue(swift_threads)
 for i, file in enumerate(files):
     print file
     try:
-        input = os.path.join(export_path, [x.replace('/','', 1) for x in export_folder.list_paths_in_partition() if file in x][0])
+        input = os.path.join(export_path, [x.replace('/','', 1) for x in export_folder.list_paths_in_partition() if file == x.replace('/','',1)][0])
         print 'Input file: {}'.format(input)
     except:
         print '{} not found'.format(file)
     try:
-        process_queue.put(i)
-        thread = Process(target=swift_send_file, args=[input, file, process_queue])
-        thread.start()
+        print "{} < {}".format(input, file)
+        #process_queue.put(i)
+        #thread = Process(target=swift_send_file, args=[input, file, process_queue])
+        #thread.start()
     except:
         print 'Failed while swifting {}'.format(input)
-        
-      
+
+
 # final listing of swift dir for log check
 try:
     r = requests.get(swift_path, verify=False, headers=headers)
@@ -137,5 +139,4 @@ try:
             print "Swift container {} successfully listed : \nno json file found"
 
 except:
-    print "Swift request failed"        
-        
+    print "Swift request failed"
